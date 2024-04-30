@@ -1,2 +1,5 @@
-public class listaArtistas {
+public class listaArtistas extends artistas{
+
+
+
 }
