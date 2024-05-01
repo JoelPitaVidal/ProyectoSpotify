@@ -3,39 +3,36 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Random;
 
-public class canciones {
+public class canciones extends artistas{
+
+    String asociarArtistas;
+
     //La clave del HashMap es el nombre de la canción, el elemento asociado el nombre del Artista
         HashMap<String, String> datosCanciones = new HashMap<String, String>();
         HashMap<String, String> datosCanciones2 = new HashMap<String, String>();
         HashMap<String, String> datosCanciones3 = new HashMap<String, String>();
 
-
+        artistas arCan = new artistas();
 
 
         public HashMap<String, String> darDatosCanciones(){
-        artistas arCan = new artistas();
+            // Se obtienen los datos de los artistas
+            arCan.darDatosArtistas();
 
-            datosCanciones.put("Hot demon bitches near you", arCan.asociarAartista());
-            datosCanciones.put("Smoke weed everyday", arCan.asociarAartista());
-            datosCanciones.put("El perro verde", arCan.asociarAartista());
-            datosCanciones.put("Shorty Party", arCan.asociarAartista());
-            datosCanciones.put("Shutdown", arCan.asociarAartista());
+            // Se obtiene un artista aleatorio del primer conjunto de datos de artistas
+            String artistaAleatorio = arCan.asociarAartista();
 
+            // Se recorren las claves (nombres de las canciones) del HashMap de datos de artistas
+            for (String cancion : arCan.datosArtistas1.keySet()) {
+                // Se asocia el nombre de la canción con el artista aleatorio
+                datosCanciones.put("Hot demon bitches near you", artistaAleatorio);
+            }
+            System.out.println(datosCanciones);
             return datosCanciones;
+
         }
 
-
-//        public void listaDeCanciones(){
+    public void listaDeCanciones(){
 //TODO: corregier error--> no muestra la lista de canciones
-            // Obtener una lista de los valores (nombres de artistas) del HashMap
-//          List<String> valores = new ArrayList<>(datosCanciones.values());
-            // Generar un número aleatorio entre 0 y el tamaño de la lista - 1
-//            Random random = new Random();
-//            int indiceAleatorio = random.nextInt(valores.size());
-//            String nombreCancion = datosCanciones.get(indiceAleatorio);
-            // Devolver el valor (nombre de artista) en el índice aleatorio
-//            System.out.println(" Se recomiendan al usuario las siguientes canciones: "+indiceAleatorio +" "+ nombreCancion);
-
-//        }
-
+    }
 }

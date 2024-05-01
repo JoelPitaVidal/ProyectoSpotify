@@ -5,7 +5,9 @@ public class Main {
         artistas art = new artistas();
         canciones can = new canciones();
         art.darDatosArtistas();
+
         art.generarLista();
-        can.listaDeCanciones();
+        can.darDatosCanciones();
     }
+
 }

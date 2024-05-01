@@ -5,13 +5,13 @@ import java.util.Random;
 
 public class artistas {
     //la clave del HashMap es el nombre de el artista, y su elemento asociado la fecha de inicio de este
-    HashMap<String, Integer> datosArtistas1 = new HashMap<String, Integer>();
-    HashMap<String, Integer> datosArtistas2 = new HashMap<String, Integer>();
-    HashMap<String, Integer> datosArtistas3 = new HashMap<String, Integer>();
+    HashMap<String, Integer> datosArtistas1 = new HashMap<>();
+    HashMap<String, Integer> datosArtistas2 = new HashMap<>();
+    HashMap<String, Integer> datosArtistas3 = new HashMap<>();
 
     String asociarArtistas;
 
-    public HashMap<String, Integer> darDatosArtistas(){
+    public void darDatosArtistas(){
 
 //TODO: Cambiar los nombres de los artistas de los HashMap datosArtistas2 y datosArtistas3
 
@@ -50,7 +50,6 @@ public class artistas {
         datosArtistas3.put("Snoop Dog",1979);
 
 
-        return datosArtistas1;
     }
 
     public void generarLista () {
@@ -106,8 +105,8 @@ public class artistas {
         Integer randomValue1 = datosArtistas1.get(randomKey1);
 
         asociarArtistas = randomKey1;
-
+        canciones can = new canciones();
+        asociarArtistas=can.asociarArtistas;
         return asociarArtistas;
     }
-
 }

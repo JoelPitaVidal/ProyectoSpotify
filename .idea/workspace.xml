@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9306fa49-089f-41e6-af9c-e255899da59b" name="Changes" comment="Artistas aleatorios configurados">
-      <change afterPath="$PROJECT_DIR$/src/MenuPrincipal.java" afterDir="false" />
+    <list default="true" id="9306fa49-089f-41e6-af9c-e255899da59b" name="Changes" comment="lista de canciones con un artista asociado">
+      <change afterPath="$PROJECT_DIR$/Premium/PagarPremium.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Premium/PremiumStatus.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Artistas/artistas.java" beforeDir="false" afterPath="$PROJECT_DIR$/Artistas/artistas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Artistas/listaArtistas.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Canciones/canciones.java" beforeDir="false" afterPath="$PROJECT_DIR$/Canciones/canciones.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Canciones/listaCanciones.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProyectoSpotify.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ProyectoSpotify.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,6 +26,12 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--follow-tags" />
+        <option name="title" value="Current Branch" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -44,7 +50,9 @@
   &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="2fpI7n1IJmUsbdXIO8oOz6fGqlL" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -93,7 +101,23 @@
       <option name="project" value="LOCAL" />
       <updated>1714548904240</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="lista de canciones con un artista asociado">
+      <option name="closed" value="true" />
+      <created>1714551436158</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1714551436158</updated>
+    </task>
+    <task id="LOCAL-00005" summary="lista de canciones con un artista asociado">
+      <option name="closed" value="true" />
+      <created>1714551695508</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1714551695508</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -110,6 +134,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="artistas aleatorios" />
     <MESSAGE value="Artistas aleatorios configurados" />
-    <option name="LAST_COMMIT_MESSAGE" value="Artistas aleatorios configurados" />
+    <MESSAGE value="lista de canciones con un artista asociado" />
+    <option name="LAST_COMMIT_MESSAGE" value="lista de canciones con un artista asociado" />
   </component>
 </project>
