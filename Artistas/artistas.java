@@ -8,13 +8,18 @@ public class artistas {
     HashMap<String, Integer> datosArtistas1 = new HashMap<String, Integer>();
     HashMap<String, Integer> datosArtistas2 = new HashMap<String, Integer>();
     HashMap<String, Integer> datosArtistas3 = new HashMap<String, Integer>();
+
+    String asociarArtistas;
+
     public HashMap<String, Integer> darDatosArtistas(){
+
 //TODO: Cambiar los nombres de los artistas de los HashMap datosArtistas2 y datosArtistas3
+
         datosArtistas1.put("Rob Zombie",1980);
         datosArtistas1.put("Eminem",1995);
         datosArtistas1.put("Disturbed",2000);
         datosArtistas1.put("CORPSE",2013);
-        datosArtistas1.put("Marea",1975);
+        datosArtistas1.put("Extremo duro",1975);
         datosArtistas1.put("Cartel de Santa",2005);
         datosArtistas1.put("Blackpink",2010);
         datosArtistas1.put("Ghostmane",1991);
@@ -25,7 +30,7 @@ public class artistas {
         datosArtistas2.put("Eminem",1995);
         datosArtistas2.put("Disturbed",2000);
         datosArtistas2.put("CORPSE",2013);
-        datosArtistas2.put("Marea",1975);
+        datosArtistas2.put("Extremo duro",1975);
         datosArtistas2.put("Cartel de Santa",2005);
         datosArtistas2.put("Blackpink",2010);
         datosArtistas2.put("Ghostmane",1991);
@@ -37,7 +42,7 @@ public class artistas {
         datosArtistas3.put("Eminem",1995);
         datosArtistas3.put("Disturbed",2000);
         datosArtistas3.put("CORPSE",2013);
-        datosArtistas3.put("Marea",1975);
+        datosArtistas3.put("Extremo duro",1975);
         datosArtistas3.put("Cartel de Santa",2005);
         datosArtistas3.put("Blackpink",2010);
         datosArtistas3.put("Ghostmane",1991);
@@ -46,10 +51,9 @@ public class artistas {
 
 
         return datosArtistas1;
-
     }
 
-    public void generarLista (){
+    public void generarLista () {
 //Primera Lista
         List<String> keys = new ArrayList<>(datosArtistas1.keySet());
         // Genera un número aleatorio entre 0 y el tamaño de la lista de claves
@@ -58,7 +62,7 @@ public class artistas {
         // Obtiene la clave aleatoria usando el número aleatorio generado
         String randomKey1 = keys.get(randomIndex);
         // Obtiene el valor asociado con la clave aleatoria
-        Integer randomValue = datosArtistas1.get(randomKey1);
+        Integer randomValue1 = datosArtistas1.get(randomKey1);
 
 //Segunda Lista
         List<String> keys2 = new ArrayList<>(datosArtistas2.keySet());
@@ -84,10 +88,26 @@ public class artistas {
 
 
         // Imprime la clave y el valor obtenidos aleatoriamente
-        System.out.println("Nombre del artista numero 1 y fecha de inicio:  " + randomKey1 + " , " + randomValue2 + "\n" +
+        System.out.println("Nombre del artista numero 1 y fecha de inicio:  " + randomKey1 + " , " + randomValue1 + "\n" +
                             "Nombre del artista numero 2 y fecha de inicio: " + randomKey2 + " , " + randomValue2 + "\n" +
                             "Nombre del artista numero 3 y fecha de inicio: " + randomKey3 + " , " + randomValue3);
 
 
     }
+
+    public String asociarAartista(){
+        List<String> keys = new ArrayList<>(datosArtistas1.keySet());
+        // Genera un número aleatorio entre 0 y el tamaño de la lista de claves
+        Random random = new Random();
+        int randomIndex = random.nextInt(keys.size());
+        // Obtiene la clave aleatoria usando el número aleatorio generado
+        String randomKey1 = keys.get(randomIndex);
+        // Obtiene el valor asociado con la clave aleatoria
+        Integer randomValue1 = datosArtistas1.get(randomKey1);
+
+        asociarArtistas = randomKey1;
+
+        return asociarArtistas;
+    }
+
 }
