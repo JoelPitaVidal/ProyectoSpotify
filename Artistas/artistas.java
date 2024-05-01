@@ -50,17 +50,17 @@ public class artistas {
     }
 
     public void generarLista (){
-
+//Primera Lista
         List<String> keys = new ArrayList<>(datosArtistas1.keySet());
         // Genera un número aleatorio entre 0 y el tamaño de la lista de claves
         Random random = new Random();
         int randomIndex = random.nextInt(keys.size());
         // Obtiene la clave aleatoria usando el número aleatorio generado
         String randomKey1 = keys.get(randomIndex);
-
         // Obtiene el valor asociado con la clave aleatoria
         Integer randomValue = datosArtistas1.get(randomKey1);
 
+//Segunda Lista
         List<String> keys2 = new ArrayList<>(datosArtistas2.keySet());
         // Genera un número aleatorio entre 0 y el tamaño de la lista de claves
         Random random2 = new Random();
@@ -70,8 +70,7 @@ public class artistas {
 
         // Obtiene el valor asociado con la clave aleatoria
         Integer randomValue2 = datosArtistas2.get(randomKey2);
-
-
+//Tercera Lista
         List<String> keys3 = new ArrayList<>(datosArtistas3.keySet());
         // Genera un número aleatorio entre 0 y el tamaño de la lista de claves
         Random random3 = new Random();
@@ -82,10 +81,12 @@ public class artistas {
         // Obtiene el valor asociado con la clave aleatoria
         Integer randomValue3 = datosArtistas3.get(randomKey3);
 
+
+
         // Imprime la clave y el valor obtenidos aleatoriamente
-        System.out.println("Nombre de los artistas: " + randomKey1 );
-        System.out.println("Fecha de inicio: " + randomValue2);
+        System.out.println("Nombre del artista numero 1 y fecha de inicio:  " + randomKey1 + " , " + randomValue2 + "\n" +
+                            "Nombre del artista numero 2 y fecha de inicio: " + randomKey2 + " , " + randomValue2 + "\n" +
+                            "Nombre del artista numero 3 y fecha de inicio: " + randomKey3 + " , " + randomValue3);
 
     }
-
 }
