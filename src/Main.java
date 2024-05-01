@@ -5,6 +5,5 @@ public class Main {
         artistas art = new artistas();
         art.darDatosArtistas();
         art.generarLista();
-
     }
 }
