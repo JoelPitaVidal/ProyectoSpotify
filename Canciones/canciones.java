@@ -25,17 +25,17 @@ public class canciones {
         }
 
 
-        public void listaDeCanciones(){
+//        public void listaDeCanciones(){
 //TODO: corregier error--> no muestra la lista de canciones
             // Obtener una lista de los valores (nombres de artistas) del HashMap
-            List<String> valores = new ArrayList<>(datosCanciones.values());
+//          List<String> valores = new ArrayList<>(datosCanciones.values());
             // Generar un número aleatorio entre 0 y el tamaño de la lista - 1
-            Random random = new Random();
-            int indiceAleatorio = random.nextInt(valores.size());
-            String nombreCancion = datosCanciones.get(indiceAleatorio);
+//            Random random = new Random();
+//            int indiceAleatorio = random.nextInt(valores.size());
+//            String nombreCancion = datosCanciones.get(indiceAleatorio);
             // Devolver el valor (nombre de artista) en el índice aleatorio
-            System.out.println(" Se recomiendan al usuario las siguientes canciones: "+indiceAleatorio +" "+ nombreCancion);
+//            System.out.println(" Se recomiendan al usuario las siguientes canciones: "+indiceAleatorio +" "+ nombreCancion);
 
-        }
+//        }
 
 }
