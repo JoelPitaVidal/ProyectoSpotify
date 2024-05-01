@@ -96,17 +96,18 @@ public class artistas {
 
     public String asociarAartista(){
         List<String> keys = new ArrayList<>(datosArtistas1.keySet());
-        // Genera un número aleatorio entre 0 y el tamaño de la lista de claves
+        // Verificar si hay artistas disponibles
+        if (keys.isEmpty()) {
+            return null; // Si no hay artistas disponibles, devolver null
+        }
+        // Generar un número aleatorio entre 0 y el tamaño de la lista de claves
         Random random = new Random();
         int randomIndex = random.nextInt(keys.size());
-        // Obtiene la clave aleatoria usando el número aleatorio generado
+        // Obtener la clave aleatoria usando el número aleatorio generado
         String randomKey1 = keys.get(randomIndex);
-        // Obtiene el valor asociado con la clave aleatoria
+        // Obtener el valor asociado con la clave aleatoria
         Integer randomValue1 = datosArtistas1.get(randomKey1);
-
-        asociarArtistas = randomKey1;
-        canciones can = new canciones();
-        asociarArtistas=can.asociarArtistas;
-        return asociarArtistas;
+        // Devolver el nombre del artista aleatorio
+        return randomKey1;
     }
 }

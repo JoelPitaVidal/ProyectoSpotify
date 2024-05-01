@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9306fa49-089f-41e6-af9c-e255899da59b" name="Changes" comment="lista de canciones con un artista asociado">
-      <change afterPath="$PROJECT_DIR$/Premium/PagarPremium.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Premium/PremiumStatus.java" afterDir="false" />
+    <list default="true" id="9306fa49-089f-41e6-af9c-e255899da59b" name="Changes" comment="Solucion parcial al problema de las listas">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Artistas/artistas.java" beforeDir="false" afterPath="$PROJECT_DIR$/Artistas/artistas.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Canciones/canciones.java" beforeDir="false" afterPath="$PROJECT_DIR$/Canciones/canciones.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProyectoSpotify.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ProyectoSpotify.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +113,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714551695508</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Solucion parcial al problema de las listas">
+      <option name="closed" value="true" />
+      <created>1714562703962</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1714562703962</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -135,6 +139,7 @@
     <MESSAGE value="artistas aleatorios" />
     <MESSAGE value="Artistas aleatorios configurados" />
     <MESSAGE value="lista de canciones con un artista asociado" />
-    <option name="LAST_COMMIT_MESSAGE" value="lista de canciones con un artista asociado" />
+    <MESSAGE value="Solucion parcial al problema de las listas" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solucion parcial al problema de las listas" />
   </component>
 </project>
