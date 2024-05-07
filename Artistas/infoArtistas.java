@@ -19,7 +19,7 @@ public class infoArtistas extends artistas{
         String buscarInfo=JOptionPane.showInputDialog("Introduzca el nombre de el artista del que desea usted buscar información");
         switch (buscarInfo) {
             case  ARTISTA1:
-                JOptionPane.showMessageDialog(null, "La información de el artista NOMBRE es : \n" +
+                JOptionPane.showMessageDialog(null, "La información de Ghostmane es : \n" +
                         "Nombre real: Eric Ghoste Whitney \n" +
                         "Fecha de nacimiento: 15 de abril de 1991 \n " +
                         "Origen: Lake Worth, Florida, Estados Unidos|\n" +
@@ -27,7 +27,7 @@ public class infoArtistas extends artistas{
                         "Sitio Web: ghostemanemerch.online");
                 break;
             case  ARTISTA2:
-                JOptionPane.showMessageDialog(null, "La información de el artista NOMBRE es : \n" +
+                JOptionPane.showMessageDialog(null, "La información de Nigth Lovel es : \n" +
                         "Nombre real: Eric Ghoste Whitney \n" +
                         "Fecha de nacimiento: 15 de abril de 1991 \n " +
                         "Origen: Lake Worth, Florida, Estados Unidos|\n" +
@@ -35,7 +35,7 @@ public class infoArtistas extends artistas{
                         "Sitio Web: ghostemanemerch.online");
                 break;
             case  ARTISTA3:
-                JOptionPane.showMessageDialog(null, "La información de el artista NOMBRE es : \n" +
+                JOptionPane.showMessageDialog(null, "La información de Snoop Dog es : \n" +
                         "Nombre real: Eric Ghoste Whitney \n" +
                         "Fecha de nacimiento: 15 de abril de 1991 \n " +
                         "Origen: Lake Worth, Florida, Estados Unidos|\n" +
@@ -43,7 +43,7 @@ public class infoArtistas extends artistas{
                         "Sitio Web: ghostemanemerch.online");
                 break;
             case  ARTISTA4:
-                JOptionPane.showMessageDialog(null, "La información de el artista NOMBRE es : \n" +
+                JOptionPane.showMessageDialog(null, "La información de Blackpink es : \n" +
                         "Nombre real: Eric Ghoste Whitney \n" +
                         "Fecha de nacimiento: 15 de abril de 1991 \n " +
                         "Origen: Lake Worth, Florida, Estados Unidos|\n" +
@@ -51,7 +51,7 @@ public class infoArtistas extends artistas{
                         "Sitio Web: ghostemanemerch.online");
                 break;
             case  ARTISTA5:
-                JOptionPane.showMessageDialog(null, "La información de el artista NOMBRE es : \n" +
+                JOptionPane.showMessageDialog(null, "La información de Cartel de Santa es : \n" +
                         "Nombre real: Eric Ghoste Whitney \n" +
                         "Fecha de nacimiento: 15 de abril de 1991 \n " +
                         "Origen: Lake Worth, Florida, Estados Unidos|\n" +
@@ -59,7 +59,7 @@ public class infoArtistas extends artistas{
                         "Sitio Web: ghostemanemerch.online");
                 break;
             case  ARTISTA6:
-                JOptionPane.showMessageDialog(null, "La información de el artista NOMBRE es : \n" +
+                JOptionPane.showMessageDialog(null, "La información de Extremo duro es : \n" +
                         "Nombre real: Eric Ghoste Whitney \n" +
                         "Fecha de nacimiento: 15 de abril de 1991 \n " +
                         "Origen: Lake Worth, Florida, Estados Unidos|\n" +
@@ -67,7 +67,7 @@ public class infoArtistas extends artistas{
                         "Sitio Web: ghostemanemerch.online");
                 break;
             case  ARTISTA7:
-                JOptionPane.showMessageDialog(null, "La información de el artista NOMBRE es : \n" +
+                JOptionPane.showMessageDialog(null, "La información de CORPSE es : \n" +
                         "Nombre real: Eric Ghoste Whitney \n" +
                         "Fecha de nacimiento: 15 de abril de 1991 \n " +
                         "Origen: Lake Worth, Florida, Estados Unidos|\n" +
@@ -75,7 +75,7 @@ public class infoArtistas extends artistas{
                         "Sitio Web: ghostemanemerch.online");
                 break;
             case  ARTISTA8:
-                JOptionPane.showMessageDialog(null, "La información de el artista NOMBRE es : \n" +
+                JOptionPane.showMessageDialog(null, "La información de Disturbed es : \n" +
                         "Nombre real: Eric Ghoste Whitney \n" +
                         "Fecha de nacimiento: 15 de abril de 1991 \n " +
                         "Origen: Lake Worth, Florida, Estados Unidos|\n" +
@@ -83,7 +83,7 @@ public class infoArtistas extends artistas{
                         "Sitio Web: ghostemanemerch.online");
                 break;
             case  ARTISTA9:
-                JOptionPane.showMessageDialog(null, "La información de el artista NOMBRE es : \n" +
+                JOptionPane.showMessageDialog(null, "La información de Eminem es : \n" +
                         "Nombre real: Eric Ghoste Whitney \n" +
                         "Fecha de nacimiento: 15 de abril de 1991 \n " +
                         "Origen: Lake Worth, Florida, Estados Unidos|\n" +
@@ -91,7 +91,7 @@ public class infoArtistas extends artistas{
                         "Sitio Web: ghostemanemerch.online");
                 break;
             case  ARTISTA10:
-                JOptionPane.showMessageDialog(null, "La información de el artista NOMBRE es : \n" +
+                JOptionPane.showMessageDialog(null, "La información de Rob Zombie es : \n" +
                         "Nombre real: Eric Ghoste Whitney \n" +
                         "Fecha de nacimiento: 15 de abril de 1991 \n " +
                         "Origen: Lake Worth, Florida, Estados Unidos|\n" +

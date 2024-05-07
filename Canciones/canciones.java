@@ -27,10 +27,10 @@ public class canciones extends artistas{
             for (String cancion : arCan.datosArtistas1.keySet()) {
                 // Se asocia el nombre de la canción con el artista aleatorio
                 datosCanciones.put("Hot demon bitches near you", artistaAleatorio);
-                datosCanciones.put("Shutdown", artistaAleatorio);
-                datosCanciones.put("Smoke weed everyday", artistaAleatorio);
-                datosCanciones.put("Live sucks so we fuck", artistaAleatorio);
-                datosCanciones.put("Miss you!", artistaAleatorio);
+                datosCanciones.put("\nShutdown", artistaAleatorio);
+                datosCanciones.put("\nSmoke weed everyday", artistaAleatorio);
+                datosCanciones.put("\nLive sucks so we fuck", artistaAleatorio);
+                datosCanciones.put("\nMiss you!", artistaAleatorio);
             }
             JOptionPane.showMessageDialog(null,datosCanciones);
             return datosCanciones;
