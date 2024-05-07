@@ -1,3 +1,4 @@
+import javax.swing.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -57,6 +58,7 @@ public class artistas {
         List<String> keys = new ArrayList<>(datosArtistas1.keySet());
         // Genera un número aleatorio entre 0 y el tamaño de la lista de claves
         Random random = new Random();
+//TODO:Esta linea falla, buscar y arreglar el bug
         int randomIndex = random.nextInt(keys.size());
         // Obtiene la clave aleatoria usando el número aleatorio generado
         String randomKey1 = keys.get(randomIndex);
@@ -87,9 +89,9 @@ public class artistas {
 
 
         // Imprime la clave y el valor obtenidos aleatoriamente
-        System.out.println("Nombre del artista numero 1 y fecha de inicio:  " + randomKey1 + " , " + randomValue1 + "\n" +
-                            "Nombre del artista numero 2 y fecha de inicio: " + randomKey2 + " , " + randomValue2 + "\n" +
-                            "Nombre del artista numero 3 y fecha de inicio: " + randomKey3 + " , " + randomValue3);
+        JOptionPane.showMessageDialog(null,"Nombre del artista numero 1 y fecha de inicio:  " + randomKey1 + " , " + randomValue1 + "\n" +
+                                                                  "Nombre del artista numero 2 y fecha de inicio: " + randomKey2 + " , " + randomValue2 + "\n" +
+                                                                  "Nombre del artista numero 3 y fecha de inicio: " + randomKey3 + " , " + randomValue3);
 
 
     }

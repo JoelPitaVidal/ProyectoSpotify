@@ -6,8 +6,8 @@ public class Main {
         canciones can = new canciones();
         art.darDatosArtistas();
 
-        art.generarLista();
-        can.darDatosCanciones();
+        new MenuPrincipal();
+
     }
 
 }

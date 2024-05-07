@@ -1,3 +1,4 @@
+import javax.swing.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -31,7 +32,7 @@ public class canciones extends artistas{
                 datosCanciones.put("Live sucks so we fuck", artistaAleatorio);
                 datosCanciones.put("Miss you!", artistaAleatorio);
             }
-            System.out.println(datosCanciones);
+            JOptionPane.showMessageDialog(null,datosCanciones);
             return datosCanciones;
 
         }
