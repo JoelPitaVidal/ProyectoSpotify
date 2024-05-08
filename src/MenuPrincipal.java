@@ -7,10 +7,12 @@ public class MenuPrincipal extends JFrame {
     artistas art = new artistas();
     canciones can = new canciones();
     public MenuPrincipal(){
+        art.darDatosArtistas();
 //Configuramos el titulo del Layout y el cierre del mismo
         setTitle("Bienvenido al Instagrám de DAM1");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
+
 //Configuramos JPanel y establecemos FlowLayout como su gestor de layout
         JPanel panel = new JPanel(new FlowLayout());
 //Botones

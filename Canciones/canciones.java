@@ -15,32 +15,38 @@ public class canciones extends artistas{
 
         artistas arCan = new artistas();
 
+    // Se obtiene un artista aleatorio del primer conjunto de datos de artistas
+    String artistaAleatorio = arCan.asociarAartista();
 
         public HashMap<String, String> darDatosCanciones(){
             // Se obtienen los datos de los artistas
             arCan.darDatosArtistas();
 
-            // Se obtiene un artista aleatorio del primer conjunto de datos de artistas
-            String artistaAleatorio = arCan.asociarAartista();
+
 
             // Se recorren las claves (nombres de las canciones) del HashMap de datos de artistas
             for (String cancion : arCan.datosArtistas1.keySet()) {
                 // Se asocia el nombre de la canción con el artista aleatorio
-                datosCanciones.put("Hot demon bitches near you", artistaAleatorio);
+                datosCanciones.put("\nHot demon bitches near you", artistaAleatorio);
                 datosCanciones.put("\nShutdown", artistaAleatorio);
                 datosCanciones.put("\nSmoke weed everyday", artistaAleatorio);
                 datosCanciones.put("\nLive sucks so we fuck", artistaAleatorio);
                 datosCanciones.put("\nMiss you!", artistaAleatorio);
-                datosCanciones.put("El Perro Verde", artistaAleatorio);
-                datosCanciones.put("\nPreaty Savage", artistaAleatorio);
-                datosCanciones.put("\nDragula", artistaAleatorio);
-                datosCanciones.put("\nShorty Party", artistaAleatorio);
-                datosCanciones.put("\nSmoke your grass", artistaAleatorio);
             }
-            JOptionPane.showMessageDialog(null,datosCanciones);
             return datosCanciones;
 
         }
+
+    public String getDatosCanciones() {
+        darDatosCanciones();
+        String devolverLista="";
+        devolverLista = "\nShutdown ->" + artistaAleatorio+
+        "\nHot demon bitches near you\n ->"+artistaAleatorio+
+        "\nSmoke weed everyday\n ->"+artistaAleatorio+
+        "\nLive sucks so we fuck\n ->"+artistaAleatorio+
+        "\nMiss you! ->"+artistaAleatorio;
+        return devolverLista;
+    }
 
     public void listaDeCanciones(){
 //TODO: corregier error--> no muestra la lista de canciones
