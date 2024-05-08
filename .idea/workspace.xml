@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9306fa49-089f-41e6-af9c-e255899da59b" name="Changes" comment="inicio lista de artistas y canciones">
+    <list default="true" id="9306fa49-089f-41e6-af9c-e255899da59b" name="Changes" comment="Busqueda de información de los artistas">
+      <change beforePath="$PROJECT_DIR$/Canciones/InfoCanciones.java" beforeDir="false" afterPath="$PROJECT_DIR$/Canciones/InfoCanciones.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Canciones/canciones.java" beforeDir="false" afterPath="$PROJECT_DIR$/Canciones/canciones.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -143,7 +144,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715099937978</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Busqueda de información de los artistas">
+      <option name="closed" value="true" />
+      <created>1715101529448</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1715101529448</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -165,6 +174,7 @@
     <MESSAGE value="Solucion  al problema de las listas" />
     <MESSAGE value="Comienzo de el Layout experimental para iniciar el proceso de implementar los demas metodos" />
     <MESSAGE value="inicio lista de artistas y canciones" />
-    <option name="LAST_COMMIT_MESSAGE" value="inicio lista de artistas y canciones" />
+    <MESSAGE value="Busqueda de información de los artistas" />
+    <option name="LAST_COMMIT_MESSAGE" value="Busqueda de información de los artistas" />
   </component>
 </project>

@@ -31,6 +31,11 @@ public class canciones extends artistas{
                 datosCanciones.put("\nSmoke weed everyday", artistaAleatorio);
                 datosCanciones.put("\nLive sucks so we fuck", artistaAleatorio);
                 datosCanciones.put("\nMiss you!", artistaAleatorio);
+                datosCanciones.put("El Perro Verde", artistaAleatorio);
+                datosCanciones.put("\nPreaty Savage", artistaAleatorio);
+                datosCanciones.put("\nDragula", artistaAleatorio);
+                datosCanciones.put("\nShorty Party", artistaAleatorio);
+                datosCanciones.put("\nSmoke your grass", artistaAleatorio);
             }
             JOptionPane.showMessageDialog(null,datosCanciones);
             return datosCanciones;
