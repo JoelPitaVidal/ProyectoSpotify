@@ -18,8 +18,14 @@ public class LayoutFinal extends JFrame{
         setResizable(false);
         setLayout(null);
         setSize(800,600);
+        iniciarMetodos();
+    }
+
+    public void iniciarMetodos(){
+
         crearPaneles();
         crearTextArea();
+
     }
 
     public void crearPaneles(){
