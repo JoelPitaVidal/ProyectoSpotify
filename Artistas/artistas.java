@@ -112,4 +112,30 @@ public class artistas {
         // Devolver el nombre del artista aleatorio
         return randomKey1;
     }
+    public String getAsociarArtistas2(){
+        List<String> keys2 = new ArrayList<>(datosArtistas2.keySet());
+        // Genera un número aleatorio entre 0 y el tamaño de la lista de claves
+        Random random2 = new Random();
+        int randomIndex2 = random2.nextInt(keys2.size());
+        // Obtiene la clave aleatoria usando el número aleatorio generado
+        String randomKey2 = keys2.get(randomIndex2);
+
+        // Obtiene el valor asociado con la clave aleatoria
+        Integer randomValue2 = datosArtistas2.get(randomKey2);
+        return randomKey2;
+    }
+    public String getAsociarArtistas3(){
+        List<String> keys3 = new ArrayList<>(datosArtistas3.keySet());
+        // Genera un número aleatorio entre 0 y el tamaño de la lista de claves
+        Random random3 = new Random();
+        int randomIndex3 = random3.nextInt(keys3.size());
+        // Obtiene la clave aleatoria usando el número aleatorio generado
+        String randomKey3 = keys3.get(randomIndex3);
+
+        // Obtiene el valor asociado con la clave aleatoria
+        Integer randomValue3 = datosArtistas3.get(randomKey3);
+        return randomKey3;
+    }
+
+
 }
