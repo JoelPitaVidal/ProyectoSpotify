@@ -18,14 +18,8 @@ public class LayoutFinal extends JFrame{
         setResizable(false);
         setLayout(null);
         setSize(800,600);
-        iniciarMetodos();
-    }
-
-    public void iniciarMetodos(){
-
         crearPaneles();
         crearTextArea();
-
     }
 
     public void crearPaneles(){
@@ -38,12 +32,12 @@ public class LayoutFinal extends JFrame{
         panelVentana.setLayout(null);
 
         arribaIzquierda=new JPanel();
-        arribaIzquierda.setBounds(0,0,160,100);
+        arribaIzquierda.setBounds(0,0,220,100);
         panelVentana.add(arribaIzquierda);
         arribaIzquierda.setBackground(Color.pink);
 
         arribaIzquierdaDebajo=new JPanel();
-        arribaIzquierdaDebajo.setBounds(0,105,160,700);
+        arribaIzquierdaDebajo.setBounds(0,105,220,700);
         panelVentana.add(arribaIzquierdaDebajo);
         arribaIzquierdaDebajo.setBackground(Color.pink);
         arribaIzquierdaDebajo.setLayout(null);
@@ -51,12 +45,12 @@ public class LayoutFinal extends JFrame{
     }
 
     public void crearTextArea(){
-
         listaDeCanciones=new JTextArea(can.getDatosCanciones());
-        listaDeCanciones.setBounds(0,0,160,700);
+        listaDeCanciones.setBounds(0,0,220,700);
         listaDeCanciones.setOpaque(false);
         listaDeCanciones.setEditable(false);
         arribaIzquierdaDebajo.add(listaDeCanciones);
+
 
     }
 
