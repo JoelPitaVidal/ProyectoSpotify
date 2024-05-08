@@ -25,7 +25,7 @@ public class canciones extends artistas{
             // Se recorren las claves (nombres de las canciones) del HashMap de datos de artistas
             for (String cancion : arCan.datosArtistas1.keySet()) {
                 // Se asocia el nombre de la canción con el artista aleatorio
-                datosCanciones.put("Hot demon bitches near you", artistaAleatorio);
+                datosCanciones.put("\nHot demon bitches near you", artistaAleatorio);
                 datosCanciones.put("\nShutdown", artistaAleatorio);
                 datosCanciones.put("\nSmoke weed everyday", artistaAleatorio);
                 datosCanciones.put("\nLive sucks so we fuck", artistaAleatorio);
@@ -35,7 +35,7 @@ public class canciones extends artistas{
             }
             for (String cancion : arCan.datosArtistas2.keySet()) {
                 // Se asocia el nombre de la canción con el artista aleatorio
-                datosCanciones2.put("Hot demon bitches near you", artistaAleatorio2);
+                datosCanciones2.put("\nHot demon bitches near you", artistaAleatorio2);
                 datosCanciones2.put("\nShutdown", artistaAleatorio2);
                 datosCanciones2.put("\nSmoke weed everyday", artistaAleatorio2);
                 datosCanciones2.put("\nLive sucks so we fuck", artistaAleatorio2);
@@ -43,7 +43,7 @@ public class canciones extends artistas{
             }
             for (String cancion : arCan.datosArtistas3.keySet()) {
                 // Se asocia el nombre de la canción con el artista aleatorio
-                datosCanciones3.put("Hot demon bitches near you", artistaAleatorio3);
+                datosCanciones3.put("\nHot demon bitches near you", artistaAleatorio3);
                 datosCanciones3.put("\nShutdown", artistaAleatorio3);
                 datosCanciones3.put("\nSmoke weed everyday", artistaAleatorio3);
                 datosCanciones3.put("\nLive sucks so we fuck", artistaAleatorio3);

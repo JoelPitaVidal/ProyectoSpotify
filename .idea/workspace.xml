@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9306fa49-089f-41e6-af9c-e255899da59b" name="Changes" comment="Listas aleatorias configuradas">
+    <list default="true" id="9306fa49-089f-41e6-af9c-e255899da59b" name="Changes" comment="Listas configuradas con artistas diferentes">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Artistas/artistas.java" beforeDir="false" afterPath="$PROJECT_DIR$/Artistas/artistas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Canciones/canciones.java" beforeDir="false" afterPath="$PROJECT_DIR$/Canciones/canciones.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,7 +194,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715186046554</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Listas configuradas con artistas diferentes">
+      <option name="closed" value="true" />
+      <created>1715186766898</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1715186766898</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -219,7 +227,8 @@
     <MESSAGE value="Busqueda de información de los artistas" />
     <MESSAGE value="Inicio de el Layout Final" />
     <MESSAGE value="Listas aleatorias configuradas" />
-    <option name="LAST_COMMIT_MESSAGE" value="Listas aleatorias configuradas" />
+    <MESSAGE value="Listas configuradas con artistas diferentes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Listas configuradas con artistas diferentes" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ProyectoSpotify$Main.ic" NAME="Main Coverage Results" MODIFIED="1715182530937" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />

@@ -27,28 +27,28 @@ public class artistas {
         datosArtistas1.put("Nigth Lovel",1975);
         datosArtistas1.put("Snoop Dog",1979);
 
-        datosArtistas2.put("Rob Zombie",1980);
-        datosArtistas2.put("Eminem",1995);
-        datosArtistas2.put("Disturbed",2000);
-        datosArtistas2.put("CORPSE",2013);
-        datosArtistas2.put("Extremo duro",1975);
-        datosArtistas2.put("Cartel de Santa",2005);
-        datosArtistas2.put("Blackpink",2010);
-        datosArtistas2.put("Ghostmane",1991);
-        datosArtistas2.put("Nigth Lovel",1975);
-        datosArtistas2.put("Snoop Dog",1979);
+        datosArtistas2.put("Pinkii",1980);
+        datosArtistas2.put("Shiki-TMS",1995);
+        datosArtistas2.put("DAEGHO",2000);
+        datosArtistas2.put("Prompto",2013);
+        datosArtistas2.put("Pitbul",1975);
+        datosArtistas2.put("Istasha",2005);
+        datosArtistas2.put("BTS",2010);
+        datosArtistas2.put("Nikone",1991);
+        datosArtistas2.put("Reality",1975);
+        datosArtistas2.put("Calero-LDN",1979);
 
 
-        datosArtistas3.put("Rob Zombie",1980);
-        datosArtistas3.put("Eminem",1995);
-        datosArtistas3.put("Disturbed",2000);
-        datosArtistas3.put("CORPSE",2013);
-        datosArtistas3.put("Extremo duro",1975);
-        datosArtistas3.put("Cartel de Santa",2005);
-        datosArtistas3.put("Blackpink",2010);
-        datosArtistas3.put("Ghostmane",1991);
-        datosArtistas3.put("Nigth Lovel",1975);
-        datosArtistas3.put("Snoop Dog",1979);
+        datosArtistas3.put("Zheani",1980);
+        datosArtistas3.put("ashnikko",1995);
+        datosArtistas3.put("Hatsune-Miku",2000);
+        datosArtistas3.put("Dead Punch",2013);
+        datosArtistas3.put("remik gonzalez",1975);
+        datosArtistas3.put("L-Gante",2005);
+        datosArtistas3.put("Doja-Cat",2010);
+        datosArtistas3.put("Clams-Casino",1991);
+        datosArtistas3.put("$UICIDEBOY$",1975);
+        datosArtistas3.put("KINDER MALO",1979);
 
 
     }
