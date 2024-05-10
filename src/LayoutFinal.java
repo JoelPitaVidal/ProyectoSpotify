@@ -67,7 +67,7 @@ public class LayoutFinal extends JFrame{
     botonDeBusqueda.addActionListener(new ActionListener() {
         @Override
         public void actionPerformed(ActionEvent e) {
-            infart.verInfoArtistas();
+            infart.menuDeBusqueda();
       }
   });
 }
