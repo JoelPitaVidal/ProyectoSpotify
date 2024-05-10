@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*;
 
 public class infoArtistas extends JFrame{
 
@@ -15,32 +16,69 @@ public class infoArtistas extends JFrame{
     final String ARTISTA9 = "Eminem";
     final String ARTISTA10 = "Rob Zombie";
 
+    final String INFOARTISTA1 = "\"La información de Ghostmane es : \\n\" +\n" +
+            "                        \"Nombre real: Eric Ghoste Whitney \\n\" +\n" +
+            "                        \"Fecha de nacimiento: 15 de abril de 1991 \\n \" +\n" +
+            "                        \"Origen: Lake Worth, Florida, Estados Unidos|\\n\" +\n" +
+            "                        \"Géneros musicales: Dark trap, noise, hip hop, trap, hip hop, cloud rap, rap Metal\" +\n" +
+            "                        \"Sitio Web: ghostemanemerch.online\"";
+
+
+    final String INFOARTISTA2 = "\"La información de Nigth Lovel es : \\n\" +\n" +
+            "                        \"Nombre real: Eric Ghoste Whitney \\n\" +\n" +
+            "                        \"Fecha de nacimiento: 15 de abril de 1991 \\n \" +\n" +
+            "                        \"Origen: Lake Worth, Florida, Estados Unidos|\\n\" +\n" +
+            "                        \"Géneros musicales: Dark trap, noise, hip hop, trap, hip hop, cloud rap, rap Metal\" +\n" +
+            "                        \"Sitio Web: ghostemanemerch.online";
+
+    final String INFOARTISTA3 = "\"La información de Snoop Dog es : \\n\" +\n" +
+            "                        \"Nombre real: Eric Ghoste Whitney \\n\" +\n" +
+            "                        \"Fecha de nacimiento: 15 de abril de 1991 \\n \" +\n" +
+            "                        \"Origen: Lake Worth, Florida, Estados Unidos|\\n\" +\n" +
+            "                        \"Géneros musicales: Dark trap, noise, hip hop, trap, hip hop, cloud rap, rap Metal\" +\n" +
+            "                        \"Sitio Web: ghostemanemerch.online\"";
+
+    final String INFOARTISTA4 = "Blackpink";
+
+    final String INFOARTISTA5 = "Cartel de Santa";
+
+    final String INFOARTISTA6 = "Extremo duro";
+
+    final String INFOARTISTA7 = "CORPSE";
+
+    final String INFOARTISTA8 = "Disturbed";
+
+    final String INFOARTISTA9 = "Eminem";
+
+    final String INFOARTISTA10 = "Rob Zombie";
+
+    public JPanel panelDeBusqueda;
+    public infoArtistas(){
+    }
+
+    public void menuBusqueda(){
+
+        panelDeBusqueda=new JPanel();
+        panelDeBusqueda.setBounds(0,0,800,600);
+        this.getContentPane().add(panelDeBusqueda);
+        panelDeBusqueda.setVisible(true);
+        panelDeBusqueda.setBackground(Color.black);
+        panelDeBusqueda.setLayout(null);
+
+    }
+
+
     public void verInfoArtistas(){
         String buscarInfo=JOptionPane.showInputDialog("Introduzca el nombre de el artista del que desea usted buscar información");
         switch (buscarInfo) {
             case  ARTISTA1:
-                JOptionPane.showMessageDialog(null, "La información de Ghostmane es : \n" +
-                        "Nombre real: Eric Ghoste Whitney \n" +
-                        "Fecha de nacimiento: 15 de abril de 1991 \n " +
-                        "Origen: Lake Worth, Florida, Estados Unidos|\n" +
-                        "Géneros musicales: Dark trap, noise, hip hop, trap, hip hop, cloud rap, rap Metal" +
-                        "Sitio Web: ghostemanemerch.online");
+                JOptionPane.showMessageDialog();
                 break;
             case  ARTISTA2:
-                JOptionPane.showMessageDialog(null, "La información de Nigth Lovel es : \n" +
-                        "Nombre real: Eric Ghoste Whitney \n" +
-                        "Fecha de nacimiento: 15 de abril de 1991 \n " +
-                        "Origen: Lake Worth, Florida, Estados Unidos|\n" +
-                        "Géneros musicales: Dark trap, noise, hip hop, trap, hip hop, cloud rap, rap Metal" +
-                        "Sitio Web: ghostemanemerch.online");
+                JOptionPane.showMessageDialog(null, ");
                 break;
             case  ARTISTA3:
-                JOptionPane.showMessageDialog(null, "La información de Snoop Dog es : \n" +
-                        "Nombre real: Eric Ghoste Whitney \n" +
-                        "Fecha de nacimiento: 15 de abril de 1991 \n " +
-                        "Origen: Lake Worth, Florida, Estados Unidos|\n" +
-                        "Géneros musicales: Dark trap, noise, hip hop, trap, hip hop, cloud rap, rap Metal" +
-                        "Sitio Web: ghostemanemerch.online");
+                JOptionPane.showMessageDialog(null, );
                 break;
             case  ARTISTA4:
                 JOptionPane.showMessageDialog(null, "La información de Blackpink es : \n" +
