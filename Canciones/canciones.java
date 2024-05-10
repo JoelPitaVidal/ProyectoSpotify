@@ -30,9 +30,9 @@ public class canciones extends artistas{
                 datosCanciones.put("\nSmoke weed everyday", artistaAleatorio);
                 datosCanciones.put("\nLive sucks so we fuck", artistaAleatorio);
                 datosCanciones.put("\nMiss you!", artistaAleatorio);
-
-
             }
+
+
             for (String cancion : arCan.datosArtistas2.keySet()) {
                 // Se asocia el nombre de la canción con el artista aleatorio
                 datosCanciones2.put("\nHot demon bitches near you", artistaAleatorio2);
@@ -41,6 +41,8 @@ public class canciones extends artistas{
                 datosCanciones2.put("\nLive sucks so we fuck", artistaAleatorio2);
                 datosCanciones2.put("\nMiss you!", artistaAleatorio2);
             }
+
+
             for (String cancion : arCan.datosArtistas3.keySet()) {
                 // Se asocia el nombre de la canción con el artista aleatorio
                 datosCanciones3.put("\nHot demon bitches near you", artistaAleatorio3);
