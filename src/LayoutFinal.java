@@ -1,7 +1,8 @@
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.*;
+import java.util.ArrayList;
 
 public class LayoutFinal extends JFrame{
 
@@ -9,8 +10,9 @@ public class LayoutFinal extends JFrame{
     public JPanel arribaIzquierda;
     public JPanel arribaIzquierdaDebajo;
     public JTextArea listaDeCanciones;
+    public JButton botonDeBusqueda;
     canciones can = new canciones();
-
+    infoArtistas infart = new infoArtistas();
     public LayoutFinal(){
 
         setTitle("Damtify");
@@ -20,6 +22,7 @@ public class LayoutFinal extends JFrame{
         setSize(800,600);
         crearPaneles();
         crearTextArea();
+        buscadorDeCanciones();
     }
 
     public void crearPaneles(){
@@ -42,6 +45,13 @@ public class LayoutFinal extends JFrame{
         arribaIzquierdaDebajo.setBackground(Color.pink);
         arribaIzquierdaDebajo.setLayout(null);
 
+
+        botonDeBusqueda =new JButton("Buscar canciones o artistas");
+        botonDeBusqueda.setLayout(null);
+        panelVentana.add(botonDeBusqueda);
+        botonDeBusqueda.setBounds(225,517,300,50);
+        botonDeBusqueda.setBackground(Color.pink);
+
     }
 
     public void crearTextArea(){
@@ -53,5 +63,16 @@ public class LayoutFinal extends JFrame{
 
 
     }
+    public void buscadorDeCanciones(){
+    botonDeBusqueda.addActionListener(new ActionListener() {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            infart.verInfoArtistas();
+      }
+  });
+}
+
+
+
 
 }
