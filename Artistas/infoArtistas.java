@@ -143,10 +143,6 @@ public class infoArtistas extends JFrame{
 
     public void mostrarResultado(){
 
-
-
-
-
         mostrarInfo=new JLabel();
         mostrarInfo.setBounds(260,0,300,50);
 
