@@ -1,6 +1,6 @@
 import javax.swing.*;
 
-public class infoArtistas extends artistas{
+public class infoArtistas extends JFrame{
 
     artistas art = new artistas();
 
@@ -15,7 +15,7 @@ public class infoArtistas extends artistas{
     final String ARTISTA9 = "Eminem";
     final String ARTISTA10 = "Rob Zombie";
 
-    public void DarInfoArtista(){
+    public void verInfoArtistas(){
         String buscarInfo=JOptionPane.showInputDialog("Introduzca el nombre de el artista del que desea usted buscar información");
         switch (buscarInfo) {
             case  ARTISTA1:
