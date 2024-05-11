@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9306fa49-089f-41e6-af9c-e255899da59b" name="Changes" comment="Cambiados los nombres de los artistas">
-      <change afterPath="$PROJECT_DIR$/Canciones/CancionesAleatorias.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Artistas/artistas.java" beforeDir="false" afterPath="$PROJECT_DIR$/Artistas/artistas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Canciones/canciones.java" beforeDir="false" afterPath="$PROJECT_DIR$/Canciones/canciones.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Canciones/Listas.java" beforeDir="false" afterPath="$PROJECT_DIR$/Canciones/Listas.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
