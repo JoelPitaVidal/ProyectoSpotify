@@ -2,7 +2,6 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionListener;
 import java.awt.event.*;
-import java.util.ArrayList;
 
 public class LayoutFinal extends JFrame{
 
@@ -11,7 +10,7 @@ public class LayoutFinal extends JFrame{
     public JPanel arribaIzquierdaDebajo;
     public JTextArea listaDeCanciones;
     public JButton botonDeBusqueda;
-    canciones can = new canciones();
+    Listas can = new Listas();
     infoArtistas infart = new infoArtistas();
     public LayoutFinal(){
 

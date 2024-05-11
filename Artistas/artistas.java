@@ -58,7 +58,6 @@ public class artistas {
         List<String> keys = new ArrayList<>(datosArtistas1.keySet());
         // Genera un número aleatorio entre 0 y el tamaño de la lista de claves
         Random random = new Random();
-//TODO:Esta linea falla, buscar y arreglar el bug
         int randomIndex = random.nextInt(keys.size());
         // Obtiene la clave aleatoria usando el número aleatorio generado
         String randomKey1 = keys.get(randomIndex);
@@ -136,6 +135,5 @@ public class artistas {
         Integer randomValue3 = datosArtistas3.get(randomKey3);
         return randomKey3;
     }
-
 
 }

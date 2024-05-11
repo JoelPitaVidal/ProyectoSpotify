@@ -5,7 +5,7 @@ import java.awt.event.ActionListener;
 
 public class MenuPrincipal extends JFrame {
     artistas art = new artistas();
-    canciones can = new canciones();
+    Listas can = new Listas();
     public MenuPrincipal(){
         art.darDatosArtistas();
 //Configuramos el titulo del Layout y el cierre del mismo

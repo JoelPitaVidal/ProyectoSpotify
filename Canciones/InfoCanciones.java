@@ -1,4 +1,4 @@
-public class InfoCanciones extends canciones{
-    canciones can = new canciones();
+public class InfoCanciones extends Listas {
+    Listas can = new Listas();
 
 }
