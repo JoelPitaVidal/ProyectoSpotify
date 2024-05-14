@@ -123,6 +123,7 @@ public class artistas {
         Integer randomValue2 = datosArtistas2.get(randomKey2);
         return randomKey2;
     }
+
     public String getAsociarArtistas3(){
         List<String> keys3 = new ArrayList<>(datosArtistas3.keySet());
         // Genera un número aleatorio entre 0 y el tamaño de la lista de claves
