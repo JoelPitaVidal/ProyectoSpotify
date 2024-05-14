@@ -1,7 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
 
-public class infoArtistas extends JFrame{
+public class infoArtistas extends JFrame {
 
     artistas art = new artistas();
 
@@ -91,8 +91,8 @@ public class infoArtistas extends JFrame{
 
     public JPanel panelDeBusqueda;
     public JTextField buscador;
-    public JLabel mostrarInfo;
-    public JTextField artistaAbuscar;
+    public JTextField mostrarInfo;
+
 
     public infoArtistas(){
     }
@@ -110,7 +110,7 @@ public class infoArtistas extends JFrame{
     }
 
     public void panelParaBuscador(){
-
+        buscador();
         panelDeBusqueda=new JPanel();
         panelDeBusqueda.setBounds(0,0,800,600);
 
@@ -128,31 +128,26 @@ public class infoArtistas extends JFrame{
 
         buscador=new JTextField();
         buscador.setBounds(260,0,300,50);
-
         this.getContentPane().add(buscador);
         buscador.setVisible(true);
-
         buscador.setBackground(Color.pink);
         buscador.setLayout(null);
-
         panelDeBusqueda.add(buscador);
 
-        artistaAbuscar=buscador;
 
-    }
 
-    public void mostrarResultado(){
 
-        mostrarInfo=new JLabel();
+        mostrarInfo=new JTextField();
         mostrarInfo.setBounds(260,0,300,50);
-
         this.getContentPane().add(mostrarInfo);
         mostrarInfo.setVisible(true);
-
+        mostrarInfo.setEditable(false);
         mostrarInfo.setBackground(Color.pink);
         mostrarInfo.setLayout(null);
-
         panelDeBusqueda.add(mostrarInfo);
+
     }
+
+
 
 }
