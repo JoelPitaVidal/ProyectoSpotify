@@ -1,5 +1,6 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.KeyEvent;
 
 public class infoArtistas extends JFrame {
 
@@ -91,7 +92,7 @@ public class infoArtistas extends JFrame {
 
     public JPanel panelDeBusqueda;
     public JTextField buscador;
-    public JTextField mostrarInfo;
+    public JLabel mostrarInfo;
 
 
     public infoArtistas(){
@@ -110,7 +111,7 @@ public class infoArtistas extends JFrame {
     }
 
     public void panelParaBuscador(){
-        buscador();
+
         panelDeBusqueda=new JPanel();
         panelDeBusqueda.setBounds(0,0,800,600);
 
@@ -121,32 +122,80 @@ public class infoArtistas extends JFrame {
         panelDeBusqueda.setLayout(null);
 
         add(panelDeBusqueda);
-
+        buscador();
+        mostrarInfo();
     }
 
     public void buscador(){
 
         buscador=new JTextField();
         buscador.setBounds(260,0,300,50);
+
         this.getContentPane().add(buscador);
         buscador.setVisible(true);
+
         buscador.setBackground(Color.pink);
         buscador.setLayout(null);
+
         panelDeBusqueda.add(buscador);
 
 
 
-        mostrarInfo=new JTextField();
-        mostrarInfo.setBounds(260,0,300,50);
-        this.getContentPane().add(mostrarInfo);
-        mostrarInfo.setVisible(true);
-        mostrarInfo.setEditable(false);
-        mostrarInfo.setBackground(Color.pink);
-        mostrarInfo.setLayout(null);
-        panelDeBusqueda.add(mostrarInfo);
+
 
     }
 
+public void mostrarInfo(){
 
-    
+    mostrarInfo=new JLabel();
+    mostrarInfo.setBounds(260,260,300,50);
+
+    this.getContentPane().add(mostrarInfo);
+    mostrarInfo.setVisible(true);
+
+    mostrarInfo.setBackground(Color.pink);
+    mostrarInfo.setLayout(null);
+
+    panelDeBusqueda.add(mostrarInfo);
+}
+
+public void keyPressed(KeyEvent e){
+        if (e.VK_ENTER==e.getKeyCode()){
+            switch (buscador.getText()) {
+                case ARTISTA1:
+                    mostrarInfo.setText(INFOARTISTA1);
+                    break;
+                case ARTISTA2:
+                    mostrarInfo.setText(INFOARTISTA2);
+                    break;
+                case ARTISTA3:
+                    mostrarInfo.setText(INFOARTISTA3);
+                    break;
+                case ARTISTA4:
+                    mostrarInfo.setText(INFOARTISTA4);
+                    break;
+                case ARTISTA5:
+                    mostrarInfo.setText(INFOARTISTA5);
+                    break;
+                case ARTISTA6:
+                    mostrarInfo.setText(INFOARTISTA6);
+                    break;
+                case ARTISTA7:
+                    mostrarInfo.setText(INFOARTISTA7);
+                    break;
+                case ARTISTA8:
+                    mostrarInfo.setText(INFOARTISTA8);
+                    break;
+                case ARTISTA9:
+                    mostrarInfo.setText(INFOARTISTA9);
+                    break;
+                case ARTISTA10:
+                    mostrarInfo.setText(INFOARTISTA10);
+                    break;
+                default:
+                    mostrarInfo.setText("Artista no reconocido");
+                    break;
+            }
+        }
+    }
 }
