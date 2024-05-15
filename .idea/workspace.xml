@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9306fa49-089f-41e6-af9c-e255899da59b" name="Changes" comment="Cambiados los nombres de los artistas">
-      <change beforePath="$PROJECT_DIR$/Canciones/Listas.java" beforeDir="false" afterPath="$PROJECT_DIR$/Canciones/Listas.java" afterDir="false" />
+    <list default="true" id="9306fa49-089f-41e6-af9c-e255899da59b" name="Changes" comment="Commit con rama para release">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Artistas/infoArtistas.java" beforeDir="false" afterPath="$PROJECT_DIR$/Artistas/infoArtistas.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,7 +21,7 @@
     </option>
   </component>
   <component name="Git.Merge.Settings">
-    <option name="BRANCH" value="origin/NuevosCommits" />
+    <option name="BRANCH" value="main" />
   </component>
   <component name="Git.Settings">
     <branch-grouping />

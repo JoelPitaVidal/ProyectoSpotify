@@ -136,7 +136,6 @@ public class infoArtistas extends JFrame {
 
 
 
-
         mostrarInfo=new JTextField();
         mostrarInfo.setBounds(260,0,300,50);
         this.getContentPane().add(mostrarInfo);
@@ -149,5 +148,5 @@ public class infoArtistas extends JFrame {
     }
 
 
-
+    
 }
