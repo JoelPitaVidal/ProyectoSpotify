@@ -6,7 +6,7 @@ import java.awt.event.*;
 public class LayoutFinal extends JFrame{
 
     public JPanel panelVentana;
-    public JPanel arribaIzquierda;
+    public JButton arribaIzquierda;
     public JPanel arribaIzquierdaDebajo;
     public JTextArea listaDeCanciones;
     public JButton botonDeBusqueda;
@@ -22,6 +22,7 @@ public class LayoutFinal extends JFrame{
         crearPaneles();
         crearTextArea();
         buscadorDeCanciones();
+        sesionDeUsuario();
     }
 
     public void crearPaneles(){
@@ -33,7 +34,8 @@ public class LayoutFinal extends JFrame{
         panelVentana.setBackground(Color.black);
         panelVentana.setLayout(null);
 
-        arribaIzquierda=new JPanel();
+        arribaIzquierda=new JButton("iniciar sesión de usuario");
+        arribaIzquierda.setLayout(null);
         arribaIzquierda.setBounds(0,0,220,100);
         panelVentana.add(arribaIzquierda);
         arribaIzquierda.setBackground(Color.pink);
@@ -72,6 +74,12 @@ public class LayoutFinal extends JFrame{
 }
 
 
+public void sesionDeUsuario(){
+        arribaIzquierda.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
 
-
+            }
+        });
+    }
 }

@@ -1,6 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
 
 public class infoArtistas extends JFrame {
 
@@ -99,7 +100,6 @@ public class infoArtistas extends JFrame {
     }
 
     public void menuDeBusqueda(){
-
         setTitle("Damtify");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setResizable(false);
@@ -108,39 +108,66 @@ public class infoArtistas extends JFrame {
         setSize(800,600);
         panelParaBuscador();
         buscador();
+        mostrarInfo();
     }
 
     public void panelParaBuscador(){
 
         panelDeBusqueda=new JPanel();
         panelDeBusqueda.setBounds(0,0,800,600);
-
-        this.getContentPane().add(panelDeBusqueda);
         panelDeBusqueda.setVisible(true);
-
         panelDeBusqueda.setBackground(Color.black);
         panelDeBusqueda.setLayout(null);
-
         add(panelDeBusqueda);
-        buscador();
-        mostrarInfo();
+
     }
 
     public void buscador(){
 
         buscador=new JTextField();
         buscador.setBounds(260,0,300,50);
-
-        this.getContentPane().add(buscador);
         buscador.setVisible(true);
-
         buscador.setBackground(Color.pink);
         buscador.setLayout(null);
-
         panelDeBusqueda.add(buscador);
 
+        buscador.addKeyListener(new KeyListener() {
+            @Override
+            public void keyTyped(KeyEvent e) {}
 
+            @Override
+            public void keyPressed(KeyEvent e) {}
 
+            @Override
+            public void keyReleased(KeyEvent e) {
+                // Verificar si la tecla presionada es Enter
+                if(e.getKeyCode() == KeyEvent.VK_ENTER) {
+                    // Comparar el contenido del JTextField con las variables ARTISTA1 hasta ARTISTA10
+                    String textoBuscado = buscador.getText();
+                    if (textoBuscado.equals(ARTISTA1)) {
+                        mostrarInfo.setText(INFOARTISTA1);
+                    } else if (textoBuscado.equals(ARTISTA2)) {
+                        mostrarInfo.setText(INFOARTISTA2);
+                    }  else if (textoBuscado.equals(ARTISTA3)) {
+                        mostrarInfo.setText(INFOARTISTA3);
+                    } else if (textoBuscado.equals(ARTISTA4)) {
+                        mostrarInfo.setText(INFOARTISTA4);
+                    } else if (textoBuscado.equals(ARTISTA5)) {
+                        mostrarInfo.setText(INFOARTISTA5);
+                    } else if (textoBuscado.equals(ARTISTA6)) {
+                        mostrarInfo.setText(INFOARTISTA6);
+                    } else if (textoBuscado.equals(ARTISTA7)) {
+                        mostrarInfo.setText(INFOARTISTA7);
+                    } else if (textoBuscado.equals(ARTISTA8)) {
+                        mostrarInfo.setText(INFOARTISTA8);
+                    } else if (textoBuscado.equals(ARTISTA9)) {
+                        mostrarInfo.setText(INFOARTISTA9);
+                    } else if (textoBuscado.equals(ARTISTA10)) {
+                        mostrarInfo.setText(INFOARTISTA10);
+                    }
+                }
+            }
+        });
 
 
     }
@@ -148,54 +175,13 @@ public class infoArtistas extends JFrame {
 public void mostrarInfo(){
 
     mostrarInfo=new JLabel();
-    mostrarInfo.setBounds(260,260,300,50);
-
-    this.getContentPane().add(mostrarInfo);
-    mostrarInfo.setVisible(true);
-
+    mostrarInfo.setBounds(260,260,300,300);
+    mostrarInfo.setOpaque(true);
     mostrarInfo.setBackground(Color.pink);
     mostrarInfo.setLayout(null);
-
     panelDeBusqueda.add(mostrarInfo);
 }
 
-public void keyPressed(KeyEvent e){
-        if (e.VK_ENTER==e.getKeyCode()){
-            switch (buscador.getText()) {
-                case ARTISTA1:
-                    mostrarInfo.setText(INFOARTISTA1);
-                    break;
-                case ARTISTA2:
-                    mostrarInfo.setText(INFOARTISTA2);
-                    break;
-                case ARTISTA3:
-                    mostrarInfo.setText(INFOARTISTA3);
-                    break;
-                case ARTISTA4:
-                    mostrarInfo.setText(INFOARTISTA4);
-                    break;
-                case ARTISTA5:
-                    mostrarInfo.setText(INFOARTISTA5);
-                    break;
-                case ARTISTA6:
-                    mostrarInfo.setText(INFOARTISTA6);
-                    break;
-                case ARTISTA7:
-                    mostrarInfo.setText(INFOARTISTA7);
-                    break;
-                case ARTISTA8:
-                    mostrarInfo.setText(INFOARTISTA8);
-                    break;
-                case ARTISTA9:
-                    mostrarInfo.setText(INFOARTISTA9);
-                    break;
-                case ARTISTA10:
-                    mostrarInfo.setText(INFOARTISTA10);
-                    break;
-                default:
-                    mostrarInfo.setText("Artista no reconocido");
-                    break;
-            }
-        }
-    }
+
+
 }
