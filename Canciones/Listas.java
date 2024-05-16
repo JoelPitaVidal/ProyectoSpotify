@@ -10,7 +10,7 @@ public class Listas extends artistas{
         HashMap<String, String> datosCanciones3 = new HashMap<String, String>();
         HashMap<String, String> guardarArtistas;
         artistas arCan = new artistas();
-        //CancionesAleatorias CanAl = new CancionesAleatorias();
+        CancionesAleatorias CanAl = new CancionesAleatorias();
 
 
     public HashMap<String, String> darDatosCanciones(){
@@ -23,31 +23,22 @@ public class Listas extends artistas{
             String artistaAleatorio2 = arCan.getAsociarArtistas2();
             String artistaAleatorio3 = arCan.getAsociarArtistas3();
 
-            /**
-            String cancion1 = CanAl.getAsociarCancion1();
-            String cancion2 = CanAl.getAsociarCancion2();
-            String cancion3 = CanAl.getAsociarCancion3();
-            String cancion4 = CanAl.getAsociarCancion4();
-            String cancion5 = CanAl.getAsociarCancion5();
-            String cancion6 = CanAl.getAsociarCancion6();
-            String cancion7 = CanAl.getAsociarCancion7();
-            String cancion8 = CanAl.getAsociarCancion8();
-            String cancion9 = CanAl.getAsociarCancion9();
-            String cancion10 = CanAl.getAsociarCancion10();
-            String cancion11 = CanAl.getAsociarCancion11();
-            String cancion12 = CanAl.getAsociarCancion12();
-            String cancion13 = CanAl.getAsociarCancion13();
-            String cancion14 = CanAl.getAsociarCancion14();
-            String cancion15 = CanAl.getAsociarCancion15();
-                **/
+            CanAl.ejecutarMetodos();
+
             // Se recorren las claves (nombres de las canciones) del HashMap de datos de artistas
             for (String cancion : arCan.datosArtistas1.keySet()) {
+                CanAl.darNombreCanciones();
+                CanAl.getAsociarCancion1();
+                CanAl.getAsociarCancion2();
+                CanAl.getAsociarCancion3();
+                CanAl.getAsociarCancion4();
+                CanAl.getAsociarCancion5();
                 // Se asocia el nombre de la canción con el artista aleatorio
-                datosCanciones.put("cancion", artistaAleatorio);
-                datosCanciones.put("cancion", artistaAleatorio);
-                datosCanciones.put("cancion", artistaAleatorio);
-                datosCanciones.put("cancion", artistaAleatorio);
-                datosCanciones.put("cancion", artistaAleatorio);
+                datosCanciones.put(CanAl.cancion1, artistaAleatorio);
+                datosCanciones.put(CanAl.cancion2, artistaAleatorio);
+                datosCanciones.put(CanAl.cancion3, artistaAleatorio);
+                datosCanciones.put(CanAl.cancion4, artistaAleatorio);
+                datosCanciones.put(CanAl.cancion5, artistaAleatorio);
             }
 
 
@@ -77,11 +68,11 @@ public class Listas extends artistas{
     public String getDatosCanciones() {
         darDatosCanciones();
         String devolverLista="";
-        devolverLista = "Lista aleatoria :" + datosCanciones
+        devolverLista = "Lista aleatoria :\n " + datosCanciones
         +"\n"
-        +"\nLista aleatoria 2: "+datosCanciones2
+        +"\nLista aleatoria 2:\n "+datosCanciones2
         +"\n"
-        +"\nLista aleatoria 3 : "+datosCanciones3;
+        +"\nLista aleatoria 3 :\n "+datosCanciones3;
         return devolverLista;
     }
 }

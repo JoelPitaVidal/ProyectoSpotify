@@ -56,7 +56,7 @@ public class LayoutFinal extends JFrame{
         botonDeBusqueda =new JButton("Buscar canciones o artistas");
         botonDeBusqueda.setLayout(null);
         panelVentana.add(botonDeBusqueda);
-        botonDeBusqueda.setBounds(225,517,300,50);
+        botonDeBusqueda.setBounds(420,517,300,50);
         botonDeBusqueda.setBackground(Color.pink);
 
 

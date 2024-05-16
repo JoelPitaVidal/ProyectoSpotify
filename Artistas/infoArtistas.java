@@ -12,82 +12,98 @@ public class infoArtistas extends JFrame {
     final String ARTISTA3 = "Snoop Dog";
     final String ARTISTA4 = "Blackpink";
     final String ARTISTA5 = "Cartel de Santa";
-    final String ARTISTA6 = "Extremo duro";
-    final String ARTISTA7 = "CORPSE";
+    final String ARTISTA6 = "Extremoduro";
+    final String ARTISTA7 = "Corpse Husband";
     final String ARTISTA8 = "Disturbed";
     final String ARTISTA9 = "Eminem";
     final String ARTISTA10 = "Rob Zombie";
 
-    final String INFOARTISTA1 = "La información de Rob Zombie es : " +
+    final String INFOARTISTA1 = "La información de Ghostmane es : " +
             "\nNombre real: Eric Ghoste Whitne" +
             "\nFecha de nacimiento: 15 de abril de 1991" +
-            "\nOrigen: Lake Worth, Florida, Estados Unidos" +
-            "\nGéneros musicales: Dark trap, noise, hip hop, trap, hip hop, cloud rap, rap Metal" +
+            "\nOrigen: Lake Worth, Florida,E.U" +
+            "\nGéneros musicales: Dark trap, noise, " +
+            "\nhip hop, trap, hip hop, cloud rap, rap Metal" +
             "\nSitio Web: ghostemanemerch.online";
 
 
-    final String INFOARTISTA2 = "La información de Rob Zombie es : " +
-            "\nNombre real: Eric Ghoste Whitne" +
-            "\nFecha de nacimiento: 15 de abril de 1991" +
-            "\nOrigen: Lake Worth, Florida, Estados Unidos" +
-            "\nGéneros musicales: Dark trap, noise, hip hop, trap, hip hop, cloud rap, rap Metal" +
-            "\nSitio Web: ghostemanemerch.online";
+    final String INFOARTISTA2 = "La información de Nigth Lovel es : " +
+            "\nNombre real: Shermar Cuba Paul" +
+            "\nFecha de nacimiento: 29 de Mayo de 1997" +
+            "\nOrigen: Ottawa , provincia de Ontario, Canada" +
+            "\nGéneros musicales:" +
+            "\nHip hoptrapcloud rapgrimePhonk";
 
-    final String INFOARTISTA3 = "La información de Rob Zombie es : " +
-            "\nNombre real: Eric Ghoste Whitne" +
-            "\nFecha de nacimiento: 15 de abril de 1991" +
-            "\nOrigen: Lake Worth, Florida, Estados Unidos" +
-            "\nGéneros musicales: Dark trap, noise, hip hop, trap, hip hop, cloud rap, rap Metal" +
-            "\nSitio Web: ghostemanemerch.online";
+    final String INFOARTISTA3 = "La información de Snoop Dog es : " +
+            "\nNombre real: \tCalvin Cordozar Broadus Jr." +
+            "\nFecha de nacimiento: 20 de Octubre de 1971" +
+            "\nOrigen: Long Beach, Californiaa,E.U" +
+            "\nGéneros musicales:Hip hop, West " +
+            "\nCoast hip hop, G-funk, gangsta rap, reggae, " +
+            "\nR&B contemporáneo, Mafioso rap, " +
+            "\nhip hop hardcore, horrorcore y funk" +
+            "\nSitio Web: www.snoopdogg.com";
 
-    final String INFOARTISTA4 = "La información de Rob Zombie es : " +
-            "\nNombre real: Eric Ghoste Whitne" +
-            "\nFecha de nacimiento: 15 de abril de 1991" +
-            "\nOrigen: Lake Worth, Florida, Estados Unidos" +
-            "\nGéneros musicales: Dark trap, noise, hip hop, trap, hip hop, cloud rap, rap Metal" +
-            "\nSitio Web: ghostemanemerch.online";
+    final String INFOARTISTA4 = "La información de Blackpink es : " +
+            "\nIntegrantes del grupo: Rosé, Jisoo, Jennie y Lissa." +
+            "\nOrigen: Corea del Sur, Seúl" +
+            "\nEstado: Activo" +
+            "\nFecha de inicio: 2016" +
+            "\nGéneros musicales: K-popEDMhip hopdance-pop" +
+            "\nSitio Web: \tblackpinkofficial.com";
 
-    final String INFOARTISTA5 ="La información de Rob Zombie es : " +
-            "\nNombre real: Eric Ghoste Whitne" +
-            "\nFecha de nacimiento: 15 de abril de 1991" +
-            "\nOrigen: Lake Worth, Florida, Estados Unidos" +
-            "\nGéneros musicales: Dark trap, noise, hip hop, trap, hip hop, cloud rap, rap Metal" +
-            "\nSitio Web: ghostemanemerch.online";
+    final String INFOARTISTA5 ="La información de Cartel de Santa es : " +
+            "\nIntegrantes del grupo: Rowán Rabia (Mono), Eduardo Dávalos de Luna (Babo)" +
+            "\nOrigen: Santa Catarina, Nuevo León, México" +
+            "\nEstado: Activo" +
+            "\nFecha de inicio: 2016" +
+            "\nGéneros musicales:Hip hop latino, Gangsta Rap, " +
+            "\nRap Metal (inicios), Rap rock y Trap latino, Hip House" +
+            "\nSitio Web: http://carteldesanta.com/";
 
-    final String INFOARTISTA6 = "La información de Rob Zombie es : " +
-            "\nNombre real: Eric Ghoste Whitne" +
-            "\nFecha de nacimiento: 15 de abril de 1991" +
-            "\nOrigen: Lake Worth, Florida, Estados Unidos" +
-            "\nGéneros musicales: Dark trap, noise, hip hop, trap, hip hop, cloud rap, rap Metal" +
-            "\nSitio Web: ghostemanemerch.online";
+    final String INFOARTISTA6 = "La información de Extremoduro es : " +
+            "\nIntegrantes del grupo: Roberto Iniesta" +
+            "\nIñaki Antón «Uoho» , José Ignacio Cantera" +
+            "\n, Miguel Colino" +
+            "\nOrigen: Plasencia, Cáceres, España" +
+            "\nEstado: Disuelto desde 2019" +
+            "\nFecha de inicio: 1987" +
+            "\nGéneros musicales:Hard rock1 Punk rock2 " +
+            "\nRock progresivo3" +
+            "\nSitio Web:extremoduro.com";
 
-    final String INFOARTISTA7 = "La información de Rob Zombie es : " +
-            "\nNombre real: Eric Ghoste Whitne" +
-            "\nFecha de nacimiento: 15 de abril de 1991" +
-            "\nOrigen: Lake Worth, Florida, Estados Unidos" +
-            "\nGéneros musicales: Dark trap, noise, hip hop, trap, hip hop, cloud rap, rap Metal" +
-            "\nSitio Web: ghostemanemerch.online";
+    final String INFOARTISTA7 = "La información de Corpse Husband es : " +
+            "\nNombre real: Desconocido" +
+            "\nFecha de nacimiento: 8 de agosto de 1997" +
+            "\nOrigen: San Diego,California, E.U" +
+            "\nGéneros musicales: Hip-hop/Rap" +
+            "\nSitio Web: https://www.youtube.com/@CorpseHusband";
 
-    final String INFOARTISTA8 = "La información de Rob Zombie es : " +
-            "\nNombre real: Eric Ghoste Whitne" +
-            "\nFecha de nacimiento: 15 de abril de 1991" +
-            "\nOrigen: Lake Worth, Florida, Estados Unidos" +
-            "\nGéneros musicales: Dark trap, noise, hip hop, trap, hip hop, cloud rap, rap Metal" +
-            "\nSitio Web: ghostemanemerch.online";
+    final String INFOARTISTA8 = "La información de Disturbed es : " +
+            "\nIntegrantes del grupo: David Draima , Dan Donegan ," +
+            "\nJohn Moyer, Mike Wengren" +
+            "\nOrigen: Chicago, Illinois, E.U" +
+            "\nEstado: activo" +
+            "\nFecha de inicio: 1994-2011, vuelta 2015-presente" +
+            "\nGéneros musicales: tHeavy metal" +
+            "\nMetal alternativo Metal Industrial Hard rock Nü metal" +
+            "\nSitio Web:www.disturbed1.com";
 
-    final String INFOARTISTA9 ="La información de Rob Zombie es : " +
-            "\nNombre real: Eric Ghoste Whitne" +
-            "\nFecha de nacimiento: 15 de abril de 1991" +
-            "\nOrigen: Lake Worth, Florida, Estados Unidos" +
-            "\nGéneros musicales: Dark trap, noise, hip hop, trap, hip hop, cloud rap, rap Metal" +
-            "\nSitio Web: ghostemanemerch.online";
+    final String INFOARTISTA9 ="La información de Eminem es : " +
+            "\nNombre real: Marshall Bruce Mathers III" +
+            "\nFecha de nacimiento: 17 de octubre de 1972" +
+            "\nOrigen: St. Joseph ,Condado de Buchanan,E.U" +
+            "\nGéneros musicales: Hip hop" +
+            "\nSitio Web: eminem.com";
 
     final String INFOARTISTA10 = "La información de Rob Zombie es : " +
-            "\nNombre real: Eric Ghoste Whitne" +
-            "\nFecha de nacimiento: 15 de abril de 1991" +
-            "\nOrigen: Lake Worth, Florida, Estados Unidos" +
-            "\nGéneros musicales: Dark trap, noise, hip hop, trap, hip hop, cloud rap, rap Metal" +
-            "\nSitio Web: ghostemanemerch.online";
+            "\nNombre real: Robert Bartleh Cummings" +
+            "\nFecha de nacimiento: 12 de enero de 1965" +
+            "\nOrigen: Haverhill, Massachusetts, E.U" +
+            "\nGéneros musicales:Heavy metal, metal alternativo," +
+            "\nmetal industrial,groove metal, hard rock, nu metal, " +
+            "\nshock rock" +
+            "\nSitio Web: robzombie.com";
 
 
     public JPanel panelDeBusqueda;

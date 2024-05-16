@@ -4,22 +4,42 @@ import java.util.ArrayList;
 
 
 public class CancionesAleatorias {
-    String cancion1;
-    String cancion2;
-    String cancion3;
-    String cancion4;
-    String cancion5;
-    String cancion6;
-    String cancion7;
-    String cancion8;
-    String cancion9;
-    String cancion10;
-    String cancion11;
-    String cancion12;
-    String cancion13;
-    String cancion14;
-    String cancion15;
+    String cancion1="";
+    String cancion2="";
+    String cancion3="";
+    String cancion4="";
+    String cancion5="";
+    String cancion6="";
+    String cancion7="";
+    String cancion8="";
+    String cancion9="";
+    String cancion10="";
+    String cancion11="";
+    String cancion12="";
+    String cancion13="";
+    String cancion14="";
+    String cancion15="";
+
     ArrayList <String> canciones = new ArrayList<>();
+
+    public void ejecutarMetodos(){
+        darNombreCanciones();
+        getAsociarCancion1();
+        getAsociarCancion2();
+        getAsociarCancion3();
+        getAsociarCancion4();
+        getAsociarCancion5();
+        getAsociarCancion6();
+        getAsociarCancion7();
+        getAsociarCancion8();
+        getAsociarCancion9();
+        getAsociarCancion10();
+        getAsociarCancion11();
+        getAsociarCancion12();
+        getAsociarCancion13();
+        getAsociarCancion14();
+        getAsociarCancion15();
+    }
 
     public void darNombreCanciones(){
         canciones.add("\nMiss you!");
