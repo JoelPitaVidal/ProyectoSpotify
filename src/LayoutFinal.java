@@ -10,6 +10,12 @@ public class LayoutFinal extends JFrame{
     public JPanel arribaIzquierdaDebajo;
     public JTextArea listaDeCanciones;
     public JButton botonDeBusqueda;
+    public JButton recomendaciones1;
+    public JButton recomendaciones2;
+    public JButton recomendaciones3;
+    public JButton recomendaciones4;
+
+
     Listas can = new Listas();
     infoArtistas infart = new infoArtistas();
     public LayoutFinal(){
@@ -53,6 +59,28 @@ public class LayoutFinal extends JFrame{
         botonDeBusqueda.setBounds(225,517,300,50);
         botonDeBusqueda.setBackground(Color.pink);
 
+
+        recomendaciones1 =new JButton("Rob Zombie");
+        recomendaciones1.setBounds(580,0,200,200);
+        recomendaciones1.setOpaque(true);
+        panelVentana.add(recomendaciones1);
+        ImageIcon robzombie = new ImageIcon("src/robzombie.jpg");
+        recomendaciones1.setIcon(robzombie);
+
+        recomendaciones2 =new JButton("Rob Zombie");
+        recomendaciones2.setBounds(580,200,200,200);
+        recomendaciones2.setOpaque(true);
+        panelVentana.add(recomendaciones2);
+        ImageIcon extremoDuro = new ImageIcon("src/extremoDuro.jpg");
+        recomendaciones2.setIcon(extremoDuro);
+
+        recomendaciones3 =new JButton("Rob Zombie");
+        recomendaciones3.setBounds(380,0,200,200);
+        recomendaciones3.setOpaque(true);
+        panelVentana.add(recomendaciones3);
+        ImageIcon eminem = new ImageIcon("src/eminem.jpg");
+        recomendaciones3.setIcon(eminem);
+
     }
 
     public void crearTextArea(){
@@ -64,6 +92,9 @@ public class LayoutFinal extends JFrame{
 
 
     }
+
+
+
     public void buscadorDeCanciones(){
     botonDeBusqueda.addActionListener(new ActionListener() {
         @Override

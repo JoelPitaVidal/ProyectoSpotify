@@ -18,82 +18,81 @@ public class infoArtistas extends JFrame {
     final String ARTISTA9 = "Eminem";
     final String ARTISTA10 = "Rob Zombie";
 
-    final String INFOARTISTA1 = "La información de Rob Zombie es : \n" +
-            "\nNombre real: Eric Ghoste Whitney\n" +
-            "\nFecha de nacimiento: 15 de abril de 1991\n" +
-            "\nOrigen: Lake Worth, Florida, Estados Unidos\n" +
-            "\nGéneros musicales: Dark trap, noise, hip hop, trap, hip hop, cloud rap, rap Metal+\n" +
+    final String INFOARTISTA1 = "La información de Rob Zombie es : " +
+            "\nNombre real: Eric Ghoste Whitne" +
+            "\nFecha de nacimiento: 15 de abril de 1991" +
+            "\nOrigen: Lake Worth, Florida, Estados Unidos" +
+            "\nGéneros musicales: Dark trap, noise, hip hop, trap, hip hop, cloud rap, rap Metal" +
             "\nSitio Web: ghostemanemerch.online";
 
 
-    final String INFOARTISTA2 = "La información de Rob Zombie es : \n" +
-            "Nombre real: Eric Ghoste Whitney\n" +
-            "Fecha de nacimiento: 15 de abril de 1991\n" +
-            "Origen: Lake Worth, Florida, Estados Unidos\n" +
-            "Géneros musicales: Dark trap, noise, hip hop, trap, hip hop, cloud rap, rap Metal+\n" +
-            "Sitio Web: ghostemanemerch.online";
+    final String INFOARTISTA2 = "La información de Rob Zombie es : " +
+            "\nNombre real: Eric Ghoste Whitne" +
+            "\nFecha de nacimiento: 15 de abril de 1991" +
+            "\nOrigen: Lake Worth, Florida, Estados Unidos" +
+            "\nGéneros musicales: Dark trap, noise, hip hop, trap, hip hop, cloud rap, rap Metal" +
+            "\nSitio Web: ghostemanemerch.online";
 
-    final String INFOARTISTA3 = "La información de Rob Zombie es : \n" +
-            "Nombre real: Eric Ghoste Whitney\n" +
-            "Fecha de nacimiento: 15 de abril de 1991\n" +
-            "Origen: Lake Worth, Florida, Estados Unidos\n" +
-            "Géneros musicales: Dark trap, noise, hip hop, trap, hip hop, cloud rap, rap Metal+\n" +
-            "Sitio Web: ghostemanemerch.online";
+    final String INFOARTISTA3 = "La información de Rob Zombie es : " +
+            "\nNombre real: Eric Ghoste Whitne" +
+            "\nFecha de nacimiento: 15 de abril de 1991" +
+            "\nOrigen: Lake Worth, Florida, Estados Unidos" +
+            "\nGéneros musicales: Dark trap, noise, hip hop, trap, hip hop, cloud rap, rap Metal" +
+            "\nSitio Web: ghostemanemerch.online";
 
-    final String INFOARTISTA4 = "La información de Rob Zombie es : \n" +
-            "Nombre real: Eric Ghoste Whitney\n" +
-            "Fecha de nacimiento: 15 de abril de 1991\n" +
-            "Origen: Lake Worth, Florida, Estados Unidos\n" +
-            "Géneros musicales: Dark trap, noise, hip hop, trap, hip hop, cloud rap, rap Metal+\n" +
-            "Sitio Web: ghostemanemerch.online";
+    final String INFOARTISTA4 = "La información de Rob Zombie es : " +
+            "\nNombre real: Eric Ghoste Whitne" +
+            "\nFecha de nacimiento: 15 de abril de 1991" +
+            "\nOrigen: Lake Worth, Florida, Estados Unidos" +
+            "\nGéneros musicales: Dark trap, noise, hip hop, trap, hip hop, cloud rap, rap Metal" +
+            "\nSitio Web: ghostemanemerch.online";
 
-    final String INFOARTISTA5 ="La información de Rob Zombie es : \n" +
-            "Nombre real: Eric Ghoste Whitney\n" +
-            "Fecha de nacimiento: 15 de abril de 1991\n" +
-            "Origen: Lake Worth, Florida, Estados Unidos\n" +
-            "Géneros musicales: Dark trap, noise, hip hop, trap, hip hop, cloud rap, rap Metal+\n" +
-            "Sitio Web: ghostemanemerch.online";
+    final String INFOARTISTA5 ="La información de Rob Zombie es : " +
+            "\nNombre real: Eric Ghoste Whitne" +
+            "\nFecha de nacimiento: 15 de abril de 1991" +
+            "\nOrigen: Lake Worth, Florida, Estados Unidos" +
+            "\nGéneros musicales: Dark trap, noise, hip hop, trap, hip hop, cloud rap, rap Metal" +
+            "\nSitio Web: ghostemanemerch.online";
 
-    final String INFOARTISTA6 = "La información de Rob Zombie es : \n" +
-            "Nombre real: Eric Ghoste Whitney\n" +
-            "Fecha de nacimiento: 15 de abril de 1991\n" +
-            "Origen: Lake Worth, Florida, Estados Unidos\n" +
-            "Géneros musicales: Dark trap, noise, hip hop, trap, hip hop, cloud rap, rap Metal+\n" +
-            "Sitio Web: ghostemanemerch.online";
+    final String INFOARTISTA6 = "La información de Rob Zombie es : " +
+            "\nNombre real: Eric Ghoste Whitne" +
+            "\nFecha de nacimiento: 15 de abril de 1991" +
+            "\nOrigen: Lake Worth, Florida, Estados Unidos" +
+            "\nGéneros musicales: Dark trap, noise, hip hop, trap, hip hop, cloud rap, rap Metal" +
+            "\nSitio Web: ghostemanemerch.online";
 
-    final String INFOARTISTA7 = "La información de Rob Zombie es : \n" +
-            "Nombre real: Eric Ghoste Whitney\n" +
-            "Fecha de nacimiento: 15 de abril de 1991\n" +
-            "Origen: Lake Worth, Florida, Estados Unidos\n" +
-            "Géneros musicales: Dark trap, noise, hip hop, trap, hip hop, cloud rap, rap Metal+\n" +
-            "Sitio Web: ghostemanemerch.online";
+    final String INFOARTISTA7 = "La información de Rob Zombie es : " +
+            "\nNombre real: Eric Ghoste Whitne" +
+            "\nFecha de nacimiento: 15 de abril de 1991" +
+            "\nOrigen: Lake Worth, Florida, Estados Unidos" +
+            "\nGéneros musicales: Dark trap, noise, hip hop, trap, hip hop, cloud rap, rap Metal" +
+            "\nSitio Web: ghostemanemerch.online";
 
-    final String INFOARTISTA8 = "La información de Rob Zombie es : \n" +
-            "Nombre real: Eric Ghoste Whitney\n" +
-            "Fecha de nacimiento: 15 de abril de 1991\n" +
-            "Origen: Lake Worth, Florida, Estados Unidos\n" +
-            "Géneros musicales: Dark trap, noise, hip hop, trap, hip hop, cloud rap, rap Metal+\n" +
-            "Sitio Web: ghostemanemerch.online";
+    final String INFOARTISTA8 = "La información de Rob Zombie es : " +
+            "\nNombre real: Eric Ghoste Whitne" +
+            "\nFecha de nacimiento: 15 de abril de 1991" +
+            "\nOrigen: Lake Worth, Florida, Estados Unidos" +
+            "\nGéneros musicales: Dark trap, noise, hip hop, trap, hip hop, cloud rap, rap Metal" +
+            "\nSitio Web: ghostemanemerch.online";
 
-    final String INFOARTISTA9 ="La información de Rob Zombie es : \n" +
-            "Nombre real: Eric Ghoste Whitney\n" +
-            "Fecha de nacimiento: 15 de abril de 1991\n" +
-            "Origen: Lake Worth, Florida, Estados Unidos\n" +
-            "Géneros musicales: Dark trap, noise, hip hop, trap, hip hop, cloud rap, rap Metal+\n" +
-            "Sitio Web: ghostemanemerch.online";
+    final String INFOARTISTA9 ="La información de Rob Zombie es : " +
+            "\nNombre real: Eric Ghoste Whitne" +
+            "\nFecha de nacimiento: 15 de abril de 1991" +
+            "\nOrigen: Lake Worth, Florida, Estados Unidos" +
+            "\nGéneros musicales: Dark trap, noise, hip hop, trap, hip hop, cloud rap, rap Metal" +
+            "\nSitio Web: ghostemanemerch.online";
 
-    final String INFOARTISTA10 = "La información de Rob Zombie es : \n" +
-            "Nombre real: Eric Ghoste Whitney\n" +
-            "Fecha de nacimiento: 15 de abril de 1991\n" +
-            "Origen: Lake Worth, Florida, Estados Unidos\n" +
-            "Géneros musicales: Dark trap, noise, hip hop, trap, hip hop, cloud rap, rap Metal+\n" +
-            "Sitio Web: ghostemanemerch.online";
-
+    final String INFOARTISTA10 = "La información de Rob Zombie es : " +
+            "\nNombre real: Eric Ghoste Whitne" +
+            "\nFecha de nacimiento: 15 de abril de 1991" +
+            "\nOrigen: Lake Worth, Florida, Estados Unidos" +
+            "\nGéneros musicales: Dark trap, noise, hip hop, trap, hip hop, cloud rap, rap Metal" +
+            "\nSitio Web: ghostemanemerch.online";
 
 
     public JPanel panelDeBusqueda;
     public JTextField buscador;
-    public JLabel mostrarInfo;
+    public JTextArea mostrarInfo;
 
 
     public infoArtistas(){
@@ -105,7 +104,7 @@ public class infoArtistas extends JFrame {
         setResizable(false);
         setVisible(true);
         setLayout(null);
-        setSize(800,600);
+        setSize(300,600);
         panelParaBuscador();
         buscador();
         mostrarInfo();
@@ -114,7 +113,7 @@ public class infoArtistas extends JFrame {
     public void panelParaBuscador(){
 
         panelDeBusqueda=new JPanel();
-        panelDeBusqueda.setBounds(0,0,800,600);
+        panelDeBusqueda.setBounds(0,0,300,600);
         panelDeBusqueda.setVisible(true);
         panelDeBusqueda.setBackground(Color.black);
         panelDeBusqueda.setLayout(null);
@@ -125,7 +124,7 @@ public class infoArtistas extends JFrame {
     public void buscador(){
 
         buscador=new JTextField();
-        buscador.setBounds(260,0,300,50);
+        buscador.setBounds(0,0,300,50);
         buscador.setVisible(true);
         buscador.setBackground(Color.pink);
         buscador.setLayout(null);
@@ -136,10 +135,7 @@ public class infoArtistas extends JFrame {
             public void keyTyped(KeyEvent e) {}
 
             @Override
-            public void keyPressed(KeyEvent e) {}
-
-            @Override
-            public void keyReleased(KeyEvent e) {
+            public void keyPressed(KeyEvent e) {
                 // Verificar si la tecla presionada es Enter
                 if(e.getKeyCode() == KeyEvent.VK_ENTER) {
                     // Comparar el contenido del JTextField con las variables ARTISTA1 hasta ARTISTA10
@@ -167,6 +163,8 @@ public class infoArtistas extends JFrame {
                     }else mostrarInfo.setText("Artista desconocido");
                 }
             }
+            @Override
+            public void keyReleased(KeyEvent e) {}
         });
 
 
@@ -174,9 +172,10 @@ public class infoArtistas extends JFrame {
 
 public void mostrarInfo(){
 
-    mostrarInfo=new JLabel();
-    mostrarInfo.setBounds(260,260,300,300);
+    mostrarInfo=new JTextArea();
+    mostrarInfo.setBounds(0,260,300,300);
     mostrarInfo.setOpaque(true);
+    mostrarInfo.setEditable(false);
     mostrarInfo.setBackground(Color.pink);
     mostrarInfo.setLayout(null);
     panelDeBusqueda.add(mostrarInfo);
