@@ -100,7 +100,6 @@ public class infoArtistas extends JFrame {
 
     public void menuDeBusqueda(){
         setTitle("Damtify");
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setResizable(false);
         setVisible(true);
         setLayout(null);

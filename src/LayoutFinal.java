@@ -81,6 +81,13 @@ public class LayoutFinal extends JFrame{
         ImageIcon eminem = new ImageIcon("src/eminem.jpg");
         recomendaciones3.setIcon(eminem);
 
+        recomendaciones4 =new JButton("Rob Zombie");
+        recomendaciones4.setBounds(380,200,200,200);
+        recomendaciones4.setOpaque(true);
+        panelVentana.add(recomendaciones4);
+        ImageIcon ghostmane = new ImageIcon("src/ghostmane.jpg");
+        recomendaciones4.setIcon(ghostmane);
+
     }
 
     public void crearTextArea(){
