@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9306fa49-089f-41e6-af9c-e255899da59b" name="Changes" comment="el buscador de artistas ya no cierra todo el proyecto">
+    <list default="true" id="9306fa49-089f-41e6-af9c-e255899da59b" name="Changes" comment="Información sobre los artistas actualizada">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Artistas/infoArtistas.java" beforeDir="false" afterPath="$PROJECT_DIR$/Artistas/infoArtistas.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Canciones/CancionesAleatorias.java" beforeDir="false" afterPath="$PROJECT_DIR$/Canciones/CancionesAleatorias.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Canciones/Listas.java" beforeDir="false" afterPath="$PROJECT_DIR$/Canciones/Listas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LayoutFinal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LayoutFinal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -261,7 +259,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715860715519</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Información sobre los artistas actualizada">
+      <option name="closed" value="true" />
+      <created>1715872393753</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1715872393753</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -293,7 +299,8 @@
     <MESSAGE value="inicio de formateo de respuestas" />
     <MESSAGE value="añadidos botones con imágenes de artistas en concreto" />
     <MESSAGE value="el buscador de artistas ya no cierra todo el proyecto" />
-    <option name="LAST_COMMIT_MESSAGE" value="el buscador de artistas ya no cierra todo el proyecto" />
+    <MESSAGE value="Información sobre los artistas actualizada" />
+    <option name="LAST_COMMIT_MESSAGE" value="Información sobre los artistas actualizada" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ProyectoSpotify$Main.ic" NAME="Main Coverage Results" MODIFIED="1715182530937" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
