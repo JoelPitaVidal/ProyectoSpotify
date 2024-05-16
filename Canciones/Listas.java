@@ -71,7 +71,9 @@ public class Listas extends artistas{
         darDatosCanciones();
         String devolverLista="";
         devolverLista =
-        "Lista aleatoria :\n "
+        "\n"
+        +"\n"
+        +"Lista aleatoria :\n "
         + datosCanciones
         + "\n"
         + "\nLista aleatoria 2:\n "

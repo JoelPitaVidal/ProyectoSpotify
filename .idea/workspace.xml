@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9306fa49-089f-41e6-af9c-e255899da59b" name="Changes" comment="Información sobre los artistas actualizada">
+    <list default="true" id="9306fa49-089f-41e6-af9c-e255899da59b" name="Changes" comment="introducción de las imágenes y solución de el error de las listas de canciones aleatorias">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Canciones/CancionesAleatorias.java" beforeDir="false" afterPath="$PROJECT_DIR$/Canciones/CancionesAleatorias.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Canciones/Listas.java" beforeDir="false" afterPath="$PROJECT_DIR$/Canciones/Listas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LayoutFinal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LayoutFinal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/eminem.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/Imagenes/eminem.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/extremoDuro.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/Imagenes/extremoDuro.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ghostmane.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/Imagenes/ghostmane.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/robzombie.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/Imagenes/robzombie.jpg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +72,13 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\inteliji\TareaDefinitivaProg\ProyectoSpotify\src\iconos" />
+      <recent name="C:\inteliji\TareaDefinitivaProg\ProyectoSpotify\src\Imagenes" />
+      <recent name="C:\inteliji\TareaDefinitivaProg\ProyectoSpotify\src" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -267,7 +278,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715872393753</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="introducción de las imágenes y solución de el error de las listas de canciones aleatorias">
+      <option name="closed" value="true" />
+      <created>1715874182140</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1715874182140</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -300,7 +319,8 @@
     <MESSAGE value="añadidos botones con imágenes de artistas en concreto" />
     <MESSAGE value="el buscador de artistas ya no cierra todo el proyecto" />
     <MESSAGE value="Información sobre los artistas actualizada" />
-    <option name="LAST_COMMIT_MESSAGE" value="Información sobre los artistas actualizada" />
+    <MESSAGE value="introducción de las imágenes y solución de el error de las listas de canciones aleatorias" />
+    <option name="LAST_COMMIT_MESSAGE" value="introducción de las imágenes y solución de el error de las listas de canciones aleatorias" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ProyectoSpotify$Main.ic" NAME="Main Coverage Results" MODIFIED="1715182530937" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
