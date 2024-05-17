@@ -1,7 +1,10 @@
+import javax.sound.sampled.*;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionListener;
-import java.awt.event.*;
+import java.awt.event.ActionEvent;
+import java.io.File;
+import java.io.IOException;
 
 public class LayoutFinal extends JFrame{
 
@@ -23,6 +26,8 @@ public class LayoutFinal extends JFrame{
     public JButton recomendaciones3;
     public JButton recomendaciones4;
 
+
+    private Clip audioClip;
 
     Listas can = new Listas();
     infoArtistas infart = new infoArtistas();
@@ -191,6 +196,35 @@ public class LayoutFinal extends JFrame{
                         panelVentana.repaint();
                  }
               });
+                botonplay.addActionListener(new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+                        try {
+                            if (audioClip != null && audioClip.isOpen()) {
+                                audioClip.stop();
+                                audioClip.close();
+                                 File audioFile = new File("src/sounds/Rules_of_Nature.mp3");
+                                 AudioInputStream audioStream = AudioSystem.getAudioInputStream(audioFile);
+                                 audioClip = AudioSystem.getClip();
+                                 audioClip.open(audioStream);
+                                 audioClip.start();
+                                 System.out.println("Funciona");
+                            }
+                        } catch (UnsupportedAudioFileException | IOException | LineUnavailableException ex) {
+                            ex.printStackTrace();
+                        }
+                    }
+                });
+
+                // Acción para pausar la reproducción
+                botonpause.addActionListener(new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+                        if (audioClip != null && audioClip.isRunning()) {
+                            audioClip.stop();
+                        }
+                    }
+                });
             }
         });
     }
