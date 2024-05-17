@@ -8,10 +8,10 @@ public class LayoutFinal extends JFrame{
     public JPanel panelVentana;
     public JButton arribaIzquierda;
     public JPanel arribaIzquierdaDebajo;
-    public JPanel menuDeReproducción;
-    public JPanel menuDeReproducción2;
-    public JPanel menuDeReproducción3;
-    public JPanel menuDeReproducción4;
+    public JPanel menuDeReproduccion;
+    public JPanel menuDeReproduccion2;
+    public JPanel menuDeReproduccion3;
+    public JPanel menuDeReproduccion4;
     public JButton botonCerrar1;
     public JButton botonCerrar2;
     public JButton botonCerrar3;
@@ -146,11 +146,11 @@ public class LayoutFinal extends JFrame{
                 ImageIcon añadirLista = new ImageIcon("src/iconos/añadirAlista.png");
                 JButton añadirAlista;
 
-                menuDeReproducción=new JPanel();
-                menuDeReproducción.setBounds(230,15,140,200);
-                panelVentana.add(menuDeReproducción);
-                menuDeReproducción.setBackground(Color.pink);
-                menuDeReproducción.setLayout(null);
+                menuDeReproduccion =new JPanel();
+                menuDeReproduccion.setBounds(230,15,140,200);
+                panelVentana.add(menuDeReproduccion);
+                menuDeReproduccion.setBackground(Color.pink);
+                menuDeReproduccion.setLayout(null);
 
                 botonCerrar1 = new JButton("Fin \nreproducción");
                 botonCerrar1.setBounds(230,245,140,50);
@@ -159,51 +159,101 @@ public class LayoutFinal extends JFrame{
                 botonCerrar1.setLayout(null);
 
                 botonplay = new JButton();
-                botonplay.setBounds(20,20,50,50);
-                menuDeReproducción.add(botonplay);
+                botonplay.setBounds(15,20,50,50);
+                menuDeReproduccion.add(botonplay);
+                botonplay.setBackground(Color.pink);
                 botonplay.setIcon(play);
 
                 botonpause = new JButton();
-                botonpause.setBounds(40,20,50,50);
-                menuDeReproducción.add(botonpause);
+                botonpause.setBounds(15,120,50,50);
+                menuDeReproduccion.add(botonpause);
+                botonpause.setBackground(Color.pink);
                 botonpause.setIcon(pause);
 
                 botonrepetir = new JButton();
-                botonrepetir.setBounds(20,40,50,50);
-                menuDeReproducción.add(botonrepetir);
+                botonrepetir.setBounds(75,20,50,50);
+                menuDeReproduccion.add(botonrepetir);
+                botonrepetir.setBackground(Color.pink);
                 botonrepetir.setIcon(repetir);
 
                 añadirAlista = new JButton();
-                añadirAlista.setBounds(40,40,50,50);
-                menuDeReproducción.add(añadirAlista);
+                añadirAlista.setBounds(75,120,50,50);
+                menuDeReproduccion.add(añadirAlista);
+                añadirAlista.setBackground(Color.pink);
                 añadirAlista.setIcon(añadirLista);
 
                 botonCerrar1.addActionListener(new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
-
-                    }
-                });
-
+                        panelVentana.remove(menuDeReproduccion);
+                        panelVentana.remove(botonCerrar1);
+                        panelVentana.revalidate();
+                        panelVentana.repaint();
+                 }
+              });
             }
         });
-
     }
     public void menuDeReproduccion2(){
         recomendaciones2.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                menuDeReproducción2=new JPanel();
-                menuDeReproducción2.setBounds(230,15,140,200);
-                panelVentana.add(menuDeReproducción2);
-                menuDeReproducción2.setBackground(Color.pink);
-                menuDeReproducción2.setLayout(null);
+
+                ImageIcon play = new ImageIcon("src/iconos/play.png");
+                JButton botonplay;
+                ImageIcon pause = new ImageIcon("src/iconos/pause.png");
+                JButton botonpause;
+                ImageIcon repetir = new ImageIcon("src/iconos/repetir.png");
+                JButton botonrepetir;
+                ImageIcon añadirLista = new ImageIcon("src/iconos/añadirAlista.png");
+                JButton añadirAlista;
+
+                menuDeReproduccion2 =new JPanel();
+                menuDeReproduccion2.setBounds(230,15,140,200);
+                panelVentana.add(menuDeReproduccion2);
+                menuDeReproduccion2.setBackground(Color.pink);
+                menuDeReproduccion2.setLayout(null);
+
+                botonplay = new JButton();
+                botonplay.setBounds(15,20,50,50);
+                menuDeReproduccion2.add(botonplay);
+                botonplay.setBackground(Color.pink);
+                botonplay.setIcon(play);
+
+                botonpause = new JButton();
+                botonpause.setBounds(15,120,50,50);
+                menuDeReproduccion2.add(botonpause);
+                botonpause.setBackground(Color.pink);
+                botonpause.setIcon(pause);
+
+                botonrepetir = new JButton();
+                botonrepetir.setBounds(75,20,50,50);
+                menuDeReproduccion2.add(botonrepetir);
+                botonrepetir.setBackground(Color.pink);
+                botonrepetir.setIcon(repetir);
+
+                añadirAlista = new JButton();
+                añadirAlista.setBounds(75,120,50,50);
+                menuDeReproduccion2.add(añadirAlista);
+                añadirAlista.setBackground(Color.pink);
+                añadirAlista.setIcon(añadirLista);
 
                 botonCerrar2 =new JButton("Fin \nreproducción");
                 botonCerrar2.setBounds(230,245,140,50);
                 panelVentana.add(botonCerrar2);
                 botonCerrar2.setBackground(Color.pink);
                 botonCerrar2.setLayout(null);
+
+                botonCerrar2.addActionListener(new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+                        panelVentana.remove(menuDeReproduccion2);
+                        panelVentana.remove(botonCerrar2);
+                        panelVentana.revalidate();
+                        panelVentana.repaint();
+                    }
+                });
+
             }
         });
 
@@ -213,17 +263,62 @@ public class LayoutFinal extends JFrame{
         recomendaciones3.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                menuDeReproducción3=new JPanel();
-                menuDeReproducción3.setBounds(230,15,140,200);
-                panelVentana.add(menuDeReproducción3);
-                menuDeReproducción3.setBackground(Color.pink);
-                menuDeReproducción3.setLayout(null);
+
+                ImageIcon play = new ImageIcon("src/iconos/play.png");
+                JButton botonplay;
+                ImageIcon pause = new ImageIcon("src/iconos/pause.png");
+                JButton botonpause;
+                ImageIcon repetir = new ImageIcon("src/iconos/repetir.png");
+                JButton botonrepetir;
+                ImageIcon añadirLista = new ImageIcon("src/iconos/añadirAlista.png");
+                JButton añadirAlista;
+
+                menuDeReproduccion3 =new JPanel();
+                menuDeReproduccion3.setBounds(230,15,140,200);
+                panelVentana.add(menuDeReproduccion3);
+                menuDeReproduccion3.setBackground(Color.pink);
+                menuDeReproduccion3.setLayout(null);
+
+                botonplay = new JButton();
+                botonplay.setBounds(15,20,50,50);
+                menuDeReproduccion3.add(botonplay);
+                botonplay.setBackground(Color.pink);
+                botonplay.setIcon(play);
+
+                botonpause = new JButton();
+                botonpause.setBounds(15,120,50,50);
+                menuDeReproduccion3.add(botonpause);
+                botonpause.setBackground(Color.pink);
+                botonpause.setIcon(pause);
+
+                botonrepetir = new JButton();
+                botonrepetir.setBounds(75,20,50,50);
+                menuDeReproduccion3.add(botonrepetir);
+                botonrepetir.setBackground(Color.pink);
+                botonrepetir.setIcon(repetir);
+
+                añadirAlista = new JButton();
+                añadirAlista.setBounds(75,120,50,50);
+                menuDeReproduccion3.add(añadirAlista);
+                añadirAlista.setBackground(Color.pink);
+                añadirAlista.setIcon(añadirLista);
 
                 botonCerrar3 =new JButton("Fin \nreproducción");
                 botonCerrar3.setBounds(230,245,140,50);
                 panelVentana.add(botonCerrar3);
                 botonCerrar3.setBackground(Color.pink);
                 botonCerrar3.setLayout(null);
+
+                botonCerrar3.addActionListener(new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+                        panelVentana.remove(menuDeReproduccion3);
+                        panelVentana.remove(botonCerrar3);
+                        panelVentana.revalidate();
+                        panelVentana.repaint();
+                    }
+                });
+
             }
         });
 
@@ -233,17 +328,61 @@ public class LayoutFinal extends JFrame{
         recomendaciones4.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                menuDeReproducción4=new JPanel();
-                menuDeReproducción4.setBounds(230,15,140,200);
-                panelVentana.add(menuDeReproducción4);
-                menuDeReproducción4.setBackground(Color.pink);
-                menuDeReproducción4.setLayout(null);
+
+                ImageIcon play = new ImageIcon("src/iconos/play.png");
+                JButton botonplay;
+                ImageIcon pause = new ImageIcon("src/iconos/pause.png");
+                JButton botonpause;
+                ImageIcon repetir = new ImageIcon("src/iconos/repetir.png");
+                JButton botonrepetir;
+                ImageIcon añadirLista = new ImageIcon("src/iconos/añadirAlista.png");
+                JButton añadirAlista;
+
+                menuDeReproduccion4 =new JPanel();
+                menuDeReproduccion4.setBounds(230,15,140,200);
+                panelVentana.add(menuDeReproduccion4);
+                menuDeReproduccion4.setBackground(Color.pink);
+                menuDeReproduccion4.setLayout(null);
+
+                botonplay = new JButton();
+                botonplay.setBounds(15,20,50,50);
+                menuDeReproduccion4.add(botonplay);
+                botonplay.setBackground(Color.pink);
+                botonplay.setIcon(play);
+
+                botonpause = new JButton();
+                botonpause.setBounds(15,120,50,50);
+                menuDeReproduccion4.add(botonpause);
+                botonpause.setBackground(Color.pink);
+                botonpause.setIcon(pause);
+
+                botonrepetir = new JButton();
+                botonrepetir.setBounds(75,20,50,50);
+                menuDeReproduccion4.add(botonrepetir);
+                botonrepetir.setBackground(Color.pink);
+                botonrepetir.setIcon(repetir);
+
+                añadirAlista = new JButton();
+                añadirAlista.setBounds(75,120,50,50);
+                menuDeReproduccion4.add(añadirAlista);
+                añadirAlista.setBackground(Color.pink);
+                añadirAlista.setIcon(añadirLista);
 
                 botonCerrar4 =new JButton("Fin \nreproducción");
                 botonCerrar4.setBounds(230,245,140,50);
                 panelVentana.add(botonCerrar4);
                 botonCerrar4.setBackground(Color.pink);
                 botonCerrar4.setLayout(null);
+
+                botonCerrar4.addActionListener(new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+                        panelVentana.remove(menuDeReproduccion4);
+                        panelVentana.remove(botonCerrar4);
+                        panelVentana.revalidate();
+                        panelVentana.repaint();
+                    }
+                });
             }
         });
 

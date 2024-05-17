@@ -4,14 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9306fa49-089f-41e6-af9c-e255899da59b" name="Changes" comment="introducción de las imágenes y solución de el error de las listas de canciones aleatorias">
+    <list default="true" id="9306fa49-089f-41e6-af9c-e255899da59b" name="Changes" comment="iconos de el menú de reproducción">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Canciones/Listas.java" beforeDir="false" afterPath="$PROJECT_DIR$/Canciones/Listas.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/LayoutFinal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LayoutFinal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/eminem.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/Imagenes/eminem.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/extremoDuro.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/Imagenes/extremoDuro.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ghostmane.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/Imagenes/ghostmane.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/robzombie.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/Imagenes/robzombie.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/iconos/añadirAlista.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/iconos/añadirAlista.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/iconos/pause.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/iconos/pause.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/iconos/play.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/iconos/play.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/iconos/repetir.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/iconos/repetir.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -286,7 +285,23 @@
       <option name="project" value="LOCAL" />
       <updated>1715874182140</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="añadimos menú de reproducción y botones">
+      <option name="closed" value="true" />
+      <created>1715878598450</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1715878598450</updated>
+    </task>
+    <task id="LOCAL-00025" summary="iconos de el menú de reproducción">
+      <option name="closed" value="true" />
+      <created>1715878631020</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1715878631020</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -320,7 +335,9 @@
     <MESSAGE value="el buscador de artistas ya no cierra todo el proyecto" />
     <MESSAGE value="Información sobre los artistas actualizada" />
     <MESSAGE value="introducción de las imágenes y solución de el error de las listas de canciones aleatorias" />
-    <option name="LAST_COMMIT_MESSAGE" value="introducción de las imágenes y solución de el error de las listas de canciones aleatorias" />
+    <MESSAGE value="añadimos menú de reproducción y botones" />
+    <MESSAGE value="iconos de el menú de reproducción" />
+    <option name="LAST_COMMIT_MESSAGE" value="iconos de el menú de reproducción" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ProyectoSpotify$Main.ic" NAME="Main Coverage Results" MODIFIED="1715182530937" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
