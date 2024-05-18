@@ -200,18 +200,20 @@ public class LayoutFinal extends JFrame{
                     @Override
                     public void actionPerformed(ActionEvent e) {
                         try {
+
+                            File audioFile = new File("src/sounds/Rules_of_Nature.mp3");
+                            AudioInputStream audioStream = AudioSystem.getAudioInputStream(audioFile);
+                            audioClip.open(audioStream);
+
                             if (audioClip != null && audioClip.isOpen()) {
-                                audioClip.stop();
-                                audioClip.close();
-                                 File audioFile = new File("src/sounds/Rules_of_Nature.mp3");
-                                 AudioInputStream audioStream = AudioSystem.getAudioInputStream(audioFile);
-                                 audioClip = AudioSystem.getClip();
-                                 audioClip.open(audioStream);
-                                 audioClip.start();
-                                 System.out.println("Funciona");
+                                audioClip = AudioSystem.getClip();
+                                audioClip.start();
+                                System.out.println("El audio Funciona");
                             }
+
                         } catch (UnsupportedAudioFileException | IOException | LineUnavailableException ex) {
                             ex.printStackTrace();
+                            System.out.println("El audio no funcionna");
                         }
                     }
                 });
