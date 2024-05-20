@@ -1,20 +1,41 @@
-
 import java.sql.*;
 
-public class DDBB {
+public class DDBB{
 
-    Connection BaseDatos = null;
-    Statement st = null;
+    public static void ConexiónBaseDeDatos() {
 
-    String url="";
+        // Primero hacemos un "try-catch"
+        try {
 
-    String usuario="postgres";
-    String contrasena="@postgres";
+            Connection Conexión = DriverManager.getConnection("jdbc:postgresql://localhost:5432/Prueba", "postgres", "123456789");
 
-    //try {
+            System.out.println("Conexión correcta");
 
+        }// Fin del try
 
-    //}catch (Exception e) {
-      //  System.err.println( e.getMessage() );
-    //}
-}
+        catch (java.sql.SQLException Excepción) {
+
+            System.out.println("Conexión fallida");
+        }
+
+    } // Fin del método Conexión Base De Datos
+
+    public static void Select() {
+
+    try {
+
+        Connection Conexión = DriverManager.getConnection("jdbc:postgresql://localhost:5432/Prueba", "postgres", "123456789");
+
+        PreparedStatement Query = Conexión.prepareStatement("Select Columna1 from 'Prueba1'");
+        String Resultado = String.valueOf(Query.getResultSet());
+        System.out.println(Resultado);
+    }
+
+    catch (java.sql.SQLException Excepción){
+
+        System.out.println("Conexión fallida");
+    }
+
+    }
+
+} // Fin de la clase DDBB
