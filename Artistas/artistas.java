@@ -20,7 +20,7 @@ public class artistas {
         datosArtistas1.put("Eminem",1995);
         datosArtistas1.put("Disturbed",2000);
         datosArtistas1.put("CORPSE",2013);
-        datosArtistas1.put("Extremo duro",1975);
+        datosArtistas1.put("Extremoduro",1975);
         datosArtistas1.put("Cartel de Santa",2005);
         datosArtistas1.put("Blackpink",2010);
         datosArtistas1.put("Ghostmane",1991);
