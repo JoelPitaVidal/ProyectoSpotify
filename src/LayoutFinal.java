@@ -201,17 +201,18 @@ public class LayoutFinal extends JFrame{
                     public void actionPerformed(ActionEvent e) {
                         try {
 
-                            File audioFile = new File("src/sounds/Rules_of_Nature.mp3");
+                            File audioFile = new File("src/sounds/Rob Zombie - Dragula.wav");
                             AudioInputStream audioStream = AudioSystem.getAudioInputStream(audioFile);
                             audioClip.open(audioStream);
-
+                            audioClip = AudioSystem.getClip();
                             if (audioClip != null && audioClip.isOpen()) {
-                                audioClip = AudioSystem.getClip();
                                 audioClip.start();
                                 System.out.println("El audio Funciona");
                             }
 
-                        } catch (UnsupportedAudioFileException | IOException | LineUnavailableException ex) {
+                        }
+
+                        catch (UnsupportedAudioFileException | IOException | LineUnavailableException ex) {
                             ex.printStackTrace();
                             System.out.println("El audio no funcionna");
                         }

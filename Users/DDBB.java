@@ -11,10 +11,10 @@ public class DDBB {
     String usuario="postgres";
     String contrasena="@postgres";
 
-    try {
+    //try {
 
 
-    }catch (Exception e) {
-        System.err.println( e.getMessage() );
-    }
+    //}catch (Exception e) {
+      //  System.err.println( e.getMessage() );
+    //}
 }
