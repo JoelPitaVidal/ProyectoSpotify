@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9306fa49-089f-41e6-af9c-e255899da59b" name="Changes" comment="comienzo de la configuración de la base de datos">
+    <list default="true" id="9306fa49-089f-41e6-af9c-e255899da59b" name="Changes" comment="configuración de la reproducción de audio">
+      <change afterPath="$PROJECT_DIR$/src/lib/postgresql-42.7.3.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Artistas/artistas.java" beforeDir="false" afterPath="$PROJECT_DIR$/Artistas/artistas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProyectoSpotify.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ProyectoSpotify.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Users/DDBB.java" beforeDir="false" afterPath="$PROJECT_DIR$/Users/DDBB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,19 +59,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;trabajoActualizado&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "bugLinea61",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/dam/Escritorio/Programación/ProyectoSpotify/src/lib/postgresql-42.7.3.jar",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/lib" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
       <recent name="C:\inteliji\TareaDefinitivaProg\ProyectoSpotify\src\iconos" />
       <recent name="C:\inteliji\TareaDefinitivaProg\ProyectoSpotify\src\Imagenes" />
       <recent name="C:\inteliji\TareaDefinitivaProg\ProyectoSpotify\src" />
@@ -314,13 +322,13 @@
       <option name="project" value="LOCAL" />
       <updated>1715940933459</updated>
     </task>
-    <task id="LOCAL-00028" summary="comienzo de la configuración de la base de datos">
+    <task id="LOCAL-00028" summary="configuración de la reproducción de audio">
       <option name="closed" value="true" />
-      <created>1716033643761</created>
+      <created>1716195882066</created>
       <option name="number" value="00028" />
       <option name="presentableId" value="LOCAL-00028" />
       <option name="project" value="LOCAL" />
-      <updated>1716033643761</updated>
+      <updated>1716195882066</updated>
     </task>
     <option name="localTasksCounter" value="29" />
     <servers />
@@ -360,8 +368,7 @@
     <MESSAGE value="iconos de el menú de reproducción" />
     <MESSAGE value="configuración de botones y menu desplegable de la reproducción de audio" />
     <MESSAGE value="configuración de la reproducción de audio" />
-    <MESSAGE value="comienzo de la configuración de la base de datos" />
-    <option name="LAST_COMMIT_MESSAGE" value="comienzo de la configuración de la base de datos" />
+    <option name="LAST_COMMIT_MESSAGE" value="configuración de la reproducción de audio" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ProyectoSpotify$Main.ic" NAME="Main Coverage Results" MODIFIED="1715182530937" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
