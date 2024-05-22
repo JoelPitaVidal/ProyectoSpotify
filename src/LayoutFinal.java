@@ -1,13 +1,9 @@
-import javax.sound.sampled.*;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.io.File;
 import java.io.IOException;
-import java.io.File;
-import java.io.IOException;
-import java.util.Scanner;
 import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
@@ -16,23 +12,23 @@ import javax.sound.sampled.UnsupportedAudioFileException;
 
 public class LayoutFinal extends JFrame{
 
-    public JPanel panelVentana;
+    public JPanel panelReproductorGeneral;
     public JButton arribaIzquierda;
     public JPanel arribaIzquierdaDebajo;
-    public JPanel menuDeReproduccion;
-    public JPanel menuDeReproduccion2;
-    public JPanel menuDeReproduccion3;
-    public JPanel menuDeReproduccion4;
-    public JButton botonCerrar1;
-    public JButton botonCerrar2;
-    public JButton botonCerrar3;
-    public JButton botonCerrar4;
+    public JPanel menuDeRobZombie;
+    public JPanel reproductorExtemoduro;
+    public JPanel reproductorCancionEminem;
+    public JPanel reproductorCancionGhostmane;
+    public JButton cerrarPanelZombie;
+    public JButton botonCerrarExtremoduro;
+    public JButton cerrarCancionEminem;
+    public JButton cerrarCancionGhostmane;
     public JTextArea listaDeCanciones;
     public JButton botonDeBusqueda;
-    public JButton recomendaciones1;
-    public JButton recomendaciones2;
-    public JButton recomendaciones3;
-    public JButton recomendaciones4;
+    public JButton cancionRobZombie;
+    public JButton cancionExtremoduro;
+    public JButton cancionEminem;
+    public JButton cancionGhostmane;
 
 //1 = reproduciendo
 //2 = audio parado
@@ -61,60 +57,60 @@ public class LayoutFinal extends JFrame{
 
     public void crearPaneles(){
 
-        panelVentana=new JPanel();
-        panelVentana.setBounds(0,0,800,600);
-        this.getContentPane().add(panelVentana);
-        panelVentana.setVisible(true);
-        panelVentana.setBackground(Color.black);
-        panelVentana.setLayout(null);
+        panelReproductorGeneral =new JPanel();
+        panelReproductorGeneral.setBounds(0,0,800,600);
+        this.getContentPane().add(panelReproductorGeneral);
+        panelReproductorGeneral.setVisible(true);
+        panelReproductorGeneral.setBackground(Color.black);
+        panelReproductorGeneral.setLayout(null);
 
         arribaIzquierda=new JButton("iniciar sesión de usuario");
         arribaIzquierda.setLayout(null);
         arribaIzquierda.setBounds(0,0,220,100);
-        panelVentana.add(arribaIzquierda);
+        panelReproductorGeneral.add(arribaIzquierda);
         arribaIzquierda.setBackground(Color.pink);
 
         arribaIzquierdaDebajo=new JPanel();
         arribaIzquierdaDebajo.setBounds(0,105,220,700);
-        panelVentana.add(arribaIzquierdaDebajo);
+        panelReproductorGeneral.add(arribaIzquierdaDebajo);
         arribaIzquierdaDebajo.setBackground(Color.pink);
         arribaIzquierdaDebajo.setLayout(null);
 
 
         botonDeBusqueda =new JButton("Buscar canciones o artistas");
         botonDeBusqueda.setLayout(null);
-        panelVentana.add(botonDeBusqueda);
+        panelReproductorGeneral.add(botonDeBusqueda);
         botonDeBusqueda.setBounds(420,460,300,50);
         botonDeBusqueda.setBackground(Color.pink);
 
 
-        recomendaciones1 =new JButton("Rob Zombie");
-        recomendaciones1.setBounds(580,0,200,200);
-        recomendaciones1.setOpaque(true);
-        panelVentana.add(recomendaciones1);
+        cancionRobZombie =new JButton("Rob Zombie");
+        cancionRobZombie.setBounds(580,0,200,200);
+        cancionRobZombie.setOpaque(true);
+        panelReproductorGeneral.add(cancionRobZombie);
         ImageIcon robzombie = new ImageIcon("src/Imagenes/robzombie.jpg");
-        recomendaciones1.setIcon(robzombie);
+        cancionRobZombie.setIcon(robzombie);
 
-        recomendaciones2 =new JButton("Rob Zombie");
-        recomendaciones2.setBounds(580,200,200,200);
-        recomendaciones2.setOpaque(true);
-        panelVentana.add(recomendaciones2);
+        cancionExtremoduro =new JButton("Rob Zombie");
+        cancionExtremoduro.setBounds(580,200,200,200);
+        cancionExtremoduro.setOpaque(true);
+        panelReproductorGeneral.add(cancionExtremoduro);
         ImageIcon extremoDuro = new ImageIcon("src/Imagenes/extremoDuro.jpg");
-        recomendaciones2.setIcon(extremoDuro);
+        cancionExtremoduro.setIcon(extremoDuro);
 
-        recomendaciones3 =new JButton("Rob Zombie");
-        recomendaciones3.setBounds(380,0,200,200);
-        recomendaciones3.setOpaque(true);
-        panelVentana.add(recomendaciones3);
+        cancionEminem =new JButton("Rob Zombie");
+        cancionEminem.setBounds(380,0,200,200);
+        cancionEminem.setOpaque(true);
+        panelReproductorGeneral.add(cancionEminem);
         ImageIcon eminem = new ImageIcon("src/Imagenes/eminem.jpg");
-        recomendaciones3.setIcon(eminem);
+        cancionEminem.setIcon(eminem);
 
-        recomendaciones4 =new JButton("Rob Zombie");
-        recomendaciones4.setBounds(380,200,200,200);
-        recomendaciones4.setOpaque(true);
-        panelVentana.add(recomendaciones4);
+        cancionGhostmane =new JButton("Rob Zombie");
+        cancionGhostmane.setBounds(380,200,200,200);
+        cancionGhostmane.setOpaque(true);
+        panelReproductorGeneral.add(cancionGhostmane);
         ImageIcon ghostmane = new ImageIcon("src/Imagenes/ghostmane.jpg");
-        recomendaciones4.setIcon(ghostmane);
+        cancionGhostmane.setIcon(ghostmane);
 
     }
 
@@ -149,7 +145,7 @@ public class LayoutFinal extends JFrame{
         });
     }
     public void menuDeReproduccion(){
-        recomendaciones1.addActionListener(new ActionListener() {
+        cancionRobZombie.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
@@ -162,49 +158,49 @@ public class LayoutFinal extends JFrame{
                 ImageIcon añadirLista = new ImageIcon("src/iconos/añadirAlista.png");
                 JButton añadirAlista;
 
-                menuDeReproduccion =new JPanel();
-                menuDeReproduccion.setBounds(230,15,140,200);
-                panelVentana.add(menuDeReproduccion);
-                menuDeReproduccion.setBackground(Color.pink);
-                menuDeReproduccion.setLayout(null);
+                menuDeRobZombie =new JPanel();
+                menuDeRobZombie.setBounds(230,15,140,200);
+                panelReproductorGeneral.add(menuDeRobZombie);
+                menuDeRobZombie.setBackground(Color.pink);
+                menuDeRobZombie.setLayout(null);
 
-                botonCerrar1 = new JButton("Fin \nreproducción");
-                botonCerrar1.setBounds(230,245,140,50);
-                panelVentana.add(botonCerrar1);
-                botonCerrar1.setBackground(Color.pink);
-                botonCerrar1.setLayout(null);
+                cerrarPanelZombie = new JButton("Fin \nreproducción");
+                cerrarPanelZombie.setBounds(230,245,140,50);
+                panelReproductorGeneral.add(cerrarPanelZombie);
+                cerrarPanelZombie.setBackground(Color.pink);
+                cerrarPanelZombie.setLayout(null);
 
                 botonplay = new JButton();
                 botonplay.setBounds(15,20,50,50);
-                menuDeReproduccion.add(botonplay);
+                menuDeRobZombie.add(botonplay);
                 botonplay.setBackground(Color.pink);
                 botonplay.setIcon(play);
 
                 botonpause = new JButton();
                 botonpause.setBounds(15,120,50,50);
-                menuDeReproduccion.add(botonpause);
+                menuDeRobZombie.add(botonpause);
                 botonpause.setBackground(Color.pink);
                 botonpause.setIcon(pause);
 
                 botonrepetir = new JButton();
                 botonrepetir.setBounds(75,20,50,50);
-                menuDeReproduccion.add(botonrepetir);
+                menuDeRobZombie.add(botonrepetir);
                 botonrepetir.setBackground(Color.pink);
                 botonrepetir.setIcon(repetir);
 
                 añadirAlista = new JButton();
                 añadirAlista.setBounds(75,120,50,50);
-                menuDeReproduccion.add(añadirAlista);
+                menuDeRobZombie.add(añadirAlista);
                 añadirAlista.setBackground(Color.pink);
                 añadirAlista.setIcon(añadirLista);
 
-                botonCerrar1.addActionListener(new ActionListener() {
+                cerrarPanelZombie.addActionListener(new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
-                        panelVentana.remove(menuDeReproduccion);
-                        panelVentana.remove(botonCerrar1);
-                        panelVentana.revalidate();
-                        panelVentana.repaint();
+                        panelReproductorGeneral.remove(menuDeRobZombie);
+                        panelReproductorGeneral.remove(cerrarPanelZombie);
+                        panelReproductorGeneral.revalidate();
+                        panelReproductorGeneral.repaint();
                  }
               });
 
@@ -225,8 +221,6 @@ public class LayoutFinal extends JFrame{
 
                             // open audioInputStream to the clip
                             clip.open(audioInputStream);
-
-                            clip.loop(Clip.LOOP_CONTINUOUSLY);
 
                             clip.start();
                             status=1;
@@ -259,11 +253,23 @@ public class LayoutFinal extends JFrame{
                         }
                     }
                 });
+                //activar la repetición en bucle de la cancion
+                botonrepetir.addActionListener(new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+                        if (status==1){
+                            clip.loop(Clip.LOOP_CONTINUOUSLY);
+                        }else{
+                            System.out.println("cancion en reproducción");
+                        }
+                    }
+                });
+
             }
         });
     }
     public void menuDeReproduccion2(){
-        recomendaciones2.addActionListener(new ActionListener() {
+        cancionExtremoduro.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
@@ -276,49 +282,49 @@ public class LayoutFinal extends JFrame{
                 ImageIcon añadirLista = new ImageIcon("src/iconos/añadirAlista.png");
                 JButton añadirAlista;
 
-                menuDeReproduccion2 =new JPanel();
-                menuDeReproduccion2.setBounds(230,15,140,200);
-                panelVentana.add(menuDeReproduccion2);
-                menuDeReproduccion2.setBackground(Color.pink);
-                menuDeReproduccion2.setLayout(null);
+                reproductorExtemoduro =new JPanel();
+                reproductorExtemoduro.setBounds(230,15,140,200);
+                panelReproductorGeneral.add(reproductorExtemoduro);
+                reproductorExtemoduro.setBackground(Color.pink);
+                reproductorExtemoduro.setLayout(null);
 
                 botonplay = new JButton();
                 botonplay.setBounds(15,20,50,50);
-                menuDeReproduccion2.add(botonplay);
+                reproductorExtemoduro.add(botonplay);
                 botonplay.setBackground(Color.pink);
                 botonplay.setIcon(play);
 
                 botonpause = new JButton();
                 botonpause.setBounds(15,120,50,50);
-                menuDeReproduccion2.add(botonpause);
+                reproductorExtemoduro.add(botonpause);
                 botonpause.setBackground(Color.pink);
                 botonpause.setIcon(pause);
 
                 botonrepetir = new JButton();
                 botonrepetir.setBounds(75,20,50,50);
-                menuDeReproduccion2.add(botonrepetir);
+                reproductorExtemoduro.add(botonrepetir);
                 botonrepetir.setBackground(Color.pink);
                 botonrepetir.setIcon(repetir);
 
                 añadirAlista = new JButton();
                 añadirAlista.setBounds(75,120,50,50);
-                menuDeReproduccion2.add(añadirAlista);
+                reproductorExtemoduro.add(añadirAlista);
                 añadirAlista.setBackground(Color.pink);
                 añadirAlista.setIcon(añadirLista);
 
-                botonCerrar2 =new JButton("Fin \nreproducción");
-                botonCerrar2.setBounds(230,245,140,50);
-                panelVentana.add(botonCerrar2);
-                botonCerrar2.setBackground(Color.pink);
-                botonCerrar2.setLayout(null);
+                botonCerrarExtremoduro =new JButton("Fin \nreproducción");
+                botonCerrarExtremoduro.setBounds(230,245,140,50);
+                panelReproductorGeneral.add(botonCerrarExtremoduro);
+                botonCerrarExtremoduro.setBackground(Color.pink);
+                botonCerrarExtremoduro.setLayout(null);
 
-                botonCerrar2.addActionListener(new ActionListener() {
+                botonCerrarExtremoduro.addActionListener(new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
-                        panelVentana.remove(menuDeReproduccion2);
-                        panelVentana.remove(botonCerrar2);
-                        panelVentana.revalidate();
-                        panelVentana.repaint();
+                        panelReproductorGeneral.remove(reproductorExtemoduro);
+                        panelReproductorGeneral.remove(botonCerrarExtremoduro);
+                        panelReproductorGeneral.revalidate();
+                        panelReproductorGeneral.repaint();
                     }
                 });
 
@@ -336,7 +342,9 @@ public class LayoutFinal extends JFrame{
                             clip = AudioSystem.getClip();
                             // open audioInputStream to the clip
                             clip.open(audioInputStream);
+
                             clip.loop(Clip.LOOP_CONTINUOUSLY);
+
                             clip.start();
                             status=1;
                         }
@@ -367,7 +375,7 @@ public class LayoutFinal extends JFrame{
     }
 
     public void menuDeReproduccion3(){
-        recomendaciones3.addActionListener(new ActionListener() {
+        cancionEminem.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
@@ -380,49 +388,49 @@ public class LayoutFinal extends JFrame{
                 ImageIcon añadirLista = new ImageIcon("src/iconos/añadirAlista.png");
                 JButton añadirAlista;
 
-                menuDeReproduccion3 =new JPanel();
-                menuDeReproduccion3.setBounds(230,15,140,200);
-                panelVentana.add(menuDeReproduccion3);
-                menuDeReproduccion3.setBackground(Color.pink);
-                menuDeReproduccion3.setLayout(null);
+                reproductorCancionEminem =new JPanel();
+                reproductorCancionEminem.setBounds(230,15,140,200);
+                panelReproductorGeneral.add(reproductorCancionEminem);
+                reproductorCancionEminem.setBackground(Color.pink);
+                reproductorCancionEminem.setLayout(null);
 
                 botonplay = new JButton();
                 botonplay.setBounds(15,20,50,50);
-                menuDeReproduccion3.add(botonplay);
+                reproductorCancionEminem.add(botonplay);
                 botonplay.setBackground(Color.pink);
                 botonplay.setIcon(play);
 
                 botonpause = new JButton();
                 botonpause.setBounds(15,120,50,50);
-                menuDeReproduccion3.add(botonpause);
+                reproductorCancionEminem.add(botonpause);
                 botonpause.setBackground(Color.pink);
                 botonpause.setIcon(pause);
 
                 botonrepetir = new JButton();
                 botonrepetir.setBounds(75,20,50,50);
-                menuDeReproduccion3.add(botonrepetir);
+                reproductorCancionEminem.add(botonrepetir);
                 botonrepetir.setBackground(Color.pink);
                 botonrepetir.setIcon(repetir);
 
                 añadirAlista = new JButton();
                 añadirAlista.setBounds(75,120,50,50);
-                menuDeReproduccion3.add(añadirAlista);
+                reproductorCancionEminem.add(añadirAlista);
                 añadirAlista.setBackground(Color.pink);
                 añadirAlista.setIcon(añadirLista);
 
-                botonCerrar3 =new JButton("Fin \nreproducción");
-                botonCerrar3.setBounds(230,245,140,50);
-                panelVentana.add(botonCerrar3);
-                botonCerrar3.setBackground(Color.pink);
-                botonCerrar3.setLayout(null);
+                cerrarCancionEminem =new JButton("Fin \nreproducción");
+                cerrarCancionEminem.setBounds(230,245,140,50);
+                panelReproductorGeneral.add(cerrarCancionEminem);
+                cerrarCancionEminem.setBackground(Color.pink);
+                cerrarCancionEminem.setLayout(null);
 
-                botonCerrar3.addActionListener(new ActionListener() {
+                cerrarCancionEminem.addActionListener(new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
-                        panelVentana.remove(menuDeReproduccion3);
-                        panelVentana.remove(botonCerrar3);
-                        panelVentana.revalidate();
-                        panelVentana.repaint();
+                        panelReproductorGeneral.remove(reproductorCancionEminem);
+                        panelReproductorGeneral.remove(cerrarCancionEminem);
+                        panelReproductorGeneral.revalidate();
+                        panelReproductorGeneral.repaint();
                     }
                 });
 
@@ -473,7 +481,7 @@ public class LayoutFinal extends JFrame{
     }
 
     public void menuDeReproduccion4(){
-        recomendaciones4.addActionListener(new ActionListener() {
+        cancionGhostmane.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
@@ -486,49 +494,49 @@ public class LayoutFinal extends JFrame{
                 ImageIcon añadirLista = new ImageIcon("src/iconos/añadirAlista.png");
                 JButton añadirAlista;
 
-                menuDeReproduccion4 =new JPanel();
-                menuDeReproduccion4.setBounds(230,15,140,200);
-                panelVentana.add(menuDeReproduccion4);
-                menuDeReproduccion4.setBackground(Color.pink);
-                menuDeReproduccion4.setLayout(null);
+                reproductorCancionGhostmane =new JPanel();
+                reproductorCancionGhostmane.setBounds(230,15,140,200);
+                panelReproductorGeneral.add(reproductorCancionGhostmane);
+                reproductorCancionGhostmane.setBackground(Color.pink);
+                reproductorCancionGhostmane.setLayout(null);
 
                 botonplay = new JButton();
                 botonplay.setBounds(15,20,50,50);
-                menuDeReproduccion4.add(botonplay);
+                reproductorCancionGhostmane.add(botonplay);
                 botonplay.setBackground(Color.pink);
                 botonplay.setIcon(play);
 
                 botonpause = new JButton();
                 botonpause.setBounds(15,120,50,50);
-                menuDeReproduccion4.add(botonpause);
+                reproductorCancionGhostmane.add(botonpause);
                 botonpause.setBackground(Color.pink);
                 botonpause.setIcon(pause);
 
                 botonrepetir = new JButton();
                 botonrepetir.setBounds(75,20,50,50);
-                menuDeReproduccion4.add(botonrepetir);
+                reproductorCancionGhostmane.add(botonrepetir);
                 botonrepetir.setBackground(Color.pink);
                 botonrepetir.setIcon(repetir);
 
                 añadirAlista = new JButton();
                 añadirAlista.setBounds(75,120,50,50);
-                menuDeReproduccion4.add(añadirAlista);
+                reproductorCancionGhostmane.add(añadirAlista);
                 añadirAlista.setBackground(Color.pink);
                 añadirAlista.setIcon(añadirLista);
 
-                botonCerrar4 =new JButton("Fin \nreproducción");
-                botonCerrar4.setBounds(230,245,140,50);
-                panelVentana.add(botonCerrar4);
-                botonCerrar4.setBackground(Color.pink);
-                botonCerrar4.setLayout(null);
+                cerrarCancionGhostmane =new JButton("Fin \nreproducción");
+                cerrarCancionGhostmane.setBounds(230,245,140,50);
+                panelReproductorGeneral.add(cerrarCancionGhostmane);
+                cerrarCancionGhostmane.setBackground(Color.pink);
+                cerrarCancionGhostmane.setLayout(null);
 
-                botonCerrar4.addActionListener(new ActionListener() {
+                cerrarCancionGhostmane.addActionListener(new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
-                        panelVentana.remove(menuDeReproduccion4);
-                        panelVentana.remove(botonCerrar4);
-                        panelVentana.revalidate();
-                        panelVentana.repaint();
+                        panelReproductorGeneral.remove(reproductorCancionGhostmane);
+                        panelReproductorGeneral.remove(cerrarCancionGhostmane);
+                        panelReproductorGeneral.revalidate();
+                        panelReproductorGeneral.repaint();
                     }
                 });
 
