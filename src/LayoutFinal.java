@@ -249,6 +249,7 @@ public class LayoutFinal extends JFrame{
                         String filePath= "src/sounds/Rob Zombie - Dragula.wav";
                         if (status==1){
                             clip.stop();
+                            status=0;
                         }else{
                             System.out.println("cancion en reproducción");
                         }
@@ -362,6 +363,7 @@ public class LayoutFinal extends JFrame{
                     public void actionPerformed(ActionEvent e) {
                         if (status==1){
                             clip.stop();
+                            status=0;
                         }else{
                             System.out.println("cancion en reproducción");
                         }
@@ -477,6 +479,7 @@ public class LayoutFinal extends JFrame{
                     public void actionPerformed(ActionEvent e) {
                         if (status==1){
                             clip.stop();
+                            status=0;
                         }else{
                             System.out.println("cancion en reproducción");
                         }
@@ -592,6 +595,7 @@ public class LayoutFinal extends JFrame{
                     public void actionPerformed(ActionEvent e) {
                         if (status==1){
                             clip.stop();
+                            status=0;
                         }else{
                             System.out.println("cancion en reproducción");
                         }
