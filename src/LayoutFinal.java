@@ -343,8 +343,6 @@ public class LayoutFinal extends JFrame{
                             // open audioInputStream to the clip
                             clip.open(audioInputStream);
 
-                            clip.loop(Clip.LOOP_CONTINUOUSLY);
-
                             clip.start();
                             status=1;
                         }
@@ -363,6 +361,18 @@ public class LayoutFinal extends JFrame{
                     public void actionPerformed(ActionEvent e) {
                         if (status==1){
                             clip.stop();
+                        }else{
+                            System.out.println("cancion en reproducción");
+                        }
+                    }
+                });
+
+                //activar la repetición en bucle de la cancion
+                botonrepetir.addActionListener(new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+                        if (status==1){
+                            clip.loop(Clip.LOOP_CONTINUOUSLY);
                         }else{
                             System.out.println("cancion en reproducción");
                         }
@@ -448,9 +458,6 @@ public class LayoutFinal extends JFrame{
 
                             // open audioInputStream to the clip
                             clip.open(audioInputStream);
-
-                            clip.loop(Clip.LOOP_CONTINUOUSLY);
-
                             clip.start();
                             status=1;
                         }
@@ -475,6 +482,17 @@ public class LayoutFinal extends JFrame{
                     }
                 });
 
+                //activar la repetición en bucle de la cancion
+                botonrepetir.addActionListener(new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+                        if (status==1){
+                            clip.loop(Clip.LOOP_CONTINUOUSLY);
+                        }else{
+                            System.out.println("cancion en reproducción");
+                        }
+                    }
+                });
             }
         });
 
@@ -555,8 +573,6 @@ public class LayoutFinal extends JFrame{
                             // open audioInputStream to the clip
                             clip.open(audioInputStream);
 
-                            clip.loop(Clip.LOOP_CONTINUOUSLY);
-
                             clip.start();
                             status=1;
                         }
@@ -580,7 +596,17 @@ public class LayoutFinal extends JFrame{
                         }
                     }
                 });
-
+                //activar la repetición en bucle de la cancion
+                botonrepetir.addActionListener(new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+                        if (status==1){
+                            clip.loop(Clip.LOOP_CONTINUOUSLY);
+                        }else{
+                            System.out.println("cancion en reproducción");
+                        }
+                    }
+                });
             }
         });
 
