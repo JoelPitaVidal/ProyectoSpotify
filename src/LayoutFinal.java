@@ -34,7 +34,10 @@ public class LayoutFinal extends JFrame{
 //2 = audio parado
     int status;
 
-    Clip clip;
+    Clip clipRobZombie;
+    Clip clipExtremoDuro;
+    Clip clipEminem;
+    Clip clipGhostmane;
 
     private Clip audioClip;
 
@@ -218,12 +221,12 @@ public class LayoutFinal extends JFrame{
                         try {
                             audioInputStream = AudioSystem.getAudioInputStream(new File(filePath).getAbsoluteFile());
                             // create clip reference
-                            clip = AudioSystem.getClip();
+                            clipRobZombie = AudioSystem.getClip();
 
                             // open audioInputStream to the clip
-                            clip.open(audioInputStream);
+                            clipRobZombie.open(audioInputStream);
 
-                            clip.start();
+                            clipRobZombie.start();
                             status=1;
                         }
                         catch (UnsupportedAudioFileException ex) {
@@ -248,7 +251,7 @@ public class LayoutFinal extends JFrame{
                         AudioInputStream audioInputStream;
                         String filePath= "src/sounds/Rob Zombie - Dragula.wav";
                         if (status==1){
-                            clip.stop();
+                            clipRobZombie.stop();
                             status=0;
                         }else{
                             System.out.println("cancion en reproducción");
@@ -260,7 +263,7 @@ public class LayoutFinal extends JFrame{
                     @Override
                     public void actionPerformed(ActionEvent e) {
                         if (status==1){
-                            clip.loop(Clip.LOOP_CONTINUOUSLY);
+                            clipRobZombie.loop(Clip.LOOP_CONTINUOUSLY);
                         }else{
                             System.out.println("cancion en reproducción");
                         }
@@ -341,11 +344,11 @@ public class LayoutFinal extends JFrame{
                         try {
                             audioInputStream = AudioSystem.getAudioInputStream(new File(filePath).getAbsoluteFile());
                             // create clip reference
-                            clip = AudioSystem.getClip();
+                            clipExtremoDuro = AudioSystem.getClip();
                             // open audioInputStream to the clip
-                            clip.open(audioInputStream);
+                            clipExtremoDuro.open(audioInputStream);
 
-                            clip.start();
+                            clipExtremoDuro.start();
                             status=1;
                         }
                         catch (UnsupportedAudioFileException ex) {
@@ -362,7 +365,7 @@ public class LayoutFinal extends JFrame{
                     @Override
                     public void actionPerformed(ActionEvent e) {
                         if (status==1){
-                            clip.stop();
+                            clipExtremoDuro.stop();
                             status=0;
                         }else{
                             System.out.println("cancion en reproducción");
@@ -375,7 +378,7 @@ public class LayoutFinal extends JFrame{
                     @Override
                     public void actionPerformed(ActionEvent e) {
                         if (status==1){
-                            clip.loop(Clip.LOOP_CONTINUOUSLY);
+                            clipExtremoDuro.loop(Clip.LOOP_CONTINUOUSLY);
                         }else{
                             System.out.println("cancion en reproducción");
                         }
@@ -457,11 +460,11 @@ public class LayoutFinal extends JFrame{
                         try {
                             audioInputStream = AudioSystem.getAudioInputStream(new File(filePath).getAbsoluteFile());
                             // create clip reference
-                            clip = AudioSystem.getClip();
+                            clipEminem = AudioSystem.getClip();
 
                             // open audioInputStream to the clip
-                            clip.open(audioInputStream);
-                            clip.start();
+                            clipEminem.open(audioInputStream);
+                            clipEminem.start();
                             status=1;
                         }
                         catch (UnsupportedAudioFileException ex) {
@@ -478,7 +481,7 @@ public class LayoutFinal extends JFrame{
                     @Override
                     public void actionPerformed(ActionEvent e) {
                         if (status==1){
-                            clip.stop();
+                            clipEminem.stop();
                             status=0;
                         }else{
                             System.out.println("cancion en reproducción");
@@ -491,7 +494,7 @@ public class LayoutFinal extends JFrame{
                     @Override
                     public void actionPerformed(ActionEvent e) {
                         if (status==1){
-                            clip.loop(Clip.LOOP_CONTINUOUSLY);
+                            clipEminem.loop(Clip.LOOP_CONTINUOUSLY);
                         }else{
                             System.out.println("cancion en reproducción");
                         }
@@ -572,12 +575,12 @@ public class LayoutFinal extends JFrame{
                         try {
                             audioInputStream = AudioSystem.getAudioInputStream(new File(filePath).getAbsoluteFile());
                             // create clip reference
-                            clip = AudioSystem.getClip();
+                            clipGhostmane = AudioSystem.getClip();
 
                             // open audioInputStream to the clip
-                            clip.open(audioInputStream);
+                            clipGhostmane.open(audioInputStream);
 
-                            clip.start();
+                            clipGhostmane.start();
                             status=1;
                         }
                         catch (UnsupportedAudioFileException ex) {
@@ -594,7 +597,7 @@ public class LayoutFinal extends JFrame{
                     @Override
                     public void actionPerformed(ActionEvent e) {
                         if (status==1){
-                            clip.stop();
+                            clipGhostmane.stop();
                             status=0;
                         }else{
                             System.out.println("cancion en reproducción");
@@ -606,7 +609,7 @@ public class LayoutFinal extends JFrame{
                     @Override
                     public void actionPerformed(ActionEvent e) {
                         if (status==1){
-                            clip.loop(Clip.LOOP_CONTINUOUSLY);
+                            clipGhostmane.loop(Clip.LOOP_CONTINUOUSLY);
                         }else{
                             System.out.println("cancion en reproducción");
                         }
