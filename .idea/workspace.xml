@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9306fa49-089f-41e6-af9c-e255899da59b" name="Changes" comment="configuración de la reproducción de audio">
+    <list default="true" id="9306fa49-089f-41e6-af9c-e255899da59b" name="Changes" comment="Audio funcional">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/LayoutFinal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LayoutFinal.java" afterDir="false" />
     </list>
@@ -343,7 +343,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716366713272</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Audio funcional">
+      <option name="closed" value="true" />
+      <created>1716371807190</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1716371807190</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -381,7 +389,8 @@
     <MESSAGE value="iconos de el menú de reproducción" />
     <MESSAGE value="configuración de botones y menu desplegable de la reproducción de audio" />
     <MESSAGE value="configuración de la reproducción de audio" />
-    <option name="LAST_COMMIT_MESSAGE" value="configuración de la reproducción de audio" />
+    <MESSAGE value="Audio funcional" />
+    <option name="LAST_COMMIT_MESSAGE" value="Audio funcional" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ProyectoSpotify$Main.ic" NAME="Main Coverage Results" MODIFIED="1715182530937" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
