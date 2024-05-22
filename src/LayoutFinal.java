@@ -137,10 +137,13 @@ public class LayoutFinal extends JFrame{
             }
         });
     }
+
     public void menuDeReproduccion(){
         recomendaciones1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+
+
 
                 ImageIcon play = new ImageIcon("src/iconos/play.png");
                 JButton botonplay;
@@ -201,11 +204,11 @@ public class LayoutFinal extends JFrame{
                     public void actionPerformed(ActionEvent e) {
                         try {
 
-                            File audioFile = new File("src/sounds/Rob Zombie - Dragula.wav");
-                            AudioInputStream audioStream = AudioSystem.getAudioInputStream(audioFile);
-                            audioClip.open(audioStream);
-                            audioClip = AudioSystem.getClip();
                             if (audioClip != null && audioClip.isOpen()) {
+                                File audioFile = new File("src/sounds/Rob Zombie - Dragula.wav");
+                                AudioInputStream audioStream = AudioSystem.getAudioInputStream(audioFile);
+                                audioClip.open(audioStream);
+                                audioClip = AudioSystem.getClip();
                                 audioClip.start();
                                 System.out.println("El audio Funciona");
                             }

@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9306fa49-089f-41e6-af9c-e255899da59b" name="Changes" comment="configuración de la reproducción de audio">
-      <change afterPath="$PROJECT_DIR$/src/lib/postgresql-42.7.3.jar" afterDir="false" />
+    <list default="true" id="9306fa49-089f-41e6-af9c-e255899da59b" name="Changes" comment="guardado de commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProyectoSpotify.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ProyectoSpotify.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Users/DDBB.java" beforeDir="false" afterPath="$PROJECT_DIR$/Users/DDBB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LayoutFinal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LayoutFinal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +61,7 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "bugLinea61",
+    "git-widget-placeholder": "trabajoActualizado",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/home/dam/Escritorio/Programación/ProyectoSpotify/src/lib/postgresql-42.7.3.jar",
     "project.structure.last.edited": "Libraries",
