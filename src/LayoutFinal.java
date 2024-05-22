@@ -33,6 +33,7 @@ public class LayoutFinal extends JFrame{
 //1 = reproduciendo
 //2 = audio parado
     int status;
+
     Clip clip;
 
     private Clip audioClip;

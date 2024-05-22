@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9306fa49-089f-41e6-af9c-e255899da59b" name="Changes" comment="guardado de commit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LayoutFinal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LayoutFinal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MenuPrincipal.java" beforeDir="false" />
-    </list>
+    <list default="true" id="9306fa49-089f-41e6-af9c-e255899da59b" name="Changes" comment="todos los botónes de repetir canción funcinales" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -352,7 +348,23 @@
       <option name="project" value="LOCAL" />
       <updated>1716371807190</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Primer botón de repetir canción funcinal">
+      <option name="closed" value="true" />
+      <created>1716394777325</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1716394777325</updated>
+    </task>
+    <task id="LOCAL-00033" summary="todos los botónes de repetir canción funcinales">
+      <option name="closed" value="true" />
+      <created>1716394958059</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1716394958059</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -367,8 +379,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="artistas aleatorios" />
-    <MESSAGE value="Artistas aleatorios configurados" />
     <MESSAGE value="lista de canciones con un artista asociado" />
     <MESSAGE value="Solucion parcial al problema de las listas" />
     <MESSAGE value="Solucion  al problema de las listas" />
@@ -391,7 +401,10 @@
     <MESSAGE value="configuración de botones y menu desplegable de la reproducción de audio" />
     <MESSAGE value="configuración de la reproducción de audio" />
     <MESSAGE value="Audio funcional" />
-    <option name="LAST_COMMIT_MESSAGE" value="Audio funcional" />
+    <MESSAGE value="Botón de repetir canción funcinal" />
+    <MESSAGE value="Primer botón de repetir canción funcinal" />
+    <MESSAGE value="todos los botónes de repetir canción funcinales" />
+    <option name="LAST_COMMIT_MESSAGE" value="todos los botónes de repetir canción funcinales" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ProyectoSpotify$Main.ic" NAME="Main Coverage Results" MODIFIED="1715182530937" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
