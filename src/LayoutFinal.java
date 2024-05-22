@@ -5,6 +5,14 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.io.File;
 import java.io.IOException;
+import java.io.File;
+import java.io.IOException;
+import java.util.Scanner;
+import javax.sound.sampled.AudioInputStream;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
+import javax.sound.sampled.LineUnavailableException;
+import javax.sound.sampled.UnsupportedAudioFileException;
 
 public class LayoutFinal extends JFrame{
 
@@ -26,13 +34,16 @@ public class LayoutFinal extends JFrame{
     public JButton recomendaciones3;
     public JButton recomendaciones4;
 
+//1 = reproduciendo
+//2 = audio parado
+    int status;
+    Clip clip;
 
     private Clip audioClip;
 
     Listas can = new Listas();
     infoArtistas infart = new infoArtistas();
     public LayoutFinal(){
-
         setTitle("Damtify");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setResizable(false);
@@ -137,13 +148,10 @@ public class LayoutFinal extends JFrame{
             }
         });
     }
-
     public void menuDeReproduccion(){
         recomendaciones1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
-
 
                 ImageIcon play = new ImageIcon("src/iconos/play.png");
                 JButton botonplay;
@@ -199,25 +207,41 @@ public class LayoutFinal extends JFrame{
                         panelVentana.repaint();
                  }
               });
+
+
+
+
                 botonplay.addActionListener(new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
+                        // estado actual del clip
+                        AudioInputStream audioInputStream;
+                        String filePath= "src/sounds/Rob Zombie - Dragula.wav";
+                        // create AudioInputStream object
                         try {
+                            audioInputStream = AudioSystem.getAudioInputStream(new File(filePath).getAbsoluteFile());
+                            // create clip reference
+                            clip = AudioSystem.getClip();
 
-                            if (audioClip != null && audioClip.isOpen()) {
-                                File audioFile = new File("src/sounds/Rob Zombie - Dragula.wav");
-                                AudioInputStream audioStream = AudioSystem.getAudioInputStream(audioFile);
-                                audioClip.open(audioStream);
-                                audioClip = AudioSystem.getClip();
-                                audioClip.start();
-                                System.out.println("El audio Funciona");
-                            }
+                            // open audioInputStream to the clip
+                            clip.open(audioInputStream);
+
+                            clip.loop(Clip.LOOP_CONTINUOUSLY);
+
+                            clip.start();
+                            status=1;
+                        }
+                        catch (UnsupportedAudioFileException ex) {
+
+                            throw new RuntimeException(ex);
 
                         }
+                        catch (IOException ex) {
 
-                        catch (UnsupportedAudioFileException | IOException | LineUnavailableException ex) {
-                            ex.printStackTrace();
-                            System.out.println("El audio no funcionna");
+                            throw new RuntimeException(ex);
+
+                        } catch (LineUnavailableException ex) {
+                            throw new RuntimeException(ex);
                         }
                     }
                 });
@@ -226,8 +250,12 @@ public class LayoutFinal extends JFrame{
                 botonpause.addActionListener(new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
-                        if (audioClip != null && audioClip.isRunning()) {
-                            audioClip.stop();
+                        AudioInputStream audioInputStream;
+                        String filePath= "src/sounds/Rob Zombie - Dragula.wav";
+                        if (status==1){
+                            clip.stop();
+                        }else{
+                            System.out.println("cancion en reproducción");
                         }
                     }
                 });
@@ -291,6 +319,45 @@ public class LayoutFinal extends JFrame{
                         panelVentana.remove(botonCerrar2);
                         panelVentana.revalidate();
                         panelVentana.repaint();
+                    }
+                });
+
+
+                botonplay.addActionListener(new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+                        // estado actual del clip
+                        AudioInputStream audioInputStream;
+                        String filePath= "src/sounds/La vereda de la puerta de atrás.wav";
+                        // create AudioInputStream object
+                        try {
+                            audioInputStream = AudioSystem.getAudioInputStream(new File(filePath).getAbsoluteFile());
+                            // create clip reference
+                            clip = AudioSystem.getClip();
+                            // open audioInputStream to the clip
+                            clip.open(audioInputStream);
+                            clip.loop(Clip.LOOP_CONTINUOUSLY);
+                            clip.start();
+                            status=1;
+                        }
+                        catch (UnsupportedAudioFileException ex) {
+                            throw new RuntimeException(ex);
+                        }
+                        catch (IOException ex) {
+                            throw new RuntimeException(ex);
+                        } catch (LineUnavailableException ex) {
+                            throw new RuntimeException(ex);
+                        }
+                    }
+                });
+                botonpause.addActionListener(new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+                        if (status==1){
+                            clip.stop();
+                        }else{
+                            System.out.println("cancion en reproducción");
+                        }
                     }
                 });
 
@@ -359,6 +426,47 @@ public class LayoutFinal extends JFrame{
                     }
                 });
 
+                botonplay.addActionListener(new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+                        // estado actual del clip
+                        AudioInputStream audioInputStream;
+                        String filePath= "src/sounds/Without Me.wav";
+                        // create AudioInputStream object
+                        try {
+                            audioInputStream = AudioSystem.getAudioInputStream(new File(filePath).getAbsoluteFile());
+                            // create clip reference
+                            clip = AudioSystem.getClip();
+
+                            // open audioInputStream to the clip
+                            clip.open(audioInputStream);
+
+                            clip.loop(Clip.LOOP_CONTINUOUSLY);
+
+                            clip.start();
+                            status=1;
+                        }
+                        catch (UnsupportedAudioFileException ex) {
+                            throw new RuntimeException(ex);
+                        }
+                        catch (IOException ex) {
+                            throw new RuntimeException(ex);
+                        } catch (LineUnavailableException ex) {
+                            throw new RuntimeException(ex);
+                        }
+                    }
+                });
+                botonpause.addActionListener(new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+                        if (status==1){
+                            clip.stop();
+                        }else{
+                            System.out.println("cancion en reproducción");
+                        }
+                    }
+                });
+
             }
         });
 
@@ -423,6 +531,48 @@ public class LayoutFinal extends JFrame{
                         panelVentana.repaint();
                     }
                 });
+
+                botonplay.addActionListener(new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+                        // estado actual del clip
+                        AudioInputStream audioInputStream;
+                        String filePath= "src/sounds/GHOSTEMANE - Andromeda [Official Video].wav";
+                        // create AudioInputStream object
+                        try {
+                            audioInputStream = AudioSystem.getAudioInputStream(new File(filePath).getAbsoluteFile());
+                            // create clip reference
+                            clip = AudioSystem.getClip();
+
+                            // open audioInputStream to the clip
+                            clip.open(audioInputStream);
+
+                            clip.loop(Clip.LOOP_CONTINUOUSLY);
+
+                            clip.start();
+                            status=1;
+                        }
+                        catch (UnsupportedAudioFileException ex) {
+                            throw new RuntimeException(ex);
+                        }
+                        catch (IOException ex) {
+                            throw new RuntimeException(ex);
+                        } catch (LineUnavailableException ex) {
+                            throw new RuntimeException(ex);
+                        }
+                    }
+                });
+                botonpause.addActionListener(new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+                        if (status==1){
+                            clip.stop();
+                        }else{
+                            System.out.println("cancion en reproducción");
+                        }
+                    }
+                });
+
             }
         });
 
