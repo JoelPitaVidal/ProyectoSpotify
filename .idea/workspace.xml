@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9306fa49-089f-41e6-af9c-e255899da59b" name="Changes" comment="botones de anterior y siguiente añadidos">
+    <list default="true" id="9306fa49-089f-41e6-af9c-e255899da59b" name="Changes" comment="boton de siguiente canción funcional">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FormerButton.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NextButton.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -401,7 +399,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716476082886</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="boton de siguiente canción funcional">
+      <option name="closed" value="true" />
+      <created>1716484422585</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1716484422585</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -416,7 +422,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Comienzo de el Layout experimental para iniciar el proceso de implementar los demas metodos" />
     <MESSAGE value="inicio lista de artistas y canciones" />
     <MESSAGE value="Busqueda de información de los artistas" />
     <MESSAGE value="Inicio de el Layout Final" />
@@ -441,7 +446,8 @@
     <MESSAGE value="La variable status se iguala a 0 cuando se le da al boton stop" />
     <MESSAGE value="separación de variable clip de las 4 canciones" />
     <MESSAGE value="botones de anterior y siguiente añadidos" />
-    <option name="LAST_COMMIT_MESSAGE" value="botones de anterior y siguiente añadidos" />
+    <MESSAGE value="boton de siguiente canción funcional" />
+    <option name="LAST_COMMIT_MESSAGE" value="boton de siguiente canción funcional" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ProyectoSpotify$Main.ic" NAME="Main Coverage Results" MODIFIED="1715182530937" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
