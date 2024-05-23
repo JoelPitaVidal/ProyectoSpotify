@@ -10,7 +10,7 @@ import javax.sound.sampled.Clip;
 import javax.sound.sampled.LineUnavailableException;
 import javax.sound.sampled.UnsupportedAudioFileException;
 
-public class LayoutFinal extends JFrame{
+public class View extends JFrame{
 
     public JPanel panelReproductorGeneral;
     public JButton arribaIzquierda;
@@ -30,6 +30,9 @@ public class LayoutFinal extends JFrame{
     public JButton cancionEminem;
     public JButton cancionGhostmane;
 
+
+//variables para indicar la canción siguiente y anterior
+    int siguiente = 0;
 //1 = reproduciendo
 //2 = audio parado
     int status;
@@ -43,7 +46,7 @@ public class LayoutFinal extends JFrame{
 
     Listas can = new Listas();
     infoArtistas infart = new infoArtistas();
-    public LayoutFinal(){
+    public View(){
         setTitle("Damtify");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setResizable(false);
@@ -161,7 +164,10 @@ public class LayoutFinal extends JFrame{
                 JButton botonrepetir;
                 ImageIcon añadirLista = new ImageIcon("src/iconos/añadirAlista.png");
                 JButton añadirAlista;
-
+                ImageIcon siguiente = new ImageIcon("src/iconos/siguiente.png");
+                JButton botonSiguiente;
+                ImageIcon anterior = new ImageIcon("src/iconos/anterior.png");
+                JButton botonAnterior;
                 menuDeRobZombie =new JPanel();
                 menuDeRobZombie.setBounds(230,15,140,200);
                 panelReproductorGeneral.add(menuDeRobZombie);
@@ -197,6 +203,20 @@ public class LayoutFinal extends JFrame{
                 menuDeRobZombie.add(añadirAlista);
                 añadirAlista.setBackground(Color.pink);
                 añadirAlista.setIcon(añadirLista);
+
+                botonSiguiente = new JButton();
+                botonSiguiente.setBounds(50,70,50,50);
+                menuDeRobZombie.add(botonSiguiente);
+                botonSiguiente.setBackground(Color.pink);
+                botonSiguiente.setIcon(siguiente);
+
+
+                botonAnterior = new JButton();
+                botonAnterior.setBounds(50,70,50,50);
+                menuDeRobZombie.add(botonAnterior);
+                botonAnterior.setBackground(Color.pink);
+                botonAnterior.setIcon(siguiente);
+
 
                 cerrarPanelZombie.addActionListener(new ActionListener() {
                     @Override
