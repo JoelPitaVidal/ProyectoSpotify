@@ -100,7 +100,6 @@ public class View extends JFrame{
 
     Clip clipRobZombie;
     Clip clipExtremoDuro;
-
     Clip clipEminem;
     Clip clipGhostmane;
 
