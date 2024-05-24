@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9306fa49-089f-41e6-af9c-e255899da59b" name="Changes" comment="Audio funcional">
+    <list default="true" id="9306fa49-089f-41e6-af9c-e255899da59b" name="Changes" comment="botones de anterior y siguiente añadidos">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LayoutFinal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LayoutFinal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FormerButton.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NextButton.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +63,7 @@
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;Application.Main.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;bugLinea61&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;trabajoActualizado&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;/home/dam/Escritorio/Programación/ProyectoSpotify/src/lib/postgresql-42.7.3.jar&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
@@ -351,7 +353,55 @@
       <option name="project" value="LOCAL" />
       <updated>1716371807190</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Primer botón de repetir canción funcinal">
+      <option name="closed" value="true" />
+      <created>1716394777325</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1716394777325</updated>
+    </task>
+    <task id="LOCAL-00033" summary="todos los botónes de repetir canción funcinales">
+      <option name="closed" value="true" />
+      <created>1716394958059</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1716394958059</updated>
+    </task>
+    <task id="LOCAL-00034" summary="todos los botónes de repetir canción funcinales">
+      <option name="closed" value="true" />
+      <created>1716395210414</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1716395210414</updated>
+    </task>
+    <task id="LOCAL-00035" summary="La variable status se iguala a 0 cuando se le da al boton stop">
+      <option name="closed" value="true" />
+      <created>1716395888579</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1716395888579</updated>
+    </task>
+    <task id="LOCAL-00036" summary="separación de variable clip de las 4 canciones">
+      <option name="closed" value="true" />
+      <created>1716396677792</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1716396677792</updated>
+    </task>
+    <task id="LOCAL-00037" summary="botones de anterior y siguiente añadidos">
+      <option name="closed" value="true" />
+      <created>1716476082886</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1716476082886</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -366,11 +416,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="artistas aleatorios" />
-    <MESSAGE value="Artistas aleatorios configurados" />
-    <MESSAGE value="lista de canciones con un artista asociado" />
-    <MESSAGE value="Solucion parcial al problema de las listas" />
-    <MESSAGE value="Solucion  al problema de las listas" />
     <MESSAGE value="Comienzo de el Layout experimental para iniciar el proceso de implementar los demas metodos" />
     <MESSAGE value="inicio lista de artistas y canciones" />
     <MESSAGE value="Busqueda de información de los artistas" />
@@ -390,7 +435,13 @@
     <MESSAGE value="configuración de botones y menu desplegable de la reproducción de audio" />
     <MESSAGE value="configuración de la reproducción de audio" />
     <MESSAGE value="Audio funcional" />
-    <option name="LAST_COMMIT_MESSAGE" value="Audio funcional" />
+    <MESSAGE value="Botón de repetir canción funcinal" />
+    <MESSAGE value="Primer botón de repetir canción funcinal" />
+    <MESSAGE value="todos los botónes de repetir canción funcinales" />
+    <MESSAGE value="La variable status se iguala a 0 cuando se le da al boton stop" />
+    <MESSAGE value="separación de variable clip de las 4 canciones" />
+    <MESSAGE value="botones de anterior y siguiente añadidos" />
+    <option name="LAST_COMMIT_MESSAGE" value="botones de anterior y siguiente añadidos" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ProyectoSpotify$Main.ic" NAME="Main Coverage Results" MODIFIED="1715182530937" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
