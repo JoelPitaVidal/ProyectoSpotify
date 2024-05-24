@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9306fa49-089f-41e6-af9c-e255899da59b" name="Changes" comment="Añadimos clip.stop a los botones de cerrar el reproductor para que se pause la reproducción de musica al cerrarlo">
-      <change afterPath="$PROJECT_DIR$/Users/Query.java" afterDir="false" />
+    <list default="true" id="9306fa49-089f-41e6-af9c-e255899da59b" name="Changes" comment="comienzo de base de datis y layout de los usuarios para iniciar sesión">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Users/DDBB.java" beforeDir="false" afterPath="$PROJECT_DIR$/Users/DDBB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Users/IniciarSesion.java" beforeDir="false" afterPath="$PROJECT_DIR$/Users/IniciarSesion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -416,7 +417,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716538797646</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="comienzo de base de datis y layout de los usuarios para iniciar sesión">
+      <option name="closed" value="true" />
+      <created>1716544626704</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1716544626704</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -431,7 +440,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Busqueda de información de los artistas" />
     <MESSAGE value="Inicio de el Layout Final" />
     <MESSAGE value="Listas aleatorias configuradas" />
     <MESSAGE value="Listas configuradas con artistas diferentes" />
@@ -456,7 +464,8 @@
     <MESSAGE value="botones de anterior y siguiente añadidos" />
     <MESSAGE value="boton de siguiente canción funcional" />
     <MESSAGE value="Añadimos clip.stop a los botones de cerrar el reproductor para que se pause la reproducción de musica al cerrarlo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Añadimos clip.stop a los botones de cerrar el reproductor para que se pause la reproducción de musica al cerrarlo" />
+    <MESSAGE value="comienzo de base de datis y layout de los usuarios para iniciar sesión" />
+    <option name="LAST_COMMIT_MESSAGE" value="comienzo de base de datis y layout de los usuarios para iniciar sesión" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ProyectoSpotify$Main.ic" NAME="Main Coverage Results" MODIFIED="1715182530937" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />

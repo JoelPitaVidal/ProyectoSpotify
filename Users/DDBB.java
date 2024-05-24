@@ -25,8 +25,7 @@ public class DDBB{
     try {
 
         Connection Conexión = DriverManager.getConnection("jdbc:postgresql://localhost:5432/Prueba", "postgres", "123456789");
-
-        PreparedStatement Query = Conexión.prepareStatement("Select Columna1 from 'Prueba1'");
+        PreparedStatement Query = Conexión.prepareStatement("Select Nombre from 'Usuario'");
         String Resultado = String.valueOf(Query.getResultSet());
         System.out.println(Resultado);
     }

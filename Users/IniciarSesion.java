@@ -7,6 +7,14 @@ public class IniciarSesion extends JFrame {
     public JTextField insertarDatos;
     public JLabel mostrarDatosUsuario;
 
+    public void RespuestaBotonIncio(){
+
+        InicioDeSesion();
+        EscribirDatos();
+        MostrarDatosUsuario();
+
+    }
+
     public void InicioDeSesion(){
 
         iniciarsesion=new JPanel();

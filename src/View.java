@@ -271,20 +271,6 @@ public class View extends JFrame{
                 botonAnterior.setBackground(Color.pink);
                 botonAnterior.setIcon(anterior);
 
-
-                cerrarPanelZombie.addActionListener(new ActionListener() {
-                    @Override
-                    public void actionPerformed(ActionEvent e) {
-                        panelReproductorGeneral.remove(menuDeRobZombie);
-                        panelReproductorGeneral.remove(cerrarPanelZombie);
-                        panelReproductorGeneral.revalidate();
-                        panelReproductorGeneral.repaint();
-                        clipRobZombie.stop();
-                 }
-              });
-
-
-
                 botonplay.addActionListener(new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
@@ -404,6 +390,16 @@ public class View extends JFrame{
                         }
                     }
                 });
+                cerrarPanelZombie.addActionListener(new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+                        panelReproductorGeneral.remove(menuDeRobZombie);
+                        panelReproductorGeneral.remove(cerrarPanelZombie);
+                        panelReproductorGeneral.revalidate();
+                        panelReproductorGeneral.repaint();
+                        clipRobZombie.stop();
+                    }
+                });
             }
         });
     }
@@ -462,17 +458,6 @@ public class View extends JFrame{
                 panelReproductorGeneral.add(botonCerrarExtremoduro);
                 botonCerrarExtremoduro.setBackground(Color.pink);
                 botonCerrarExtremoduro.setLayout(null);
-
-                botonCerrarExtremoduro.addActionListener(new ActionListener() {
-                    @Override
-                    public void actionPerformed(ActionEvent e) {
-                        panelReproductorGeneral.remove(reproductorExtemoduro);
-                        panelReproductorGeneral.remove(botonCerrarExtremoduro);
-                        panelReproductorGeneral.revalidate();
-                        panelReproductorGeneral.repaint();
-                        clipExtremoDuro.stop();
-                    }
-                });
 
 
                 botonplay2.addActionListener(new ActionListener() {
@@ -584,6 +569,16 @@ public class View extends JFrame{
                         }
                     }
                 });
+                botonCerrarExtremoduro.addActionListener(new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+                        panelReproductorGeneral.remove(reproductorExtemoduro);
+                        panelReproductorGeneral.remove(botonCerrarExtremoduro);
+                        panelReproductorGeneral.revalidate();
+                        panelReproductorGeneral.repaint();
+                        clipExtremoDuro.stop();
+                    }
+                });
             }
         });
 
@@ -642,17 +637,6 @@ public class View extends JFrame{
                 panelReproductorGeneral.add(cerrarCancionEminem);
                 cerrarCancionEminem.setBackground(Color.pink);
                 cerrarCancionEminem.setLayout(null);
-
-                cerrarCancionEminem.addActionListener(new ActionListener() {
-                    @Override
-                    public void actionPerformed(ActionEvent e) {
-                        panelReproductorGeneral.remove(reproductorCancionEminem);
-                        panelReproductorGeneral.remove(cerrarCancionEminem);
-                        panelReproductorGeneral.revalidate();
-                        panelReproductorGeneral.repaint();
-                        clipEminem.stop();
-                    }
-                });
 
                 botonplay3.addActionListener(new ActionListener() {
                     @Override
@@ -763,6 +747,17 @@ public class View extends JFrame{
                         }
                     }
                 });
+                cerrarCancionEminem.addActionListener(new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+                        panelReproductorGeneral.remove(reproductorCancionEminem);
+                        panelReproductorGeneral.remove(cerrarCancionEminem);
+                        panelReproductorGeneral.revalidate();
+                        panelReproductorGeneral.repaint();
+                        clipEminem.stop();
+                    }
+                });
+
             }
         });
 
@@ -823,17 +818,6 @@ public class View extends JFrame{
                 cerrarCancionGhostmane.setBackground(Color.pink);
                 cerrarCancionGhostmane.setLayout(null);
 
-                cerrarCancionGhostmane.addActionListener(new ActionListener() {
-                    @Override
-                    public void actionPerformed(ActionEvent e) {
-                        panelReproductorGeneral.remove(reproductorCancionGhostmane);
-                        panelReproductorGeneral.remove(cerrarCancionGhostmane);
-                        panelReproductorGeneral.revalidate();
-                        panelReproductorGeneral.repaint();
-                        clipGhostmane.stop();
-
-                    }
-                });
 
                 botonplay4.addActionListener(new ActionListener() {
                     @Override
@@ -944,9 +928,19 @@ public class View extends JFrame{
                         }
                     }
                 });
+                cerrarCancionGhostmane.addActionListener(new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+                        panelReproductorGeneral.remove(reproductorCancionGhostmane);
+                        panelReproductorGeneral.remove(cerrarCancionGhostmane);
+                        panelReproductorGeneral.revalidate();
+                        panelReproductorGeneral.repaint();
+                        clipGhostmane.stop();
+
+                    }
+                });
             }
         });
-
     }
 
 }
