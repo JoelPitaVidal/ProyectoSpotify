@@ -271,6 +271,10 @@ public class View extends JFrame{
                         panelReproductorGeneral.remove(cerrarPanelZombie);
                         panelReproductorGeneral.revalidate();
                         panelReproductorGeneral.repaint();
+                        clipExtremoDuro.stop();
+                        clipRobZombie.stop();
+                        clipGhostmane.stop();
+                        clipEminem.stop();
                  }
               });
 
@@ -461,6 +465,10 @@ public class View extends JFrame{
                         panelReproductorGeneral.remove(botonCerrarExtremoduro);
                         panelReproductorGeneral.revalidate();
                         panelReproductorGeneral.repaint();
+                        clipExtremoDuro.stop();
+                        clipRobZombie.stop();
+                        clipGhostmane.stop();
+                        clipEminem.stop();
                     }
                 });
 
@@ -640,6 +648,10 @@ public class View extends JFrame{
                         panelReproductorGeneral.remove(cerrarCancionEminem);
                         panelReproductorGeneral.revalidate();
                         panelReproductorGeneral.repaint();
+                        clipExtremoDuro.stop();
+                        clipRobZombie.stop();
+                        clipGhostmane.stop();
+                        clipEminem.stop();
                     }
                 });
 
@@ -819,6 +831,10 @@ public class View extends JFrame{
                         panelReproductorGeneral.remove(cerrarCancionGhostmane);
                         panelReproductorGeneral.revalidate();
                         panelReproductorGeneral.repaint();
+                        clipExtremoDuro.stop();
+                        clipRobZombie.stop();
+                        clipGhostmane.stop();
+                        clipEminem.stop();
                     }
                 });
 
