@@ -192,7 +192,15 @@ public class View extends JFrame{
 
     }
 
+    public void sesionUsuario(){
 
+        arribaIzquierda.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
+    }
 
     public void buscadorDeCanciones(){
     botonDeBusqueda.addActionListener(new ActionListener() {
@@ -271,10 +279,7 @@ public class View extends JFrame{
                         panelReproductorGeneral.remove(cerrarPanelZombie);
                         panelReproductorGeneral.revalidate();
                         panelReproductorGeneral.repaint();
-                        clipExtremoDuro.stop();
                         clipRobZombie.stop();
-                        clipGhostmane.stop();
-                        clipEminem.stop();
                  }
               });
 
@@ -466,9 +471,6 @@ public class View extends JFrame{
                         panelReproductorGeneral.revalidate();
                         panelReproductorGeneral.repaint();
                         clipExtremoDuro.stop();
-                        clipRobZombie.stop();
-                        clipGhostmane.stop();
-                        clipEminem.stop();
                     }
                 });
 
@@ -648,9 +650,6 @@ public class View extends JFrame{
                         panelReproductorGeneral.remove(cerrarCancionEminem);
                         panelReproductorGeneral.revalidate();
                         panelReproductorGeneral.repaint();
-                        clipExtremoDuro.stop();
-                        clipRobZombie.stop();
-                        clipGhostmane.stop();
                         clipEminem.stop();
                     }
                 });
@@ -831,10 +830,8 @@ public class View extends JFrame{
                         panelReproductorGeneral.remove(cerrarCancionGhostmane);
                         panelReproductorGeneral.revalidate();
                         panelReproductorGeneral.repaint();
-                        clipExtremoDuro.stop();
-                        clipRobZombie.stop();
                         clipGhostmane.stop();
-                        clipEminem.stop();
+
                     }
                 });
 

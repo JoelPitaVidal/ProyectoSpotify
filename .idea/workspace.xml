@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9306fa49-089f-41e6-af9c-e255899da59b" name="Changes" comment="Audio funcional">
+    <list default="true" id="9306fa49-089f-41e6-af9c-e255899da59b" name="Changes" comment="Añadimos clip.stop a los botones de cerrar el reproductor para que se pause la reproducción de musica al cerrarlo">
+      <change afterPath="$PROJECT_DIR$/Users/Query.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,19 +57,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "bugLinea61",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/dam/Escritorio/Programación/ProyectoSpotify/src/lib/postgresql-42.7.3.jar",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;bugLinea61&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/dam/Escritorio/Programación/ProyectoSpotify/src/lib/postgresql-42.7.3.jar&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/lib" />
@@ -406,7 +408,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716484422585</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Añadimos clip.stop a los botones de cerrar el reproductor para que se pause la reproducción de musica al cerrarlo">
+      <option name="closed" value="true" />
+      <created>1716538797646</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1716538797646</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -421,7 +431,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="inicio lista de artistas y canciones" />
     <MESSAGE value="Busqueda de información de los artistas" />
     <MESSAGE value="Inicio de el Layout Final" />
     <MESSAGE value="Listas aleatorias configuradas" />
@@ -446,7 +455,8 @@
     <MESSAGE value="separación de variable clip de las 4 canciones" />
     <MESSAGE value="botones de anterior y siguiente añadidos" />
     <MESSAGE value="boton de siguiente canción funcional" />
-    <option name="LAST_COMMIT_MESSAGE" value="boton de siguiente canción funcional" />
+    <MESSAGE value="Añadimos clip.stop a los botones de cerrar el reproductor para que se pause la reproducción de musica al cerrarlo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Añadimos clip.stop a los botones de cerrar el reproductor para que se pause la reproducción de musica al cerrarlo" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ProyectoSpotify$Main.ic" NAME="Main Coverage Results" MODIFIED="1715182530937" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
