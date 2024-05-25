@@ -1,12 +1,12 @@
 import java.util.Random;
 import java.util.ArrayList;
 
-public class CancionesAleatorias {
+public class RandomSongs {
 
     Random rand = new Random();
     ArrayList<String> canciones = new ArrayList<>();
 
-    public CancionesAleatorias() {
+    public RandomSongs() {
         darNombreCanciones();
     }
 

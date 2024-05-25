@@ -4,10 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9306fa49-089f-41e6-af9c-e255899da59b" name="Changes" comment="comienzo de base de datis y layout de los usuarios para iniciar sesión">
+    <list default="true" id="9306fa49-089f-41e6-af9c-e255899da59b" name="Changes" comment="boton de anterior canción funcional y botones finalmente colocados y en su sítio">
+      <change afterPath="$PROJECT_DIR$/Users/Query.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Users/DDBB.java" beforeDir="false" afterPath="$PROJECT_DIR$/Users/DDBB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Users/IniciarSesion.java" beforeDir="false" afterPath="$PROJECT_DIR$/Users/IniciarSesion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Artistas/artistas.java" beforeDir="false" afterPath="$PROJECT_DIR$/Artistas/Singers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Artistas/infoArtistas.java" beforeDir="false" afterPath="$PROJECT_DIR$/Artistas/SingersInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Canciones/CancionesAleatorias.java" beforeDir="false" afterPath="$PROJECT_DIR$/Canciones/RandomSongs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Canciones/InfoCanciones.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Canciones/Listas.java" beforeDir="false" afterPath="$PROJECT_DIR$/Canciones/SongsList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Users/DDBB.java" beforeDir="false" afterPath="$PROJECT_DIR$/Users/DataBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,7 +29,7 @@
     </option>
   </component>
   <component name="Git.Merge.Settings">
-    <option name="BRANCH" value="origin/bugLinea61" />
+    <option name="BRANCH" value="main" />
   </component>
   <component name="Git.Settings">
     <branch-grouping />
@@ -63,7 +69,7 @@
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;Application.Main.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;bugLinea61&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;trabajoActualizado&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;/home/dam/Escritorio/Programación/ProyectoSpotify/src/lib/postgresql-42.7.3.jar&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
@@ -409,23 +415,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716484422585</updated>
     </task>
-    <task id="LOCAL-00039" summary="Añadimos clip.stop a los botones de cerrar el reproductor para que se pause la reproducción de musica al cerrarlo">
+    <task id="LOCAL-00039" summary="boton de anterior canción funcional y botones finalmente colocados y en su sítio">
       <option name="closed" value="true" />
-      <created>1716538797646</created>
+      <created>1716486252867</created>
       <option name="number" value="00039" />
       <option name="presentableId" value="LOCAL-00039" />
       <option name="project" value="LOCAL" />
-      <updated>1716538797646</updated>
+      <updated>1716486252867</updated>
     </task>
-    <task id="LOCAL-00040" summary="comienzo de base de datis y layout de los usuarios para iniciar sesión">
-      <option name="closed" value="true" />
-      <created>1716544626704</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1716544626704</updated>
-    </task>
-    <option name="localTasksCounter" value="41" />
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -440,6 +438,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="Busqueda de información de los artistas" />
     <MESSAGE value="Inicio de el Layout Final" />
     <MESSAGE value="Listas aleatorias configuradas" />
     <MESSAGE value="Listas configuradas con artistas diferentes" />
@@ -463,9 +462,8 @@
     <MESSAGE value="separación de variable clip de las 4 canciones" />
     <MESSAGE value="botones de anterior y siguiente añadidos" />
     <MESSAGE value="boton de siguiente canción funcional" />
-    <MESSAGE value="Añadimos clip.stop a los botones de cerrar el reproductor para que se pause la reproducción de musica al cerrarlo" />
-    <MESSAGE value="comienzo de base de datis y layout de los usuarios para iniciar sesión" />
-    <option name="LAST_COMMIT_MESSAGE" value="comienzo de base de datis y layout de los usuarios para iniciar sesión" />
+    <MESSAGE value="boton de anterior canción funcional y botones finalmente colocados y en su sítio" />
+    <option name="LAST_COMMIT_MESSAGE" value="boton de anterior canción funcional y botones finalmente colocados y en su sítio" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ProyectoSpotify$Main.ic" NAME="Main Coverage Results" MODIFIED="1715182530937" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />

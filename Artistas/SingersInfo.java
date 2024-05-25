@@ -3,9 +3,9 @@ import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
-public class infoArtistas extends JFrame {
+public class SingersInfo extends JFrame {
 
-    artistas art = new artistas();
+    Singers art = new Singers();
 
     final String ARTISTA1 = "Ghostmane";
     final String ARTISTA2 = "Nigth Lovel";
@@ -111,7 +111,7 @@ public class infoArtistas extends JFrame {
     public JTextArea mostrarInfo;
 
 
-    public infoArtistas(){
+    public SingersInfo(){
     }
 
     public void menuDeBusqueda(){

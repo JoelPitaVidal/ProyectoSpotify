@@ -7,8 +7,8 @@ public class Main {
 
         lbhd.setVisible(true);
 
-        DDBB.ConexiónBaseDeDatos();
-        DDBB.Select();
+        DataBase.ConexiónBaseDeDatos();
+        DataBase.Select();
 
     }
 

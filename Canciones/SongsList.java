@@ -1,7 +1,6 @@
 import java.util.HashMap;
-import java.util.Random;
 
-public class Listas extends artistas{
+public class SongsList extends Singers {
 
 
     //La clave del HashMap es el nombre de la canción, el elemento asociado el nombre del Artista
@@ -9,8 +8,8 @@ public class Listas extends artistas{
         HashMap<String, String> datosCanciones2 = new HashMap<String, String>();
         HashMap<String, String> datosCanciones3 = new HashMap<String, String>();
         HashMap<String, String> guardarArtistas;
-        artistas arCan = new artistas();
-        CancionesAleatorias CanAl = new CancionesAleatorias();
+        Singers arCan = new Singers();
+        RandomSongs CanAl = new RandomSongs();
 
 
     public HashMap<String, String> darDatosCanciones(){

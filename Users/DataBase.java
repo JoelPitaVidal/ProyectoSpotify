@@ -1,6 +1,6 @@
 import java.sql.*;
 
-public class DDBB{
+public class DataBase {
 
     public static void ConexiónBaseDeDatos() {
 
