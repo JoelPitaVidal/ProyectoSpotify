@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9306fa49-089f-41e6-af9c-e255899da59b" name="Changes" comment="botón de reproducción aleatoria no funciona correctamente #3   (Ishue Solucionado)">
-      <change afterPath="$PROJECT_DIR$/src/Help.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="9306fa49-089f-41e6-af9c-e255899da59b" name="Changes" comment="configuración de boton de ayuda">
       <change beforePath="$PROJECT_DIR$/Artistas/SingersInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Artistas/SingersInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Users/IniciarSesion.java" beforeDir="false" afterPath="$PROJECT_DIR$/Users/IniciarSesion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Help.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Help.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -428,7 +424,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716638667913</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="configuración de boton de ayuda">
+      <option name="closed" value="true" />
+      <created>1716716044441</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1716716044441</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -443,7 +447,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Listas configuradas con artistas diferentes" />
     <MESSAGE value="Cambiados los nombres de los artistas" />
     <MESSAGE value="Commit con rama para release" />
     <MESSAGE value="creación de directorio y clase para la base de datos y finalización del buscador&#10;&#10;&#10;//TODO:formatear respuestas" />
@@ -468,7 +471,8 @@
     <MESSAGE value="boton de cancion aleatoria funciona,pero solo reproduce la cuarta cancion" />
     <MESSAGE value="boton de cancion aleatoria ya es completamente funcional #3" />
     <MESSAGE value="botón de reproducción aleatoria no funciona correctamente #3   (Ishue Solucionado)" />
-    <option name="LAST_COMMIT_MESSAGE" value="botón de reproducción aleatoria no funciona correctamente #3   (Ishue Solucionado)" />
+    <MESSAGE value="configuración de boton de ayuda" />
+    <option name="LAST_COMMIT_MESSAGE" value="configuración de boton de ayuda" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ProyectoSpotify$Main.ic" NAME="Main Coverage Results" MODIFIED="1715182530937" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />

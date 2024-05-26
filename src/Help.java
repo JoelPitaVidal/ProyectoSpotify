@@ -17,16 +17,22 @@ public class Help extends JFrame{
                                    "\ncancion a tu lista de canciones, tambien consta de" +
                                    "\nun boton de cerrar, que cierra el reproductor pero " +
                                    "\nno la cancion,asique si quieres parar la cancion " +
-                                   "\ny luegocerrar el menu,debes darle al boton de" +
+                                   "\ny luego cerrar el menu,debes darle al boton de" +
                                    "\npausa antes. El boton de buscar canciones" +
                                    "\nabre una pestaña con un buscador en " +
                                    "\nla parte superior en el que escribir el" +
                                    "\nnombre del artista y una pestaña debajo" +
-                                   "\nque muestra la información finalmente " +
+                                   "\nque muestra la información, el boton de " +
+                                   "\ncancion aleatoria lo que hace es abrir uno" +
+                                   "\nde los reproductores aleatoriamente y darle" +
+                                   "\nal play para que inicie, no se recomienda" +
+                                   "\ndarle una segunda vez sin darle al pause" +
                                    "\n el botón de inicio de sesion abre un panel" +
                                    "\ncon un JTextField en el que ingresar sus datos" +
                                    "\ny un JTextArea en el que se muestran estos." +
-                                   "por último el panel de la izquierda";
+                                   "\npor último el panel de la izquierda muestra" +
+                                   "\ntres listas aleatoriamente escogidas con " +
+                                   "\ndiferentes canciones y artistas.";
 
     public void respuestaBotonAyuda(){
 
