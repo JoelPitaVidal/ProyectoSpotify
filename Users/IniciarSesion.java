@@ -9,6 +9,11 @@ public class IniciarSesion extends JFrame {
 
     public void RespuestaBotonIncio(){
 
+        setTitle("Damtify");
+        setResizable(false);
+        setVisible(true);
+        setLayout(null);
+        setSize(300,600);
         InicioDeSesion();
         EscribirDatos();
         MostrarDatosUsuario();

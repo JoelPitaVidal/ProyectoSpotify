@@ -31,6 +31,9 @@ public class View extends JFrame{
     public JButton cancionEminem;
     public JButton cancionGhostmane;
     public JButton reproduccionAleatoria;
+    public JButton botonDeAyuda;
+    public JPanel panelAyuda;
+    public JLabel InfoAyuda;
 
 //botones de reproducción de rob zombie e iconos
     ImageIcon play = new ImageIcon("src/iconos/play.png");
@@ -182,7 +185,15 @@ public class View extends JFrame{
         ImageIcon ghostmane = new ImageIcon("src/Imagenes/ghostmane.jpg");
         cancionGhostmane.setIcon(ghostmane);
 
+
+        botonDeAyuda = new JButton("Ayuda");
+        botonDeAyuda.setBounds(230,360,140,50);
+        panelReproductorGeneral.add(botonDeAyuda);
+        botonDeAyuda.setBackground(Color.pink);
+        botonDeAyuda.setLayout(null);
+
         botonReproduccionRandom();
+        HelperButton();
     }
 
     public void crearTextArea(){
@@ -195,7 +206,15 @@ public class View extends JFrame{
 
     }
 
-
+    public void HelperButton(){
+        botonDeAyuda.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Help hlp = new Help();
+                hlp.respuestaBotonAyuda();
+            }
+        });
+    }
 
     public void buscadorDeCanciones(){
     botonDeBusqueda.addActionListener(new ActionListener() {
@@ -211,14 +230,10 @@ public class View extends JFrame{
         arribaIzquierda.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                IniciarSesion inses =  new IniciarSesion();
+                inses.RespuestaBotonIncio();
             }
         });
-    }
-
-    public void crearCanciones(){
-
-
     }
 
     public void menuDeReproduccion(){
@@ -945,12 +960,11 @@ public class View extends JFrame{
     public void botonReproduccionRandom()
     {
 
-        reproduccionAleatoria = new JButton("Reproducción Aleatoria");
+        reproduccionAleatoria = new JButton("Canción Aleatoria");
         reproduccionAleatoria.setBounds(230,300,140,50);
         panelReproductorGeneral.add(reproduccionAleatoria);
         reproduccionAleatoria.setBackground(Color.pink);
         reproduccionAleatoria.setLayout(null);
-
 
         reproduccionAleatoria.addActionListener(new ActionListener() {
             @Override
@@ -980,6 +994,15 @@ public class View extends JFrame{
                     botonplay4.doClick();
             }
         });
+      }
+
+
+    public void panelDeAyuda(){
+
 
     }
+
+
+
 }
+

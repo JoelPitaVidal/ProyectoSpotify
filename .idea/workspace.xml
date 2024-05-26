@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9306fa49-089f-41e6-af9c-e255899da59b" name="Changes" comment="boton de anterior canción funcional y botones finalmente colocados y en su sítio">
+    <list default="true" id="9306fa49-089f-41e6-af9c-e255899da59b" name="Changes" comment="botón de reproducción aleatoria no funciona correctamente #3   (Ishue Solucionado)">
+      <change afterPath="$PROJECT_DIR$/src/Help.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Artistas/SingersInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Artistas/SingersInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Users/IniciarSesion.java" beforeDir="false" afterPath="$PROJECT_DIR$/Users/IniciarSesion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,19 +61,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "bugLinea61",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/dam/Escritorio/Programación/ProyectoSpotify/src/lib/postgresql-42.7.3.jar",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;bugLinea61&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/dam/Escritorio/Programación/ProyectoSpotify/src/lib/postgresql-42.7.3.jar&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/lib" />
@@ -416,7 +420,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716486252867</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="botón de reproducción aleatoria no funciona correctamente #3   (Ishue Solucionado)">
+      <option name="closed" value="true" />
+      <created>1716638667913</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1716638667913</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -431,9 +443,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Busqueda de información de los artistas" />
-    <MESSAGE value="Inicio de el Layout Final" />
-    <MESSAGE value="Listas aleatorias configuradas" />
     <MESSAGE value="Listas configuradas con artistas diferentes" />
     <MESSAGE value="Cambiados los nombres de los artistas" />
     <MESSAGE value="Commit con rama para release" />
@@ -456,7 +465,10 @@
     <MESSAGE value="botones de anterior y siguiente añadidos" />
     <MESSAGE value="boton de siguiente canción funcional" />
     <MESSAGE value="boton de anterior canción funcional y botones finalmente colocados y en su sítio" />
-    <option name="LAST_COMMIT_MESSAGE" value="boton de anterior canción funcional y botones finalmente colocados y en su sítio" />
+    <MESSAGE value="boton de cancion aleatoria funciona,pero solo reproduce la cuarta cancion" />
+    <MESSAGE value="boton de cancion aleatoria ya es completamente funcional #3" />
+    <MESSAGE value="botón de reproducción aleatoria no funciona correctamente #3   (Ishue Solucionado)" />
+    <option name="LAST_COMMIT_MESSAGE" value="botón de reproducción aleatoria no funciona correctamente #3   (Ishue Solucionado)" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ProyectoSpotify$Main.ic" NAME="Main Coverage Results" MODIFIED="1715182530937" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />

@@ -115,7 +115,7 @@ public class SingersInfo extends JFrame {
     }
 
     public void menuDeBusqueda(){
-        setTitle("Damtify");
+        setTitle("Buscador de Damtify");
         setResizable(false);
         setVisible(true);
         setLayout(null);
