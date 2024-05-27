@@ -16,8 +16,6 @@ public class Singers {
 
     public void darDatosArtistas(){
 
-//TODO: Cambiar los nombres de los artistas de los HashMap datosArtistas2 y datosArtistas3
-
         datosArtistas1.put("Rob Zombie",1980);
         datosArtistas1.put("Eminem",1995);
         datosArtistas1.put("Disturbed",2000);

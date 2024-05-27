@@ -5,11 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9306fa49-089f-41e6-af9c-e255899da59b" name="Changes" comment="refactorizar estructura del proyecto y clases test añadida">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_05_2024_13_48__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_05_2024_13_48__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Layout/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Layout/View.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Users/DataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Users/DataBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Users/IniciarSesion.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Users/Query.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProyectoSpotify.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ProyectoSpotify.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Artistas/Singers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Artistas/Singers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Artistas/SingersInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Artistas/SingersInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/RandomSongsTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SingersInfoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/SingersInfoTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +51,9 @@
     &quot;accountId&quot;: &quot;c24b9aa7-3abc-465e-b157-f145b52df969&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/test/SingersInfoTest.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -64,6 +69,10 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Application.Main.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "bugLinea61",

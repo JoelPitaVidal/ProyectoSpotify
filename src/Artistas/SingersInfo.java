@@ -20,7 +20,7 @@ public class SingersInfo extends JFrame {
     final String ARTISTA9 = "Eminem";
     final String ARTISTA10 = "Rob Zombie";
 
-    final String INFOARTISTA1 = "La información de Ghostmane es : " +
+    public final String INFOARTISTA1 = "La información de Ghostmane es : " +
             "\nNombre real: Eric Ghoste Whitne" +
             "\nFecha de nacimiento: 15 de abril de 1991" +
             "\nOrigen: Lake Worth, Florida,E.U" +
@@ -29,14 +29,14 @@ public class SingersInfo extends JFrame {
             "\nSitio Web: ghostemanemerch.online";
 
 
-    final String INFOARTISTA2 = "La información de Nigth Lovel es : " +
+    public final String INFOARTISTA2 = "La información de Nigth Lovel es : " +
             "\nNombre real: Shermar Cuba Paul" +
             "\nFecha de nacimiento: 29 de Mayo de 1997" +
             "\nOrigen: Ottawa , provincia de Ontario, Canada" +
             "\nGéneros musicales:" +
             "\nHip hoptrapcloud rapgrimePhonk";
 
-    final String INFOARTISTA3 = "La información de Snoop Dog es : " +
+    public final String INFOARTISTA3 = "La información de Snoop Dog es : " +
             "\nNombre real: \tCalvin Cordozar Broadus Jr." +
             "\nFecha de nacimiento: 20 de Octubre de 1971" +
             "\nOrigen: Long Beach, Californiaa,E.U" +
@@ -46,7 +46,7 @@ public class SingersInfo extends JFrame {
             "\nhip hop hardcore, horrorcore y funk" +
             "\nSitio Web: www.snoopdogg.com";
 
-    final String INFOARTISTA4 = "La información de Blackpink es : " +
+    public final String INFOARTISTA4 = "La información de Blackpink es : " +
             "\nIntegrantes del grupo: Rosé, Jisoo, Jennie y Lissa." +
             "\nOrigen: Corea del Sur, Seúl" +
             "\nEstado: Activo" +
@@ -54,7 +54,7 @@ public class SingersInfo extends JFrame {
             "\nGéneros musicales: K-popEDMhip hopdance-pop" +
             "\nSitio Web: \tblackpinkofficial.com";
 
-    final String INFOARTISTA5 ="La información de Cartel de Santa es : " +
+    public final String INFOARTISTA5 ="La información de Cartel de Santa es : " +
             "\nIntegrantes del grupo: Rowán Rabia (Mono), Eduardo Dávalos de Luna (Babo)" +
             "\nOrigen: Santa Catarina, Nuevo León, México" +
             "\nEstado: Activo" +
@@ -63,7 +63,7 @@ public class SingersInfo extends JFrame {
             "\nRap Metal (inicios), Rap rock y Trap latino, Hip House" +
             "\nSitio Web: http://carteldesanta.com/";
 
-    final String INFOARTISTA6 = "La información de Extremoduro es : " +
+    public final String INFOARTISTA6 = "La información de Extremoduro es : " +
             "\nIntegrantes del grupo: Roberto Iniesta" +
             "\nIñaki Antón «Uoho» , José Ignacio Cantera" +
             "\n, Miguel Colino" +
@@ -74,14 +74,14 @@ public class SingersInfo extends JFrame {
             "\nRock progresivo3" +
             "\nSitio Web:extremoduro.com";
 
-    final String INFOARTISTA7 = "La información de Corpse Husband es : " +
+    public final String INFOARTISTA7 = "La información de Corpse Husband es : " +
             "\nNombre real: Desconocido" +
             "\nFecha de nacimiento: 8 de agosto de 1997" +
             "\nOrigen: San Diego,California, E.U" +
             "\nGéneros musicales: Hip-hop/Rap" +
             "\nSitio Web: https://www.youtube.com/@CorpseHusband";
 
-    final String INFOARTISTA8 = "La información de Disturbed es : " +
+    public final String INFOARTISTA8 = "La información de Disturbed es : " +
             "\nIntegrantes del grupo: David Draima , Dan Donegan ," +
             "\nJohn Moyer, Mike Wengren" +
             "\nOrigen: Chicago, Illinois, E.U" +
@@ -91,14 +91,14 @@ public class SingersInfo extends JFrame {
             "\nMetal alternativo Metal Industrial Hard rock Nü metal" +
             "\nSitio Web:www.disturbed1.com";
 
-    final String INFOARTISTA9 ="La información de Eminem es : " +
+    public final String INFOARTISTA9 ="La información de Eminem es : " +
             "\nNombre real: Marshall Bruce Mathers III" +
             "\nFecha de nacimiento: 17 de octubre de 1972" +
             "\nOrigen: St. Joseph ,Condado de Buchanan,E.U" +
             "\nGéneros musicales: Hip hop" +
             "\nSitio Web: eminem.com";
 
-    final String INFOARTISTA10 = "La información de Rob Zombie es : " +
+    public  final String INFOARTISTA10 = "La información de Rob Zombie es : " +
             "\nNombre real: Robert Bartleh Cummings" +
             "\nFecha de nacimiento: 12 de enero de 1965" +
             "\nOrigen: Haverhill, Massachusetts, E.U" +
