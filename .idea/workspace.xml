@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9306fa49-089f-41e6-af9c-e255899da59b" name="Changes" comment="refactorizar estructura del proyecto">
-      <change afterPath="$PROJECT_DIR$/test/RandomSongsTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/SingersInfoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/ViewTest.java" afterDir="false" />
+    <list default="true" id="9306fa49-089f-41e6-af9c-e255899da59b" name="Changes" comment="refactorizar estructura del proyecto y clases test añadida">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProyectoSpotify.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ProyectoSpotify.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Layout/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Layout/View.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Users/DataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Users/DataBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Users/IniciarSesion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Users/Query.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +72,8 @@
     "onboarding.tips.debug.path": "/home/dam/Escritorio/Programación/ProyectoProgramacion/test/src/Main.java",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -448,7 +449,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716794772818</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="refactorizar estructura del proyecto y clases test añadida">
+      <option name="closed" value="true" />
+      <created>1716795461828</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1716795461828</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -463,7 +472,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Commit con rama para release" />
     <MESSAGE value="creación de directorio y clase para la base de datos y finalización del buscador&#10;&#10;&#10;//TODO:formatear respuestas" />
     <MESSAGE value="inicio de formateo de respuestas" />
     <MESSAGE value="añadidos botones con imágenes de artistas en concreto" />
@@ -488,7 +496,8 @@
     <MESSAGE value="botón de reproducción aleatoria no funciona correctamente #3   (Ishue Solucionado)" />
     <MESSAGE value="configuración de boton de ayuda" />
     <MESSAGE value="refactorizar estructura del proyecto" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactorizar estructura del proyecto" />
+    <MESSAGE value="refactorizar estructura del proyecto y clases test añadida" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactorizar estructura del proyecto y clases test añadida" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -500,6 +509,11 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <inline-watch fileUrl="file://$PROJECT_DIR$/src/Users/DataBase.java" line="98">
+        <watch expression="GetNombre" language="JAVA" />
+      </inline-watch>
+    </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ProyectoSpotify$Main.ic" NAME="Main Coverage Results" MODIFIED="1715182530937" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />

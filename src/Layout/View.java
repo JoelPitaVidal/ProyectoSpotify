@@ -2,7 +2,7 @@ package Layout;
 
 import Artistas.SingersInfo;
 import Canciones.SongsList;
-import Users.IniciarSesion;
+import Users.DataBase;
 
 import javax.swing.*;
 import java.awt.*;
@@ -236,7 +236,7 @@ public class View extends JFrame{
         arribaIzquierda.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                IniciarSesion inses =  new IniciarSesion();
+                DataBase inses =  new DataBase();
                 inses.RespuestaBotonIncio();
             }
         });
