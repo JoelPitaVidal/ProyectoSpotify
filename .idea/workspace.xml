@@ -5,19 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9306fa49-089f-41e6-af9c-e255899da59b" name="Changes" comment="refactorizar estructura del proyecto">
+      <change afterPath="$PROJECT_DIR$/test/RandomSongsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/SingersInfoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/ViewTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Artistas/Singers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Artistas/Singers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Artistas/SingersInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Artistas/SingersInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Canciones/RandomSongs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Canciones/RandomSongs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Canciones/SongsList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Canciones/SongsList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Premium/PagarPremium.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Premium/PagarPremium.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Premium/PremiumStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Premium/PremiumStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Users/DataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Users/DataBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Users/IniciarSesion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Users/IniciarSesion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Users/Query.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Users/Query.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Help.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Layout/Help.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Layout/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Layout/View.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProyectoSpotify.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ProyectoSpotify.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,9 +65,11 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "bugLinea61",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/home/dam/Escritorio/Programación/ProyectoSpotify/src/lib/postgresql-42.7.3.jar",
+    "onboarding.tips.debug.path": "/home/dam/Escritorio/Programación/ProyectoProgramacion/test/src/Main.java",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2"
@@ -446,7 +440,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716716044441</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="refactorizar estructura del proyecto">
+      <option name="closed" value="true" />
+      <created>1716794772818</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1716794772818</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -487,6 +489,17 @@
     <MESSAGE value="configuración de boton de ayuda" />
     <MESSAGE value="refactorizar estructura del proyecto" />
     <option name="LAST_COMMIT_MESSAGE" value="refactorizar estructura del proyecto" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/src/Main.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ProyectoSpotify$Main.ic" NAME="Main Coverage Results" MODIFIED="1715182530937" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
