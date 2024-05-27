@@ -45,9 +45,9 @@ public class View extends JFrame{
     ImageIcon play = new ImageIcon("src/iconos/play.png");
     JButton botonplay;
     ImageIcon pause = new ImageIcon("src/iconos/pause.png");
-    JButton botonpause;
+    public JButton botonpause;
     ImageIcon repetir = new ImageIcon("src/iconos/repetir.png");
-    JButton botonrepetir;
+    public JButton botonrepetir;
     ImageIcon añadirLista = new ImageIcon("src/iconos/añadirAlista.png");
     JButton añadirAlista;
     ImageIcon siguiente = new ImageIcon("src/iconos/siquiente.png");
@@ -1002,13 +1002,12 @@ public class View extends JFrame{
         });
       }
 
-
-    public void panelDeAyuda(){
-
-
+    public JPanel getPanelReproductorGeneral() {
+        return panelReproductorGeneral;
     }
 
-
-
+    public void setPanelReproductorGeneral(JPanel panelReproductorGeneral) {
+        this.panelReproductorGeneral = panelReproductorGeneral;
+    }
 }
 

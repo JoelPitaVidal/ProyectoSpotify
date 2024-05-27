@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9306fa49-089f-41e6-af9c-e255899da59b" name="Changes" comment="refactorizar estructura del proyecto y clases test añadida">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_05_2024_13_48__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_05_2024_13_48__Changes_.xml" afterDir="false" />
+    <list default="true" id="9306fa49-089f-41e6-af9c-e255899da59b" name="Changes" comment="Primera batería de tests, realizada para la clase SingersInfoTest.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProyectoSpotify.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ProyectoSpotify.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Artistas/Singers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Artistas/Singers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Artistas/SingersInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Artistas/SingersInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/RandomSongsTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/SingersInfoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/SingersInfoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Layout/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Layout/View.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/ViewTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/ViewTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +95,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Layout.Main" />
       <module name="ProyectoSpotify" />
@@ -107,9 +103,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SingersInfoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ProyectoSpotify" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SingersInfoTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.SingersInfoTest" />
       </list>
     </recent_temporary>
   </component>
@@ -466,7 +472,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716795461828</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Primera batería de tests, realizada para la clase SingersInfoTest.">
+      <option name="closed" value="true" />
+      <created>1716822192199</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1716822192199</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -481,7 +495,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="creación de directorio y clase para la base de datos y finalización del buscador&#10;&#10;&#10;//TODO:formatear respuestas" />
     <MESSAGE value="inicio de formateo de respuestas" />
     <MESSAGE value="añadidos botones con imágenes de artistas en concreto" />
     <MESSAGE value="el buscador de artistas ya no cierra todo el proyecto" />
@@ -506,7 +519,8 @@
     <MESSAGE value="configuración de boton de ayuda" />
     <MESSAGE value="refactorizar estructura del proyecto" />
     <MESSAGE value="refactorizar estructura del proyecto y clases test añadida" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactorizar estructura del proyecto y clases test añadida" />
+    <MESSAGE value="Primera batería de tests, realizada para la clase SingersInfoTest." />
+    <option name="LAST_COMMIT_MESSAGE" value="Primera batería de tests, realizada para la clase SingersInfoTest." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
