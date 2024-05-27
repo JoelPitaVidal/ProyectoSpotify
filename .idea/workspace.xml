@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9306fa49-089f-41e6-af9c-e255899da59b" name="Changes" comment="Primera batería de tests, realizada para la clase SingersInfoTest.">
+    <list default="true" id="9306fa49-089f-41e6-af9c-e255899da59b" name="Changes" comment="Segunda batería de tests, realizada para la clase ViewTest.">
+      <change afterPath="$PROJECT_DIR$/src/Imagenes/ImagePanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Layout/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Layout/View.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/ViewTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/ViewTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +66,7 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Application.Main.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.SingersInfoTest.executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
     "Repository.Attach.Sources": "false",
@@ -480,7 +481,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716822192199</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Segunda batería de tests, realizada para la clase ViewTest.">
+      <option name="closed" value="true" />
+      <created>1716823971857</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1716823971857</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -495,7 +504,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="inicio de formateo de respuestas" />
     <MESSAGE value="añadidos botones con imágenes de artistas en concreto" />
     <MESSAGE value="el buscador de artistas ya no cierra todo el proyecto" />
     <MESSAGE value="Información sobre los artistas actualizada" />
@@ -520,7 +528,8 @@
     <MESSAGE value="refactorizar estructura del proyecto" />
     <MESSAGE value="refactorizar estructura del proyecto y clases test añadida" />
     <MESSAGE value="Primera batería de tests, realizada para la clase SingersInfoTest." />
-    <option name="LAST_COMMIT_MESSAGE" value="Primera batería de tests, realizada para la clase SingersInfoTest." />
+    <MESSAGE value="Segunda batería de tests, realizada para la clase ViewTest." />
+    <option name="LAST_COMMIT_MESSAGE" value="Segunda batería de tests, realizada para la clase ViewTest." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

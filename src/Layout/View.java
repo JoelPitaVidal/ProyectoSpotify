@@ -2,6 +2,7 @@ package Layout;
 
 import Artistas.SingersInfo;
 import Canciones.SongsList;
+import Imagenes.ImagePanel;
 import Users.DataBase;
 
 import javax.swing.*;
@@ -132,15 +133,18 @@ public class View extends JFrame{
         menuDeReproduccion2();
         menuDeReproduccion3();
         menuDeReproduccion4();
+
     }
 
     public void crearPaneles(){
+        ImagePanel imp = new ImagePanel();
+        Image img;
+        img = Toolkit.getDefaultToolkit().createImage("src/Imagenes/fondo.jpg");
 
         panelReproductorGeneral =new JPanel();
         panelReproductorGeneral.setBounds(0,0,800,600);
         this.getContentPane().add(panelReproductorGeneral);
         panelReproductorGeneral.setVisible(true);
-        panelReproductorGeneral.setBackground(Color.black);
         panelReproductorGeneral.setLayout(null);
 
         arribaIzquierda=new JButton("iniciar sesión de usuario");
