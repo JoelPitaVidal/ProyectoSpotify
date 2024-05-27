@@ -1,3 +1,7 @@
+package Canciones;
+
+import Artistas.Singers;
+
 import java.util.HashMap;
 
 public class SongsList extends Singers {

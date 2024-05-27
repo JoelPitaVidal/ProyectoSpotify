@@ -4,9 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9306fa49-089f-41e6-af9c-e255899da59b" name="Changes" comment="configuración de boton de ayuda">
-      <change beforePath="$PROJECT_DIR$/Artistas/SingersInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Artistas/SingersInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Help.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Help.java" afterDir="false" />
+    <list default="true" id="9306fa49-089f-41e6-af9c-e255899da59b" name="Changes" comment="refactorizar estructura del proyecto">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Artistas/Singers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Artistas/Singers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Artistas/SingersInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Artistas/SingersInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Canciones/RandomSongs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Canciones/RandomSongs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Canciones/SongsList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Canciones/SongsList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Premium/PagarPremium.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Premium/PagarPremium.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Premium/PremiumStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Premium/PremiumStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Users/DataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Users/DataBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Users/IniciarSesion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Users/IniciarSesion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Users/Query.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Users/Query.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Help.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Layout/Help.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Layout/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Layout/View.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,19 +68,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;bugLinea61&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/dam/Escritorio/Programación/ProyectoSpotify/src/lib/postgresql-42.7.3.jar&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "bugLinea61",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/dam/Escritorio/Programación/ProyectoSpotify/src/lib/postgresql-42.7.3.jar",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/lib" />
@@ -80,10 +91,13 @@
       <recent name="C:\inteliji\TareaDefinitivaProg\ProyectoSpotify\src\Imagenes" />
       <recent name="C:\inteliji\TareaDefinitivaProg\ProyectoSpotify\src" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+      <option name="MAIN_CLASS_NAME" value="Layout.Main" />
       <module name="ProyectoSpotify" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -447,7 +461,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Cambiados los nombres de los artistas" />
     <MESSAGE value="Commit con rama para release" />
     <MESSAGE value="creación de directorio y clase para la base de datos y finalización del buscador&#10;&#10;&#10;//TODO:formatear respuestas" />
     <MESSAGE value="inicio de formateo de respuestas" />
@@ -472,7 +485,8 @@
     <MESSAGE value="boton de cancion aleatoria ya es completamente funcional #3" />
     <MESSAGE value="botón de reproducción aleatoria no funciona correctamente #3   (Ishue Solucionado)" />
     <MESSAGE value="configuración de boton de ayuda" />
-    <option name="LAST_COMMIT_MESSAGE" value="configuración de boton de ayuda" />
+    <MESSAGE value="refactorizar estructura del proyecto" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactorizar estructura del proyecto" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ProyectoSpotify$Main.ic" NAME="Main Coverage Results" MODIFIED="1715182530937" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />

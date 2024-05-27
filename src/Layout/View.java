@@ -1,3 +1,9 @@
+package Layout;
+
+import Artistas.SingersInfo;
+import Canciones.SongsList;
+import Users.IniciarSesion;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionListener;

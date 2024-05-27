@@ -1,3 +1,5 @@
+package Layout;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -36,7 +38,7 @@ public class Help extends JFrame{
 
     public void respuestaBotonAyuda(){
 
-        setTitle("Damtify Help");
+        setTitle("Damtify Layout.Help");
         setResizable(false);
         setVisible(true);
         setLayout(null);
