@@ -8,7 +8,7 @@ import java.awt.event.KeyListener;
 public class SingersInfo extends JFrame {
 
 
-
+        //nombres de los artistas
     final String ARTISTA1 = "Ghostmane";
     final String ARTISTA2 = "Nigth Lovel";
     final String ARTISTA3 = "Snoop Dog";
@@ -20,7 +20,7 @@ public class SingersInfo extends JFrame {
     final String ARTISTA9 = "Eminem";
     final String ARTISTA10 = "Rob Zombie";
 
-
+        //variables con la información de los artistas
     public final String INFOARTISTA1 = "La información de Ghostmane es : " +
             "\nNombre real: Eric Ghoste Whitne" +
             "\nFecha de nacimiento: 15 de abril de 1991" +
@@ -108,7 +108,7 @@ public class SingersInfo extends JFrame {
             "\nshock rock" +
             "\nSitio Web: robzombie.com";
 
-
+    //variables de los paneles
     public JPanel panelDeBusqueda;
     public JTextField buscador;
     public JTextArea mostrarInfo;
@@ -116,7 +116,7 @@ public class SingersInfo extends JFrame {
 
     public SingersInfo(){
     }
-
+    //panel del búscador
     public void menuDeBusqueda(){
         setTitle(" Buscador de Damtify");
         setResizable(false);
@@ -127,7 +127,7 @@ public class SingersInfo extends JFrame {
         buscador();
         mostrarInfo();
     }
-
+    //configuración layout del buscador
     public void panelParaBuscador(){
 
         panelDeBusqueda=new JPanel();
@@ -138,9 +138,8 @@ public class SingersInfo extends JFrame {
         add(panelDeBusqueda);
 
     }
-
+    //configuración layout del buscador
     public void buscador(){
-
         buscador=new JTextField();
         buscador.setBounds(0,0,300,50);
         buscador.setVisible(true);
@@ -151,7 +150,6 @@ public class SingersInfo extends JFrame {
         buscador.addKeyListener(new KeyListener() {
             @Override
             public void keyTyped(KeyEvent e) {}
-
             @Override
             public void keyPressed(KeyEvent e) {
                 // Verificar si la tecla presionada es Enter
@@ -187,9 +185,8 @@ public class SingersInfo extends JFrame {
 
 
     }
-
+    //panel para mostrar la info
 public void mostrarInfo(){
-
     mostrarInfo=new JTextArea();
     mostrarInfo.setBounds(0,260,300,300);
     mostrarInfo.setOpaque(true);

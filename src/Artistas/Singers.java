@@ -15,8 +15,9 @@ public class Singers {
 
     String asociarArtistas;
 
+    //dar datos a los artistas de los hash Map
     public void darDatosArtistas(){
-
+        //primer Hash Map
         datosArtistas1.put("Rob Zombie",1980);
         datosArtistas1.put("Eminem",1995);
         datosArtistas1.put("Disturbed",2000);
@@ -27,7 +28,7 @@ public class Singers {
         datosArtistas1.put("Ghostmane",1991);
         datosArtistas1.put("Nigth Lovel",1975);
         datosArtistas1.put("Snoop Dog",1979);
-
+        //segundo Hash Map
         datosArtistas2.put("Pinkii",1980);
         datosArtistas2.put("Shiki-TMS",1995);
         datosArtistas2.put("DAEGHO",2000);
@@ -38,8 +39,7 @@ public class Singers {
         datosArtistas2.put("Nikone",1991);
         datosArtistas2.put("Reality",1975);
         datosArtistas2.put("Calero-LDN",1979);
-
-
+        //tercer Hash Map
         datosArtistas3.put("Zheani",1980);
         datosArtistas3.put("ashnikko",1995);
         datosArtistas3.put("Hatsune-Miku",2000);
@@ -50,48 +50,6 @@ public class Singers {
         datosArtistas3.put("Clams-Casino",1991);
         datosArtistas3.put("$UICIDEBOY$",1975);
         datosArtistas3.put("KINDER MALO",1979);
-
-
-    }
-
-    public void generarLista () {
-//Primera Lista
-        List<String> keys = new ArrayList<>(datosArtistas1.keySet());
-        // Genera un número aleatorio entre 0 y el tamaño de la lista de claves
-        Random random = new Random();
-        int randomIndex = random.nextInt(keys.size());
-        // Obtiene la clave aleatoria usando el número aleatorio generado
-        String randomKey1 = keys.get(randomIndex);
-        // Obtiene el valor asociado con la clave aleatoria
-        Integer randomValue1 = datosArtistas1.get(randomKey1);
-
-//Segunda Lista
-        List<String> keys2 = new ArrayList<>(datosArtistas2.keySet());
-        // Genera un número aleatorio entre 0 y el tamaño de la lista de claves
-        Random random2 = new Random();
-        int randomIndex2 = random2.nextInt(keys2.size());
-        // Obtiene la clave aleatoria usando el número aleatorio generado
-        String randomKey2 = keys2.get(randomIndex2);
-
-        // Obtiene el valor asociado con la clave aleatoria
-        Integer randomValue2 = datosArtistas2.get(randomKey2);
-//Tercera Lista
-        List<String> keys3 = new ArrayList<>(datosArtistas3.keySet());
-        // Genera un número aleatorio entre 0 y el tamaño de la lista de claves
-        Random random3 = new Random();
-        int randomIndex3 = random3.nextInt(keys3.size());
-        // Obtiene la clave aleatoria usando el número aleatorio generado
-        String randomKey3 = keys3.get(randomIndex3);
-
-        // Obtiene el valor asociado con la clave aleatoria
-        Integer randomValue3 = datosArtistas3.get(randomKey3);
-
-
-
-        // Imprime la clave y el valor obtenidos aleatoriamente
-        JOptionPane.showMessageDialog(null,"Nombre del artista numero 1 y fecha de inicio:  " + randomKey1 + " , " + randomValue1 + "\n" +
-                                                                  "Nombre del artista numero 2 y fecha de inicio: " + randomKey2 + " , " + randomValue2 + "\n" +
-                                                                  "Nombre del artista numero 3 y fecha de inicio: " + randomKey3 + " , " + randomValue3);
 
 
     }

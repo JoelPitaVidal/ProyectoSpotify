@@ -68,7 +68,7 @@ public class SongsList extends Singers {
 
             return datosCanciones;
         }
-
+        //mostramos las listas
     public String getDatosCanciones() {
         darDatosCanciones();
         String devolverLista="";

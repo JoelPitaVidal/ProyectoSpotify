@@ -12,6 +12,7 @@ public class RandomSongs {
         darNombreCanciones();
     }
 
+    //damos los nombres de las canciones
     public void darNombreCanciones() {
         canciones.add("\nMiss you!");
         canciones.add("\nLive sucks so we fuck");
@@ -29,72 +30,60 @@ public class RandomSongs {
         canciones.add("\nBeliever");
         canciones.add("\nGood morning Vietnam");
     }
-
+    //conseguimos una de las canciones aleatoriamente
     public String getAsociarCancion() {
         int indiceAleatorio = rand.nextInt(canciones.size());
         return canciones.get(indiceAleatorio);
     }
-
+    //ejecutamos el anterior getter las veces necesarias como las canciones
     public String getAsociarCancion1() {
         return getAsociarCancion();
     }
-
     public String getAsociarCancion2() {
         return getAsociarCancion();
     }
-
     public String getAsociarCancion3() {
         return getAsociarCancion();
     }
-
     public String getAsociarCancion4() {
         return getAsociarCancion();
     }
-
     public String getAsociarCancion5() {
         return getAsociarCancion();
     }
-
     public String getAsociarCancion6() {
         return getAsociarCancion();
     }
-
     public String getAsociarCancion7() {
         return getAsociarCancion();
     }
-
     public String getAsociarCancion8() {
         return getAsociarCancion();
     }
-
     public String getAsociarCancion9() {
         return getAsociarCancion();
     }
-
     public String getAsociarCancion10() {
         return getAsociarCancion();
     }
-
     public String getAsociarCancion11() {
         return getAsociarCancion();
     }
-
     public String getAsociarCancion12() {
         return getAsociarCancion();
     }
-
     public String getAsociarCancion13() {
         return getAsociarCancion();
     }
-
     public String getAsociarCancion14() {
         return getAsociarCancion();
     }
-
     public String getAsociarCancion15() {
         return getAsociarCancion();
     }
 
+
+    //ejecutamos todos los metodos
 public void ejecutarMetodos(){
         darNombreCanciones();
         getAsociarCancion1();

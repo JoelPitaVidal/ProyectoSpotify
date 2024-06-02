@@ -6,6 +6,7 @@ import java.awt.*;
 public class Help extends JFrame{
     public JPanel panelDeAyuda;
     public JTextArea pestañaDeAyuda;
+    //información a mostrar en el canal de ayuda
     final  String INFORMACIONCLAVE=" \n   Panel de Ayuda:     " +
                                    "\nEn el siguiente panel se explican los" +
                                    "\nbasicos del funcionamiento del prográma" +
@@ -35,7 +36,7 @@ public class Help extends JFrame{
                                    "\npor último el panel de la izquierda muestra" +
                                    "\ntres listas aleatoriamente escogidas con " +
                                    "\ndiferentes canciones y artistas.";
-
+//configurar panel de ayuda
     public void respuestaBotonAyuda(){
 
         setTitle("Damtify Layout.Help");
@@ -46,7 +47,6 @@ public class Help extends JFrame{
         PanelDeAyuda();
         PestañaInformacion();
     }
-
     public void PanelDeAyuda(){
         panelDeAyuda=new JPanel();
         panelDeAyuda.setBounds(0,0,300,600);
@@ -55,7 +55,7 @@ public class Help extends JFrame{
         panelDeAyuda.setLayout(null);
         add(panelDeAyuda);
     }
-
+    //configurar el panel en el que se muestra la información
     public void PestañaInformacion(){
 
         pestañaDeAyuda=new JTextArea(INFORMACIONCLAVE);

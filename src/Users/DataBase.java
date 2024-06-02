@@ -35,11 +35,8 @@ public class DataBase extends JFrame{
 
     } // Fin del método Conexión Base De Datos
 
-    public static void Select() {
+    public static void Select() {}
 
-
-
-    }
 
     public void RespuestaBotonIncio(){
 
@@ -84,7 +81,7 @@ public class DataBase extends JFrame{
                 // Verificar si la tecla presionada es Enter
                 if(e.getKeyCode() == KeyEvent.VK_ENTER) {
                     try {
-
+                        //realizamos la consulta
                         Connection Conexion = DriverManager.getConnection("jdbc:postgresql://localhost:5432/Prueba", "postgres", "123456789");
                         PreparedStatement Query = Conexion.prepareStatement("SELECT * FROM public.\"Usuario\"");
                         ResultSet Resultado = Query.executeQuery();
@@ -98,7 +95,7 @@ public class DataBase extends JFrame{
                             //PreparedStatement Query = Conexion.prepareStatement("SELECT * FROM public.\"Usuario\" where ?" + (NombreBuscado));
 
                             if (NombreBuscado.equals(GetNombre)) {
-
+                            //configurar panel con la información
                                 mostrarDatosUsuario=new JTextArea();
                                 mostrarDatosUsuario.setBounds(0,260,300,300);
                                 mostrarDatosUsuario.setOpaque(true);
@@ -107,7 +104,7 @@ public class DataBase extends JFrame{
                                 mostrarDatosUsuario.setLayout(null);
                                 mostrarDatosUsuario.setVisible(true);
                                 iniciarSesion.add(mostrarDatosUsuario);
-
+                            //mostramos datos del usuário
                                 mostrarDatosUsuario.append(GetNombre + "\n" + GetApellido + "\n" + GetDni + "\n" + GetCorreo);
                             }
                         }
@@ -127,13 +124,7 @@ public class DataBase extends JFrame{
         iniciarSesion.setVisible(true);
     }
 
-    public void MostrarDatosUsuario(){
-
-
-
-
-
-    }
+    public void MostrarDatosUsuario(){}
 
 
 

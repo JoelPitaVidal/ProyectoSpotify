@@ -4,19 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9306fa49-089f-41e6-af9c-e255899da59b" name="Changes" comment="comienzo de la parte visuál del trabajo">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_05_2024_13_48_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_05_2024_13_48__Changes_.xml" beforeDir="false" />
+    <list default="true" id="9306fa49-089f-41e6-af9c-e255899da59b" name="Changes" comment="Comentrar y refactorizar">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Artistas/Singers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Artistas/Singers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Artistas/SingersInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Artistas/SingersInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Canciones/SongsList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Canciones/SongsList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Imagenes/ImagePanel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Imagenes/fondo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Layout/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Layout/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Layout/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Layout/View.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Premium/PagarPremium.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Premium/PremiumStatus.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Users/DataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Users/DataBase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -507,7 +498,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716827749569</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="Comentrar y refactorizar">
+      <option name="closed" value="true" />
+      <created>1717315240935</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1717315240935</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -522,7 +521,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="el buscador de artistas ya no cierra todo el proyecto" />
     <MESSAGE value="Información sobre los artistas actualizada" />
     <MESSAGE value="introducción de las imágenes y solución de el error de las listas de canciones aleatorias" />
     <MESSAGE value="añadimos menú de reproducción y botones" />
@@ -547,7 +545,8 @@
     <MESSAGE value="Primera batería de tests, realizada para la clase SingersInfoTest." />
     <MESSAGE value="Segunda batería de tests, realizada para la clase ViewTest." />
     <MESSAGE value="comienzo de la parte visuál del trabajo" />
-    <option name="LAST_COMMIT_MESSAGE" value="comienzo de la parte visuál del trabajo" />
+    <MESSAGE value="Comentrar y refactorizar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Comentrar y refactorizar" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -560,7 +559,7 @@
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
-      <inline-watch fileUrl="file://$PROJECT_DIR$/src/Users/DataBase.java" line="97">
+      <inline-watch fileUrl="file://$PROJECT_DIR$/src/Users/DataBase.java" line="96">
         <watch expression="GetNombre" language="JAVA" />
       </inline-watch>
     </watches-manager>
