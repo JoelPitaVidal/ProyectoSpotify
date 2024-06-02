@@ -2,16 +2,19 @@ package Layout;
 
 import Artistas.SingersInfo;
 import Canciones.SongsList;
-import Imagenes.ImagePanel;
 import Users.DataBase;
 
 import javax.swing.*;
+
 import java.awt.*;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+
 import java.io.File;
 import java.io.IOException;
+
 import java.util.Random;
+
 import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
@@ -21,26 +24,30 @@ import javax.sound.sampled.UnsupportedAudioFileException;
 public class View extends JFrame{
 
     public JPanel panelReproductorGeneral;
-    public JButton arribaIzquierda;
-    public JPanel arribaIzquierdaDebajo;
-    public JPanel menuDeRobZombie;
-    public JPanel reproductorExtemoduro;
-    public JPanel reproductorCancionEminem;
-    public JPanel reproductorCancionGhostmane;
-    public JButton cerrarPanelZombie;
-    public JButton botonCerrarExtremoduro;
-    public JButton cerrarCancionEminem;
-    public JButton cerrarCancionGhostmane;
+    public JButton botonInicioSesionUsuario;
+
+    public JPanel mostrarListasAleatorias;
     public JTextArea listaDeCanciones;
-    public JButton botonDeBusqueda;
+
+    public JPanel reproductorRobZombie;
+    public JPanel reproductorExtemoduro;
+    public JPanel reproductorEminem;
+    public JPanel reproductorGhostmane;
+
+    public JButton cerrarReproductorRobZombie;
+    public JButton cerrarReproductorExtremoduro;
+    public JButton cerrarReproductorEminem;
+    public JButton cerrarReproductorGhostmane;
+
     public JButton cancionRobZombie;
     public JButton cancionExtremoduro;
     public JButton cancionEminem;
     public JButton cancionGhostmane;
+
+    public JButton botonDeBusqueda;
+
     public JButton reproduccionAleatoria;
     public JButton botonDeAyuda;
-    public JPanel panelAyuda;
-    public JLabel InfoAyuda;
 
 //botones de reproducción de rob zombie e iconos
     ImageIcon play = new ImageIcon("src/iconos/play.png");
@@ -110,15 +117,16 @@ public class View extends JFrame{
 //2 = audio parado
 
 
-    Clip clipRobZombie;
-    Clip clipExtremoDuro;
-    Clip clipEminem;
-    Clip clipGhostmane;
+    private Clip clipRobZombie;
+    private Clip clipExtremoDuro;
+    private Clip clipEminem;
+    private Clip clipGhostmane;
 
     private Clip audioClip;
 
     SongsList can = new SongsList();
     SingersInfo infart = new SingersInfo();
+
     public View(){
         setTitle("Damtify");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -137,27 +145,24 @@ public class View extends JFrame{
     }
 
     public void crearPaneles(){
-        ImagePanel imp = new ImagePanel();
-        Image img;
-        img = Toolkit.getDefaultToolkit().createImage("src/Imagenes/fondo.jpg");
-
         panelReproductorGeneral =new JPanel();
         panelReproductorGeneral.setBounds(0,0,800,600);
         this.getContentPane().add(panelReproductorGeneral);
         panelReproductorGeneral.setVisible(true);
         panelReproductorGeneral.setLayout(null);
+        panelReproductorGeneral.setBackground(Color.black);
 
-        arribaIzquierda=new JButton("iniciar sesión de usuario");
-        arribaIzquierda.setLayout(null);
-        arribaIzquierda.setBounds(0,0,220,100);
-        panelReproductorGeneral.add(arribaIzquierda);
-        arribaIzquierda.setBackground(Color.pink);
+        botonInicioSesionUsuario =new JButton("iniciar sesión de usuario");
+        botonInicioSesionUsuario.setLayout(null);
+        botonInicioSesionUsuario.setBounds(0,0,220,100);
+        panelReproductorGeneral.add(botonInicioSesionUsuario);
+        botonInicioSesionUsuario.setBackground(Color.pink);
 
-        arribaIzquierdaDebajo=new JPanel();
-        arribaIzquierdaDebajo.setBounds(0,105,220,700);
-        panelReproductorGeneral.add(arribaIzquierdaDebajo);
-        arribaIzquierdaDebajo.setBackground(Color.pink);
-        arribaIzquierdaDebajo.setLayout(null);
+        mostrarListasAleatorias =new JPanel();
+        mostrarListasAleatorias.setBounds(0,105,220,700);
+        panelReproductorGeneral.add(mostrarListasAleatorias);
+        mostrarListasAleatorias.setBackground(Color.pink);
+        mostrarListasAleatorias.setLayout(null);
 
 
         botonDeBusqueda =new JButton("Buscar canciones o artistas");
@@ -211,7 +216,7 @@ public class View extends JFrame{
         listaDeCanciones.setBounds(0,0,220,700);
         listaDeCanciones.setOpaque(false);
         listaDeCanciones.setEditable(false);
-        arribaIzquierdaDebajo.add(listaDeCanciones);
+        mostrarListasAleatorias.add(listaDeCanciones);
 
 
     }
@@ -237,7 +242,7 @@ public class View extends JFrame{
 
 
     public void sesionDeUsuario(){
-        arribaIzquierda.addActionListener(new ActionListener() {
+        botonInicioSesionUsuario.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 DataBase inses =  new DataBase();
@@ -249,59 +254,60 @@ public class View extends JFrame{
     public void menuDeReproduccion(){
         cancionRobZombie.addActionListener(new ActionListener() {
             @Override
-            public void actionPerformed(ActionEvent e) {menuDeRobZombie =new JPanel();
-                menuDeRobZombie.setBounds(230,15,140,200);
-                panelReproductorGeneral.add(menuDeRobZombie);
-                menuDeRobZombie.setBackground(Color.pink);
-                menuDeRobZombie.setLayout(null);
+            public void actionPerformed(ActionEvent e) {
+                reproductorRobZombie =new JPanel();
+                reproductorRobZombie.setBounds(230,15,140,200);
+                panelReproductorGeneral.add(reproductorRobZombie);
+                reproductorRobZombie.setBackground(Color.pink);
+                reproductorRobZombie.setLayout(null);
 
-                cerrarPanelZombie = new JButton("Fin \nreproducción");
-                cerrarPanelZombie.setBounds(230,245,140,50);
-                panelReproductorGeneral.add(cerrarPanelZombie);
-                cerrarPanelZombie.setBackground(Color.pink);
-                cerrarPanelZombie.setLayout(null);
+                cerrarReproductorRobZombie = new JButton("Fin \nreproducción");
+                cerrarReproductorRobZombie.setBounds(230,245,140,50);
+                panelReproductorGeneral.add(cerrarReproductorRobZombie);
+                cerrarReproductorRobZombie.setBackground(Color.pink);
+                cerrarReproductorRobZombie.setLayout(null);
 
                 botonplay = new JButton();
                 botonplay.setBounds(15,20,50,50);
-                menuDeRobZombie.add(botonplay);
+                reproductorRobZombie.add(botonplay);
                 botonplay.setBackground(Color.pink);
                 botonplay.setIcon(play);
 
                 botonpause = new JButton();
                 botonpause.setBounds(15,120,50,50);
-                menuDeRobZombie.add(botonpause);
+                reproductorRobZombie.add(botonpause);
                 botonpause.setBackground(Color.pink);
                 botonpause.setIcon(pause);
 
                 botonrepetir = new JButton();
                 botonrepetir.setBounds(75,20,50,50);
-                menuDeRobZombie.add(botonrepetir);
+                reproductorRobZombie.add(botonrepetir);
                 botonrepetir.setBackground(Color.pink);
                 botonrepetir.setIcon(repetir);
 
                 añadirAlista = new JButton();
                 añadirAlista.setBounds(75,120,50,50);
-                menuDeRobZombie.add(añadirAlista);
+                reproductorRobZombie.add(añadirAlista);
                 añadirAlista.setBackground(Color.pink);
                 añadirAlista.setIcon(añadirLista);
 
                 botonSiguiente = new JButton();
                 botonSiguiente.setBounds(75,70,50,50);
-                menuDeRobZombie.add(botonSiguiente);
+                reproductorRobZombie.add(botonSiguiente);
                 botonSiguiente.setBackground(Color.pink);
                 botonSiguiente.setIcon(siguiente);
 
                 botonAnterior = new JButton();
                 botonAnterior.setBounds(15,70,50,50);
-                menuDeRobZombie.add(botonAnterior);
+                reproductorRobZombie.add(botonAnterior);
                 botonAnterior.setBackground(Color.pink);
                 botonAnterior.setIcon(anterior);
 
-                cerrarPanelZombie.addActionListener(new ActionListener() {
+                cerrarReproductorRobZombie.addActionListener(new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
-                        panelReproductorGeneral.remove(menuDeRobZombie);
-                        panelReproductorGeneral.remove(cerrarPanelZombie);
+                        panelReproductorGeneral.remove(reproductorRobZombie);
+                        panelReproductorGeneral.remove(cerrarReproductorRobZombie);
                         panelReproductorGeneral.revalidate();
                         panelReproductorGeneral.repaint();
                  }
@@ -373,22 +379,22 @@ public class View extends JFrame{
                     public void actionPerformed(ActionEvent e) {
                         if (UltimaCancion==1){
                             clipRobZombie.stop();
-                            cerrarPanelZombie.doClick();
+                            cerrarReproductorRobZombie.doClick();
                             cancionExtremoduro.doClick();
                             botonplay2.doClick();
                         } else if (UltimaCancion==2) {
                             clipExtremoDuro.stop();
-                            botonCerrarExtremoduro.doClick();
+                            cerrarReproductorExtremoduro.doClick();
                             cancionEminem.doClick();
                             botonplay3.doClick();
                         } else if (UltimaCancion==3) {
                             clipEminem.stop();
-                            cerrarCancionEminem.doClick();
+                            cerrarReproductorEminem.doClick();
                             cancionGhostmane.doClick();
                             botonplay4.doClick();
                         } else if (UltimaCancion==4) {
                             clipGhostmane.stop();
-                            cerrarCancionGhostmane.doClick();
+                            cerrarReproductorGhostmane.doClick();
                             cancionRobZombie.doClick();
                             botonplay.doClick();
                         } else if (UltimaCancion==0) {
@@ -402,22 +408,22 @@ public class View extends JFrame{
                     public void actionPerformed(ActionEvent e) {
                         if (UltimaCancion==1){
                             clipRobZombie.stop();
-                            cerrarPanelZombie.doClick();
+                            cerrarReproductorRobZombie.doClick();
                             cancionGhostmane.doClick();
                             botonplay4.doClick();
                         } else if (UltimaCancion==2) {
                             clipExtremoDuro.stop();
-                            botonCerrarExtremoduro.doClick();
+                            cerrarReproductorExtremoduro.doClick();
                             cancionRobZombie.doClick();
                             botonplay.doClick();
                         } else if (UltimaCancion==3) {
                             clipEminem.stop();
-                            cerrarCancionEminem.doClick();
+                            cerrarReproductorEminem.doClick();
                             cancionExtremoduro.doClick();
                             botonplay2.doClick();
                         } else if (UltimaCancion==4) {
                             clipGhostmane.stop();
-                            cerrarCancionGhostmane.doClick();
+                            cerrarReproductorGhostmane.doClick();
                             cancionEminem.doClick();
                             botonplay3.doClick();
                         } else if (UltimaCancion==0) {
@@ -479,17 +485,17 @@ public class View extends JFrame{
                 botonAnterior2.setIcon(anterior2);
 
 
-                botonCerrarExtremoduro =new JButton("Fin \nreproducción");
-                botonCerrarExtremoduro.setBounds(230,245,140,50);
-                panelReproductorGeneral.add(botonCerrarExtremoduro);
-                botonCerrarExtremoduro.setBackground(Color.pink);
-                botonCerrarExtremoduro.setLayout(null);
+                cerrarReproductorExtremoduro =new JButton("Fin \nreproducción");
+                cerrarReproductorExtremoduro.setBounds(230,245,140,50);
+                panelReproductorGeneral.add(cerrarReproductorExtremoduro);
+                cerrarReproductorExtremoduro.setBackground(Color.pink);
+                cerrarReproductorExtremoduro.setLayout(null);
 
-                botonCerrarExtremoduro.addActionListener(new ActionListener() {
+                cerrarReproductorExtremoduro.addActionListener(new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
                         panelReproductorGeneral.remove(reproductorExtemoduro);
-                        panelReproductorGeneral.remove(botonCerrarExtremoduro);
+                        panelReproductorGeneral.remove(cerrarReproductorExtremoduro);
                         panelReproductorGeneral.revalidate();
                         panelReproductorGeneral.repaint();
                     }
@@ -552,22 +558,22 @@ public class View extends JFrame{
                     public void actionPerformed(ActionEvent e) {
                         if (UltimaCancion==1){
                             clipRobZombie.stop();
-                            cerrarPanelZombie.doClick();
+                            cerrarReproductorRobZombie.doClick();
                             cancionExtremoduro.doClick();
                             botonplay2.doClick();
                         } else if (UltimaCancion==2) {
                             clipExtremoDuro.stop();
-                            botonCerrarExtremoduro.doClick();
+                            cerrarReproductorExtremoduro.doClick();
                             cancionEminem.doClick();
                             botonplay3.doClick();
                         } else if (UltimaCancion==3) {
                             clipEminem.stop();
-                            cerrarCancionEminem.doClick();
+                            cerrarReproductorEminem.doClick();
                             cancionGhostmane.doClick();
                             botonplay4.doClick();
                         } else if (UltimaCancion==4) {
                             clipGhostmane.stop();
-                            cerrarCancionGhostmane.doClick();
+                            cerrarReproductorGhostmane.doClick();
                             cancionRobZombie.doClick();
                             botonplay.doClick();
                         }else if (UltimaCancion==0) {
@@ -581,22 +587,22 @@ public class View extends JFrame{
                     public void actionPerformed(ActionEvent e) {
                         if (UltimaCancion==1){
                             clipRobZombie.stop();
-                            cerrarPanelZombie.doClick();
+                            cerrarReproductorRobZombie.doClick();
                             cancionGhostmane.doClick();
                             botonplay4.doClick();
                         } else if (UltimaCancion==2) {
                             clipExtremoDuro.stop();
-                            botonCerrarExtremoduro.doClick();
+                            cerrarReproductorExtremoduro.doClick();
                             cancionRobZombie.doClick();
                             botonplay.doClick();
                         } else if (UltimaCancion==3) {
                             clipEminem.stop();
-                            cerrarCancionEminem.doClick();
+                            cerrarReproductorEminem.doClick();
                             cancionExtremoduro.doClick();
                             botonplay2.doClick();
                         } else if (UltimaCancion==4) {
                             clipGhostmane.stop();
-                            cerrarCancionGhostmane.doClick();
+                            cerrarReproductorGhostmane.doClick();
                             cancionEminem.doClick();
                             botonplay3.doClick();
                         } else if (UltimaCancion==0) {
@@ -614,61 +620,61 @@ public class View extends JFrame{
         cancionEminem.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                reproductorCancionEminem =new JPanel();
-                reproductorCancionEminem.setBounds(230,15,140,200);
-                panelReproductorGeneral.add(reproductorCancionEminem);
-                reproductorCancionEminem.setBackground(Color.pink);
-                reproductorCancionEminem.setLayout(null);
+                reproductorEminem =new JPanel();
+                reproductorEminem.setBounds(230,15,140,200);
+                panelReproductorGeneral.add(reproductorEminem);
+                reproductorEminem.setBackground(Color.pink);
+                reproductorEminem.setLayout(null);
 
                 botonplay3 = new JButton();
                 botonplay3.setBounds(15,20,50,50);
-                reproductorCancionEminem.add(botonplay3);
+                reproductorEminem.add(botonplay3);
                 botonplay3.setBackground(Color.pink);
                 botonplay3.setIcon(play3);
 
                 botonpause3 = new JButton();
                 botonpause3.setBounds(15,120,50,50);
-                reproductorCancionEminem.add(botonpause3);
+                reproductorEminem.add(botonpause3);
                 botonpause3.setBackground(Color.pink);
                 botonpause3.setIcon(pause3);
 
                 botonrepetir3 = new JButton();
                 botonrepetir3.setBounds(75,20,50,50);
-                reproductorCancionEminem.add(botonrepetir3);
+                reproductorEminem.add(botonrepetir3);
                 botonrepetir3.setBackground(Color.pink);
                 botonrepetir3.setIcon(repetir3);
 
                 añadirAlista3 = new JButton();
                 añadirAlista3.setBounds(75,120,50,50);
-                reproductorCancionEminem.add(añadirAlista3);
+                reproductorEminem.add(añadirAlista3);
                 añadirAlista3.setBackground(Color.pink);
                 añadirAlista3.setIcon(añadirLista3);
 
                 botonSiguiente3 = new JButton();
                 botonSiguiente3.setBounds(75,70,50,50);
-                reproductorCancionEminem.add(botonSiguiente3);
+                reproductorEminem.add(botonSiguiente3);
                 botonSiguiente3.setBackground(Color.pink);
                 botonSiguiente3.setIcon(siguiente3);
 
 
                 botonAnterior3 = new JButton();
                 botonAnterior3.setBounds(15,70,50,50);
-                reproductorCancionEminem.add(botonAnterior3);
+                reproductorEminem.add(botonAnterior3);
                 botonAnterior3.setBackground(Color.pink);
                 botonAnterior3.setIcon(anterior3);
 
 
-                cerrarCancionEminem =new JButton("Fin \nreproducción");
-                cerrarCancionEminem.setBounds(230,245,140,50);
-                panelReproductorGeneral.add(cerrarCancionEminem);
-                cerrarCancionEminem.setBackground(Color.pink);
-                cerrarCancionEminem.setLayout(null);
+                cerrarReproductorEminem =new JButton("Fin \nreproducción");
+                cerrarReproductorEminem.setBounds(230,245,140,50);
+                panelReproductorGeneral.add(cerrarReproductorEminem);
+                cerrarReproductorEminem.setBackground(Color.pink);
+                cerrarReproductorEminem.setLayout(null);
 
-                cerrarCancionEminem.addActionListener(new ActionListener() {
+                cerrarReproductorEminem.addActionListener(new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
-                        panelReproductorGeneral.remove(reproductorCancionEminem);
-                        panelReproductorGeneral.remove(cerrarCancionEminem);
+                        panelReproductorGeneral.remove(reproductorEminem);
+                        panelReproductorGeneral.remove(cerrarReproductorEminem);
                         panelReproductorGeneral.revalidate();
                         panelReproductorGeneral.repaint();
                     }
@@ -730,22 +736,22 @@ public class View extends JFrame{
                     public void actionPerformed(ActionEvent e) {
                         if (UltimaCancion==1){
                             clipRobZombie.stop();
-                            cerrarPanelZombie.doClick();
+                            cerrarReproductorRobZombie.doClick();
                             cancionExtremoduro.doClick();
                             botonplay2.doClick();
                         } else if (UltimaCancion==2) {
                             clipExtremoDuro.stop();
-                            botonCerrarExtremoduro.doClick();
+                            cerrarReproductorExtremoduro.doClick();
                             cancionEminem.doClick();
                             botonplay3.doClick();
                         } else if (UltimaCancion==3) {
                             clipEminem.stop();
-                            cerrarCancionEminem.doClick();
+                            cerrarReproductorEminem.doClick();
                             cancionGhostmane.doClick();
                             botonplay4.doClick();
                         } else if (UltimaCancion==4) {
                             clipGhostmane.stop();
-                            cerrarCancionGhostmane.doClick();
+                            cerrarReproductorGhostmane.doClick();
                             cancionRobZombie.doClick();
                             botonplay.doClick();
                         }else if (UltimaCancion==0) {
@@ -759,22 +765,22 @@ public class View extends JFrame{
                     public void actionPerformed(ActionEvent e) {
                         if (UltimaCancion==1){
                             clipRobZombie.stop();
-                            cerrarPanelZombie.doClick();
+                            cerrarReproductorRobZombie.doClick();
                             cancionGhostmane.doClick();
                             botonplay4.doClick();
                         } else if (UltimaCancion==2) {
                             clipExtremoDuro.stop();
-                            botonCerrarExtremoduro.doClick();
+                            cerrarReproductorExtremoduro.doClick();
                             cancionRobZombie.doClick();
                             botonplay.doClick();
                         } else if (UltimaCancion==3) {
                             clipEminem.stop();
-                            cerrarCancionEminem.doClick();
+                            cerrarReproductorEminem.doClick();
                             cancionExtremoduro.doClick();
                             botonplay2.doClick();
                         } else if (UltimaCancion==4) {
                             clipGhostmane.stop();
-                            cerrarCancionGhostmane.doClick();
+                            cerrarReproductorGhostmane.doClick();
                             cancionEminem.doClick();
                             botonplay3.doClick();
                         } else if (UltimaCancion==0) {
@@ -793,61 +799,61 @@ public class View extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
 
-                reproductorCancionGhostmane =new JPanel();
-                reproductorCancionGhostmane.setBounds(230,15,140,200);
-                panelReproductorGeneral.add(reproductorCancionGhostmane);
-                reproductorCancionGhostmane.setBackground(Color.pink);
-                reproductorCancionGhostmane.setLayout(null);
+                reproductorGhostmane =new JPanel();
+                reproductorGhostmane.setBounds(230,15,140,200);
+                panelReproductorGeneral.add(reproductorGhostmane);
+                reproductorGhostmane.setBackground(Color.pink);
+                reproductorGhostmane.setLayout(null);
 
                 botonplay4 = new JButton();
                 botonplay4.setBounds(15,20,50,50);
-                reproductorCancionGhostmane.add(botonplay4);
+                reproductorGhostmane.add(botonplay4);
                 botonplay4.setBackground(Color.pink);
                 botonplay4.setIcon(play4);
 
                 botonpause4 = new JButton();
                 botonpause4.setBounds(15,120,50,50);
-                reproductorCancionGhostmane.add(botonpause4);
+                reproductorGhostmane.add(botonpause4);
                 botonpause4.setBackground(Color.pink);
                 botonpause4.setIcon(pause4);
 
                 botonrepetir4 = new JButton();
                 botonrepetir4.setBounds(75,20,50,50);
-                reproductorCancionGhostmane.add(botonrepetir4);
+                reproductorGhostmane.add(botonrepetir4);
                 botonrepetir4.setBackground(Color.pink);
                 botonrepetir4.setIcon(repetir4);
 
                 añadirAlista4 = new JButton();
                 añadirAlista4.setBounds(75,120,50,50);
-                reproductorCancionGhostmane.add(añadirAlista4);
+                reproductorGhostmane.add(añadirAlista4);
                 añadirAlista4.setBackground(Color.pink);
                 añadirAlista4.setIcon(añadirLista4);
 
                 botonSiguiente4 = new JButton();
                 botonSiguiente4.setBounds(75,70,50,50);
-                reproductorCancionGhostmane.add(botonSiguiente4);
+                reproductorGhostmane.add(botonSiguiente4);
                 botonSiguiente4.setBackground(Color.pink);
                 botonSiguiente4.setIcon(siguiente4);
 
 
                 botonAnterior4 = new JButton();
                 botonAnterior4.setBounds(15,70,50,50);
-                reproductorCancionGhostmane.add(botonAnterior4);
+                reproductorGhostmane.add(botonAnterior4);
                 botonAnterior4.setBackground(Color.pink);
                 botonAnterior4.setIcon(anterior4);
 
 
-                cerrarCancionGhostmane =new JButton("Fin \nreproducción");
-                cerrarCancionGhostmane.setBounds(230,245,140,50);
-                panelReproductorGeneral.add(cerrarCancionGhostmane);
-                cerrarCancionGhostmane.setBackground(Color.pink);
-                cerrarCancionGhostmane.setLayout(null);
+                cerrarReproductorGhostmane =new JButton("Fin \nreproducción");
+                cerrarReproductorGhostmane.setBounds(230,245,140,50);
+                panelReproductorGeneral.add(cerrarReproductorGhostmane);
+                cerrarReproductorGhostmane.setBackground(Color.pink);
+                cerrarReproductorGhostmane.setLayout(null);
 
-                cerrarCancionGhostmane.addActionListener(new ActionListener() {
+                cerrarReproductorGhostmane.addActionListener(new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
-                        panelReproductorGeneral.remove(reproductorCancionGhostmane);
-                        panelReproductorGeneral.remove(cerrarCancionGhostmane);
+                        panelReproductorGeneral.remove(reproductorGhostmane);
+                        panelReproductorGeneral.remove(cerrarReproductorGhostmane);
                         panelReproductorGeneral.revalidate();
                         panelReproductorGeneral.repaint();
                     }
@@ -909,22 +915,22 @@ public class View extends JFrame{
                     public void actionPerformed(ActionEvent e) {
                         if (UltimaCancion==1){
                             clipRobZombie.stop();
-                            cerrarPanelZombie.doClick();
+                            cerrarReproductorRobZombie.doClick();
                             cancionExtremoduro.doClick();
                             botonplay2.doClick();
                         } else if (UltimaCancion==2) {
                             clipExtremoDuro.stop();
-                            botonCerrarExtremoduro.doClick();
+                            cerrarReproductorExtremoduro.doClick();
                             cancionEminem.doClick();
                             botonplay3.doClick();
                         } else if (UltimaCancion==3) {
                             clipEminem.stop();
-                            cerrarCancionEminem.doClick();
+                            cerrarReproductorEminem.doClick();
                             cancionGhostmane.doClick();
                             botonplay4.doClick();
                         } else if (UltimaCancion==4) {
                             clipGhostmane.stop();
-                            cerrarCancionGhostmane.doClick();
+                            cerrarReproductorGhostmane.doClick();
                             cancionRobZombie.doClick();
                             botonplay.doClick();
                         }else if (UltimaCancion==0) {
@@ -938,22 +944,22 @@ public class View extends JFrame{
                     public void actionPerformed(ActionEvent e) {
                         if (UltimaCancion==1){
                             clipRobZombie.stop();
-                            cerrarPanelZombie.doClick();
+                            cerrarReproductorRobZombie.doClick();
                             cancionGhostmane.doClick();
                             botonplay4.doClick();
                         } else if (UltimaCancion==2) {
                             clipExtremoDuro.stop();
-                            botonCerrarExtremoduro.doClick();
+                            cerrarReproductorExtremoduro.doClick();
                             cancionRobZombie.doClick();
                             botonplay.doClick();
                         } else if (UltimaCancion==3) {
                             clipEminem.stop();
-                            cerrarCancionEminem.doClick();
+                            cerrarReproductorEminem.doClick();
                             cancionExtremoduro.doClick();
                             botonplay2.doClick();
                         } else if (UltimaCancion==4) {
                             clipGhostmane.stop();
-                            cerrarCancionGhostmane.doClick();
+                            cerrarReproductorGhostmane.doClick();
                             cancionEminem.doClick();
                             botonplay3.doClick();
                         } else if (UltimaCancion==0) {

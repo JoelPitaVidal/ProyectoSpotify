@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Random;
 
 public class Singers {
+
     //la clave del HashMap es el nombre de el artista, y su elemento asociado la fecha de inicio de este
     HashMap<String, Integer> datosArtistas1 = new HashMap<>();
     HashMap<String, Integer> datosArtistas2 = new HashMap<>();

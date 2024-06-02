@@ -4,10 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9306fa49-089f-41e6-af9c-e255899da59b" name="Changes" comment="Segunda batería de tests, realizada para la clase ViewTest.">
-      <change afterPath="$PROJECT_DIR$/src/Imagenes/ImagePanel.java" afterDir="false" />
+    <list default="true" id="9306fa49-089f-41e6-af9c-e255899da59b" name="Changes" comment="comienzo de la parte visuál del trabajo">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_05_2024_13_48_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_05_2024_13_48__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Artistas/Singers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Artistas/Singers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Artistas/SingersInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Artistas/SingersInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Canciones/SongsList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Canciones/SongsList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Imagenes/ImagePanel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Imagenes/fondo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Layout/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Layout/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Layout/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Layout/View.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Premium/PagarPremium.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Premium/PremiumStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Users/DataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Users/DataBase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,27 +71,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Application.Main.executor": "Run",
-    "Downloaded.Files.Path.Enabled": "false",
-    "JUnit.SingersInfoTest.executor": "Run",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "bugLinea61",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/dam/Escritorio/Programación/ProyectoSpotify/src/lib/postgresql-42.7.3.jar",
-    "onboarding.tips.debug.path": "/home/dam/Escritorio/Programación/ProyectoProgramacion/test/src/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;JUnit.SingersInfoTest.executor&quot;: &quot;Run&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;bugLinea61&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/dam/Escritorio/Programación/ProyectoSpotify/src/lib/postgresql-42.7.3.jar&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/home/dam/Escritorio/Programación/ProyectoProgramacion/test/src/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/lib" />
@@ -489,7 +499,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716823971857</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="comienzo de la parte visuál del trabajo">
+      <option name="closed" value="true" />
+      <created>1716827749569</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1716827749569</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -504,7 +522,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="añadidos botones con imágenes de artistas en concreto" />
     <MESSAGE value="el buscador de artistas ya no cierra todo el proyecto" />
     <MESSAGE value="Información sobre los artistas actualizada" />
     <MESSAGE value="introducción de las imágenes y solución de el error de las listas de canciones aleatorias" />
@@ -529,7 +546,8 @@
     <MESSAGE value="refactorizar estructura del proyecto y clases test añadida" />
     <MESSAGE value="Primera batería de tests, realizada para la clase SingersInfoTest." />
     <MESSAGE value="Segunda batería de tests, realizada para la clase ViewTest." />
-    <option name="LAST_COMMIT_MESSAGE" value="Segunda batería de tests, realizada para la clase ViewTest." />
+    <MESSAGE value="comienzo de la parte visuál del trabajo" />
+    <option name="LAST_COMMIT_MESSAGE" value="comienzo de la parte visuál del trabajo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -542,7 +560,7 @@
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
-      <inline-watch fileUrl="file://$PROJECT_DIR$/src/Users/DataBase.java" line="98">
+      <inline-watch fileUrl="file://$PROJECT_DIR$/src/Users/DataBase.java" line="97">
         <watch expression="GetNombre" language="JAVA" />
       </inline-watch>
     </watches-manager>

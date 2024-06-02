@@ -4,31 +4,32 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.sql.*;
-import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
 public class DataBase extends JFrame{
 
-    public JPanel iniciarsesion;
+    public JPanel iniciarSesion;
     public JTextField insertarDatos;
     public JTextArea mostrarDatosUsuario;
 
 
 
 
-    public static void ConexiónBaseDeDatos() {
+    public static void ConexionBaseDeDatos() {
 
         // Primero hacemos un "try-catch"
         try {
 
+            //Nos conectamos a la base de datos
             Connection Conexión = DriverManager.getConnection("jdbc:postgresql://localhost:5432/Prueba", "postgres", "123456789");
-
+            //Enviamos una confirmación por consola
             System.out.println("Conexión correcta");
 
         }// Fin del try
 
+        //Catch en caso de fallo
         catch (java.sql.SQLException Excepción) {
-
+            //innformamos del fallo por consola
             System.out.println("Conexión fallida");
         }
 
@@ -55,11 +56,11 @@ public class DataBase extends JFrame{
 
     public void InicioDeSesion(){
 
-        iniciarsesion=new JPanel();
-        iniciarsesion.setBounds(0,0,300,600);
-        iniciarsesion.setBackground(Color.black);
-        iniciarsesion.setLayout(null);
-        add(iniciarsesion);
+        iniciarSesion =new JPanel();
+        iniciarSesion.setBounds(0,0,300,600);
+        iniciarSesion.setBackground(Color.black);
+        iniciarSesion.setLayout(null);
+        add(iniciarSesion);
 
     }
 
@@ -72,7 +73,7 @@ public class DataBase extends JFrame{
         insertarDatos.setBackground(Color.pink);
         insertarDatos.setLayout(null);
 
-        iniciarsesion.add(insertarDatos);
+        iniciarSesion.add(insertarDatos);
 
         insertarDatos.addKeyListener(new KeyListener() {
             @Override
@@ -105,7 +106,7 @@ public class DataBase extends JFrame{
                                 mostrarDatosUsuario.setEditable(false);
                                 mostrarDatosUsuario.setLayout(null);
                                 mostrarDatosUsuario.setVisible(true);
-                                iniciarsesion.add(mostrarDatosUsuario);
+                                iniciarSesion.add(mostrarDatosUsuario);
 
                                 mostrarDatosUsuario.append(GetNombre + "\n" + GetApellido + "\n" + GetDni + "\n" + GetCorreo);
                             }
@@ -123,7 +124,7 @@ public class DataBase extends JFrame{
             public void keyReleased(KeyEvent e) {}
         });
 
-        iniciarsesion.setVisible(true);
+        iniciarSesion.setVisible(true);
     }
 
     public void MostrarDatosUsuario(){

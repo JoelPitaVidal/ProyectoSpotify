@@ -11,7 +11,6 @@ public class SongsList extends Singers {
         HashMap<String, String> datosCanciones = new HashMap<String, String>();
         HashMap<String, String> datosCanciones2 = new HashMap<String, String>();
         HashMap<String, String> datosCanciones3 = new HashMap<String, String>();
-        HashMap<String, String> guardarArtistas;
         Singers arCan = new Singers();
         RandomSongs CanAl = new RandomSongs();
 

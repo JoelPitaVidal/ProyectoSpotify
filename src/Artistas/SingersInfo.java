@@ -7,7 +7,7 @@ import java.awt.event.KeyListener;
 
 public class SingersInfo extends JFrame {
 
-    Singers art = new Singers();
+
 
     final String ARTISTA1 = "Ghostmane";
     final String ARTISTA2 = "Nigth Lovel";
@@ -19,6 +19,7 @@ public class SingersInfo extends JFrame {
     final String ARTISTA8 = "Disturbed";
     final String ARTISTA9 = "Eminem";
     final String ARTISTA10 = "Rob Zombie";
+
 
     public final String INFOARTISTA1 = "La información de Ghostmane es : " +
             "\nNombre real: Eric Ghoste Whitne" +

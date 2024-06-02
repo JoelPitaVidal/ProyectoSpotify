@@ -11,7 +11,7 @@ public class Main {
 
         layout.setVisible(true);
 
-        DataBase.ConexiónBaseDeDatos();
+        DataBase.ConexionBaseDeDatos();
         DataBase.Select();
 
     }
